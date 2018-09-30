@@ -11,46 +11,46 @@
 
 <body>
   <div class="wrapper">
-      <header class="header">
-          <div class="container">
-            <nav class="nav">
-              <a href="index.html" class="logo nav__logo">
-                Магазин вязаных товаров «Мишка»
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="logo nav__logo">
+            Магазин вязаных товаров «Мишка»
+          </a>
+
+          <button type="button" class="nav__icon nav__icon--burger">Открыть навигацию по сайту</button>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="catalog.html" class="nav__list">
+                Каталог товаров
               </a>
+            </li>
+            <li class="nav__item">
+              <a href="form.html" class="nav__list">
+                Вязание на заказ
+              </a>
+            </li>
+            <li class="nav__item ">
+              <a href="search.html" class="nav__link nav__link--icon nav__link--icon--search">
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="cart.html" class="nav__link nav__link--icon nav__link--icon--cart">
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-              <button type="button" class="nav__icon nav__icon--burger">Открыть навигацию по сайту</button>
-
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a href="catalog.html" class="nav__list">
-                    Каталог товаров
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a href="form.html" class="nav__list">
-                    Вязание на заказ
-                  </a>
-                </li>
-                <li class="nav__item ">
-                  <a href="search.html" class="nav__link nav__link--icon nav__link--icon--search">
-                    Поиск по сайту
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a href="cart.html" class="nav__link nav__link--icon nav__link--icon--cart">
-                    Корзина: пока пуста
-                  </a>
-                </li>
-              </ul>
-            </nav>
-
-            <div class="heading-block">
-              <h1 class="title header__title">
-                  Каталог товаров
-              </h1>
-            </div>
-          </div>
-        </header>
+        <div class="heading-block">
+          <h1 class="title header__title">
+            Каталог товаров
+          </h1>
+        </div>
+      </div>
+    </header>
 
     <main class="content">
       <div class="container">
@@ -115,58 +115,58 @@
   </div>
 
   <footer class="footer">
-      <div class="container">
-        <ul class="socials footer__socials decor-line">
-          <li class="socials__item">
-            <a href="https://instagram.com" class="socials__icon social__icon--instagram">
-              Инстаграм магазина «Мишка»
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="https://facebook.com" class="socials__icon social__icon--facebook">
-              Фейсбук магазина «Мишка»
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="https://twitter.com" class="socials__icon social__icon--twitter">
-              Твиттер магазина «Мишка»
-            </a>
-          </li>
-        </ul>
-
-        <div class="copyright footer__copyright">
-          <p class="copyright__text">
-            Разработано
-          </p>
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__logo">
-            HTMLAcademy
+    <div class="container">
+      <ul class="socials footer__socials decor-line">
+        <li class="socials__item">
+          <a href="https://instagram.com" class="socials__icon social__icon--instagram">
+            Инстаграм магазина «Мишка»
           </a>
-        </div>
-      </div>
-    </footer>
+        </li>
+        <li class="socials__item">
+          <a href="https://facebook.com" class="socials__icon social__icon--facebook">
+            Фейсбук магазина «Мишка»
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="https://twitter.com" class="socials__icon social__icon--twitter">
+            Твиттер магазина «Мишка»
+          </a>
+        </li>
+      </ul>
 
-    <div class="modal-buy">
-      <h2 class="caption modal-buy__caption caption--modal-size">
-        Добавить в корзину
-      </h2>
-
-      <form action="https://echo.htmlacademy.ru" method="post" class="size-form modal-buy__size-form">
-        <p class="size">
-          Выберите размер:
+      <div class="copyright footer__copyright">
+        <p class="copyright__text">
+          Разработано
         </p>
-
-        <label for="s"></label>
-        <input type="checkbox" name="size-s" id="s">
-
-        <label for="m"></label>
-        <input type="checkbox" name="size-m" id="m">
-
-        <label for="l"></label>
-        <input type="checkbox" name="size-l" id="l">
-
-        <button type="submit" class="size-form__btn"></button>
-      </form>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__logo">
+          HTMLAcademy
+        </a>
+      </div>
     </div>
+  </footer>
+
+  <div class="modal-buy">
+    <h2 class="caption modal-buy__caption caption--modal-size">
+      Добавить в корзину
+    </h2>
+
+    <form action="https://echo.htmlacademy.ru" method="post" class="size-form modal-buy__size-form">
+      <p class="size">
+        Выберите размер:
+      </p>
+
+      <label for="s">S</label>
+      <input type="checkbox" name="size-s" id="s">
+
+      <label for="m">M</label>
+      <input type="checkbox" name="size-m" id="m">
+
+      <label for="l">L</label>
+      <input type="checkbox" name="size-l" id="l">
+
+      <button type="submit" class="size-form__btn">Добавить</button>
+    </form>
+  </div>
 
 </body>
 
