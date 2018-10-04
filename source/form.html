@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Вязание на заказ</title>
-  <meta name="description" content="Каталог товаров магазина «Мишка»">
+  <meta name="description" content="Каталог товаров ручной работы магазина «Мишка»">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -14,30 +14,30 @@
     <header class="header">
       <div class="container">
         <nav class="header__nav">
-          <a href="index.html" class="logo nav-header__logo">
+          <a href="index.html" class="logo header-nav__logo">
             Магазин вязаных товаров «Мишка»
           </a>
 
-          <button type="button" class="nav-header__icon nav-header__icon--burger">Открыть навигацию по сайту</button>
+          <button type="button" class="header-nav__icon header-nav__icon--burger">Открыть навигацию по сайту</button>
 
-          <ul class="nav-header__list">
-            <li class="nav-header__item">
-              <a href="catalog.html" class="nav-header__link">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a href="catalog.html" class="header-nav__link">
                 Каталог товаров
               </a>
             </li>
-            <li class="nav-header__item">
-              <a class="nav-header__link">
+            <li class="header-nav__item">
+              <a class="header-nav__link">
                 Вязание на заказ
               </a>
             </li>
-            <li class="nav-header__item ">
-              <a href="search.html" class="nav-header__link nav-header__link--icon nav-header__link--icon--search">
+            <li class="header-nav__item ">
+              <a href="search.html" class="header-nav__link header-nav__link--icon header-nav__link--icon--search">
                 Поиск по сайту
               </a>
             </li>
-            <li class="nav-header__item">
-              <a href="cart.html" class="nav-header__link nav-header__link--icon nav-header__link--icon--cart">
+            <li class="header-nav__item">
+              <a href="cart.html" class="header-nav__link header-nav__link--icon header-nav__link--icon--cart">
                 Корзина: пока пуста
               </a>
             </li>
@@ -62,11 +62,11 @@
           <fieldset class="fieldset">
             <legend class="fieldset__title">Тип</legend>
 
-            <input type="radio" name="type" id="type-interier">
+            <input type="radio" name="type" id="type-interier" value="interier">
 
             <label for="type-interier">Аксессуар для интерьера</label>
 
-            <input type="radio" name="type" id="type-toy">
+            <input type="radio" name="type" id="type-toy" value="toy">
 
             <label for="type-toy">Детская игрушка</label>
           </fieldset>
@@ -112,23 +112,24 @@
 
             <input type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
           </fieldset>
-          <fieldset class="fieldset">
+          <div class="fieldset">
             <label for="phone" class="fieldset__title">Тел</label>
 
-            <input type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-          </fieldset>
-          <fieldset class="fieldset">
+            <input type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              required>
+          </div>
+          <div class="fieldset">
             <label for="email" class="fieldset__title">E-mail</label>
 
             <input type="email" name="email" id="email" placeholder="Ваш Email*" required>
-          </fieldset>
-          <fieldset class="fieldset">
+          </div>
+          <div class="fieldset">
             <label for="order-info" class="fieldset__title">Доп</label>
 
             <textarea name="order-info" id="order-info" cols="20" rows="10"></textarea>
-          </fieldset>
+          </div>
 
-          <p class="fieldset-info">
+          <p class="field-info">
             *Поля обязательны для заполнения
           </p>
 

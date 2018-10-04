@@ -13,96 +13,105 @@
   <div class="wrapper">
     <header class="header">
       <div class="container">
-        <nav class="header__nav nav-header">
-          <a class="logo nav-header__logo">
+        <nav class="header-nav header__nav">
+          <a class="logo header-nav__logo">
             Магазин вязаных товаров «Мишка»
           </a>
 
-          <button type="button" class="nav-header__icon nav-header__icon--burger">Открыть навигацию по сайту</button>
+          <button type="button" class="header-nav__icon header-nav__icon--burger">Открыть навигацию по сайту</button>
 
-          <ul class="nav-header__list">
-            <li class="nav-header__item">
-              <a href="catalog.html" class="nav-header__link">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a href="catalog.html" class="header-nav__link">
                 Каталог товаров
               </a>
             </li>
-            <li class="nav-header__item">
-              <a href="form.html" class="nav-header__link">
+            <li class="header-nav__item">
+              <a href="form.html" class="header-nav__link">
                 Вязание на заказ
               </a>
             </li>
-            <li class="nav-header__item ">
-              <a href="search.html" class="nav-header__link nav-header__link--icon nav-header__link--icon--search">
+            <li class="header-nav__item">
+              <a href="search.html" class="header-nav__link header-nav__link--icon header-nav__link--icon--search">
                 Поиск по сайту
               </a>
             </li>
-            <li class="nav-header__item">
-              <a href="cart.html" class="nav-header__link nav-header__link--icon nav-header__link--icon--cart">
+            <li class="header-nav__item">
+              <a href="cart.html" class="header-nav__link header-nav__link--icon header-nav__link--icon--cart">
                 Корзина: пока пуста
               </a>
             </li>
           </ul>
         </nav>
 
-        <section class="header__title-wrapper">
+        <div class="header__title-wrapper">
           <h1 class="header__title">
             Милые штуки ручной работы для дома
           </h1>
-        </section>
+        </div>
 
         <ul class="categories header__categories">
-            <li class="categories__item">
-              <a href="interior.html" class="categories__link categories__link--icon categories__link--icon--interior">
-                Предметы интерьера
-              </a>
-            </li>
-            <li class="categories__item">
-              <a href="toy.html" class="categories__link categories__link--icon categories__link--icon--toy">
-                Детские игрушки
-              </a>
-            </li>
-          </ul>
+          <li class="categories__item">
+            <a href="interior.html" class="categories__link categories__link--icon categories__link--icon--interior">
+              Предметы интерьера
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="toy.html" class="categories__link categories__link--icon categories__link--icon--toy">
+              Детские игрушки
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
-    <section class="promo">
+    <section class="offer">
       <div class="container">
-        <p class="good-title">
-          Вязаные корзинки
-        </p>
-
-        <h2 class="promo__category">
-          Товар недели
+        <h2 class="offer__title visually-hidden">
+          Специальное предложение магазина
         </h2>
 
-        <p class="good-description promo__description">
-          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-        </p>
+        <div class="offer__good offer-good">
 
-        <table class="good-characteristics">
-          <tr class="good-characteristics__row">
-            <td class="good-characteristics__cell">Цвет:</td>
-            <td class="good-characteristics__cell">«Тиффани»/серый</td>
-          </tr>
-          <tr class="good-characteristics__row">
-            <td class="good-characteristics__cell">Диаметр:</td>
-            <td class="good-characteristics__cell">25 см</td>
-          </tr>
-          <tr class="good-characteristics__row">
-            <td class="good-characteristics__cell">Высота:</td>
-            <td class="good-characteristics__cell">15 см</td>
-          </tr>
-        </table>
 
-        <img src="http://placehold.it/150x100"" alt="Товар недели «Вязаные корзинки»" class="good-pic" width="260" height="315">
+          <p class="offer-good__title">
+            Вязаные корзинки
+          </p>
 
-        <p class="good-price">
-          Цена: 990 руб.
-        </p>
+          <p class="offer-good__label">
+            Товар недели
+          </p>
 
-        <a href="buy.html" class="btn promo__btn">
-          Заказать
-        </a>
+          <p class="offer-good__description">
+            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+          </p>
+
+          <table class="good-characteristics offer-good__characteristics">
+            <tr class="good-characteristics__row">
+              <td class="good-characteristics__cell">Цвет:</td>
+              <td class="good-characteristics__cell">«Тиффани»/серый</td>
+            </tr>
+            <tr class="good-characteristics__row">
+              <td class="good-characteristics__cell">Диаметр:</td>
+              <td class="good-characteristics__cell">25 см</td>
+            </tr>
+            <tr class="good-characteristics__row">
+              <td class="good-characteristics__cell">Высота:</td>
+              <td class="good-characteristics__cell">15 см</td>
+            </tr>
+          </table>
+
+          <img src="http://placehold.it/150x100" alt="Товар недели «Вязаные корзинки»" class="offer-good__img" width="260"
+            height="315">
+
+          <p class="offer-good__price">
+            Цена: 990 руб.
+          </p>
+
+          <a href="buy.html" class="btn offer-good__btn">
+            Заказать
+          </a>
+        </div>
       </div>
     </section>
 
@@ -141,19 +150,25 @@
           Отзывы
         </h2>
 
-        <ul class="feedbacks__list">
+        <ul class="feedbacks__list feedbacks__slider">
           <li class="feedbacks__item">
             <blockquote class="feedbacks__text">
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
               инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
               стильными, а также набирают больше лайков!
+
+              <p class="feedbacks__author">
+                <cite>
+                  Анастасия Красильникова
+                </cite>
+              </p>
+
+              <a href="https://instagram.com/misssssiskras" class="feedbacks__author-link">
+                <cite>
+                  @misssssiskras
+                </cite>
+              </a>
             </blockquote>
-            <p class="feedbacks__author">
-              Анастасия Красильникова
-            </p>
-            <a href="https://instagram.com/misssssiskras" class="feedbacks__author-link">
-              @misssssiskras
-            </a>
           </li>
         </ul>
 
@@ -174,12 +189,12 @@
           Контакты
         </h2>
 
-        <div class="contacts__section">
+        <div class="contacts__info">
           <p class="contacts__text">e-mail:</p>
           <p class="contacts__text">info@mimimishkashop.ru</p>
         </div>
 
-        <div class="contacts__section">
+        <div class="contacts__info">
           <p class="contacts__text">адрес:</p>
           <p class="contacts__text">
             г. Санкт-Петербург,
@@ -187,7 +202,9 @@
             д. 19/8, офис 101</p>
         </div>
 
-        <img src="http://placehold.it/150x100"" alt="Местоположение нашего офиса на карте" class="contacts__map" width="322" height="457">
+        <img src="http://placehold.it/150x100" alt=" Местоположение нашего офиса на карте" class="contacts__map" width="322"
+          height="457">
+
         <a href="write-us.html" class="btn contacts__btn">
           Напишите нам
         </a>
