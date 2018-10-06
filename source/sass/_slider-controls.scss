@@ -1,0 +1,20 @@
+.slider-controls {
+  width: 258px;
+  height: 52px;
+  @include border(#ececec, 1px);
+}
+
+.slider-controls__btn {
+  width: 129px;
+  height: 100%;
+  font-size: 0;
+  border: none;
+  background-color: #ffffff;
+}
+
+.slider-controls__btn--back {
+  background: url(../img/icon-left-arrow.svg) no-repeat center center;
+}
+.slider-controls__btn--forward {
+  background: url(../img/icon-right-arrow.svg) no-repeat center center;
+}
