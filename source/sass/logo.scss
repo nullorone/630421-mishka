@@ -3,5 +3,14 @@
   font-size: 0;
   width: 86px;
   height: 35px;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      fill: #46c1ae;
+      opacity: 0.3;
+    }
 }
 
