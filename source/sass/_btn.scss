@@ -1,0 +1,23 @@
+.btn {
+  display: block;
+  width: 259px;
+  height: 52px;
+  padding: 18px;
+  color: $color-text;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  @include border($color-text, 2px);
+  box-sizing: border-box;
+
+    &:hover {
+      color: #ffffff;
+      background-color: $color-text;
+    }
+
+    &:active {
+      color: rgba($bgcolor-main, 0.3);
+    }
+}
