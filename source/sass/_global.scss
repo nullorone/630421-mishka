@@ -1,0 +1,21 @@
+body {
+  max-width: $mobile;
+  margin: 0 auto;
+  color: $color-text;
+  font-family: $font-family--main;
+  font-size: $font-size--main;
+  background: $bgcolor-main;
+}
+.container {
+  width: $mobile - 30 * 2;
+  margin: 0 auto;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
