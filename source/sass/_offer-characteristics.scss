@@ -1,0 +1,16 @@
+.offer-characteristics {
+  width: 100%;
+  font-weight: 400;
+  line-height: 20px;
+  border-collapse: collapse;
+}
+
+.offer-characteristics__row {
+  @include border-bottom(#ececec, 1px);
+}
+
+.offer-characteristics__cell {
+  &:first-child {
+    width: 100px;
+  }
+}
