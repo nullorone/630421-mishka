@@ -1,0 +1,27 @@
+.header-nav {
+  min-height: 79px;
+  box-shadow:
+    0 1px 0 #ececec,
+    inset 0 1px 0 #ececec;
+}
+.header-nav__list {
+  @include reset-ul;
+}
+.header-nav__item {
+  padding: 32px 0 30px  46px;
+}
+.header-nav__link {
+  color: $color-li;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: $line-height--main;
+  text-decoration: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+}
