@@ -1,0 +1,53 @@
+.size-form {
+  width: 100%;
+
+    label {
+      display: block;
+      width: 82px;
+      height: 52px;
+      padding: 17px;
+      font-size: 17px;
+      line-height: 17px;
+      text-transform: uppercase;
+      text-align: center;
+      box-sizing: border-box;
+      @include border(rgba($color-text, 0.1), 2px);
+
+        &:hover {
+          cursor: pointer;
+          border-color: rgba($color-text, 0.3);
+        }
+    }
+
+    input {
+      visibility: hidden;
+
+      &:checked + label {
+       border-color: #63d1bb;
+      }
+    }
+
+}
+
+.size-form__desc {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  font-weight: 400;
+  text-align: center;
+  line-height: $line-height--h2;
+}
+
+.size-form__btn {
+  margin-top: 31px;
+  display: block;
+  width: 260px;
+  padding: 19px 20px 13px 20px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 17px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #63d1bb;
+}
