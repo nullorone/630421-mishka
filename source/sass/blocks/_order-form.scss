@@ -5,7 +5,10 @@
   padding-bottom: 45px;
   border: none;
 
-    &--text {
+    &--text,
+    &--tel,
+    &--email,
+    &--textarea {
       padding-bottom: 0;
     }
 }
