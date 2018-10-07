@@ -1,0 +1,29 @@
+.goods {
+  @include reset-ul;
+}
+
+.goods__title {
+  margin: 0;
+}
+
+.goods__link {
+  color: $color-li;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.goods__description {
+  margin: 0;
+  padding: 0;
+  color: $color-text;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.goods__price {
+  margin: 0;
+  padding: 0;
+  color: $color-li;
+}
