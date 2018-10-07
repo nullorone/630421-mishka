@@ -6,21 +6,21 @@
   display: block;
   font-size: 0;
 
-    &--instagram {
-      width: 22px;
-      height: 21px;
-      background: url(../img/icon-insta.svg) no-repeat center center;
-    }
+  &--instagram {
+    width: 22px;
+    height: 21px;
+    background: url(../../img/icon-insta.svg) no-repeat center center;
+  }
 
-    &--facebook {
-      width: 15px;
-      height: 28px;
-      background: url(../img/icon-fb.svg) no-repeat center center;
-    }
+  &--facebook {
+    width: 15px;
+    height: 28px;
+    background: url(../../img/icon-fb.svg) no-repeat center center;
+  }
 
-    &--twitter {
-      width: 23px;
-      height: 20px;
-      background: url(../img/icon-twitter.svg) no-repeat center center;
-    }
+  &--twitter {
+    width: 23px;
+    height: 20px;
+    background: url(../../img/icon-twitter.svg) no-repeat center center;
+  }
 }
