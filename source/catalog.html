@@ -129,7 +129,7 @@
           <h2 class="caption production__caption">
             Процесс производства
           </h2>
-          
+
           <div class="production__img">
             <img src="img/video-mobile@1x.jpg" alt="Процесс производства товаров магазина «Мишка»" width="260" height="150">
           </div>
@@ -178,28 +178,29 @@
   </footer>
 
   <div class="modal-buy">
-    <h2 class="caption modal-buy__caption">
-      Добавить в корзину
-    </h2>
+    <div class="container">
+      <h2 class="caption modal-buy__caption">
+        Добавить в&#160;корзину
+      </h2>
 
-    <form action="https://echo.htmlacademy.ru" method="post" class="size-form modal-buy__size-form">
-      <p class="size-form__desc">
-        Выберите размер:
-      </p>
+      <form action="https://echo.htmlacademy.ru" method="post" class="size-form modal-buy__size-form">
+        <p class="size-form__desc">
+          Выберите размер:
+        </p>
 
-      <label for="s">S</label>
-      <input type="radio" name="size" id="s">
+        <input type="radio" class="size-form__radio" name="size" id="s">
+        <label class="size-form__label" for="s">S</label>
 
-      <label for="m">M</label>
-      <input type="radio" name="size" id="m">
+        <input type="radio" class="size-form__radio" name="size" id="m">
+        <label class="size-form__label" for="m">M</label>
 
-      <label for="l">L</label>
-      <input type="radio" name="size" id="l">
+        <input type="radio" class="size-form__radio" name="size" id="l">
+        <label class="size-form__label" for="l">L</label>
 
-      <button type="submit" class="size-form__btn">Добавить</button>
-    </form>
+        <button type="submit" class="btn-form size-form__btn">Добавить</button>
+      </form>
+    </div>
   </div>
-
 </body>
 
 </html>
