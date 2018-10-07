@@ -122,11 +122,13 @@
 .order-form__input-text {
   margin-bottom: 24px;
   padding: 17px 20px 18px 1px;
+  width: 260px;
   color:  $color-li;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
   border: none;
+  box-sizing: border-box;
   box-shadow: inset 0 -2px 0 $color-li;
 
     &::placeholder {
@@ -141,11 +143,13 @@
 .order-form__tel,
 .order-form__email {
   padding: 16px 40px 21px 1px;
+  width: 260px;
   color:  $color-li;
   font-size: 19px;
   font-weight: 400;
   line-height: 19px;
   border: none;
+  box-sizing: border-box;
   box-shadow: inset 0 -2px 0 $color-li;
 
     &::placeholder {
