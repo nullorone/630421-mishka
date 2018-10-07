@@ -8,10 +8,6 @@ body {
   background: $bgcolor-main;
   line-height: $line-height--main;
 }
-.container {
-  width: $mobile - 30 * 2;
-  margin: 0 auto;
-}
 .visually-hidden {
   position: absolute;
   width: 1px;
