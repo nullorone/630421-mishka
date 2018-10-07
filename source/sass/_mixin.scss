@@ -3,19 +3,3 @@
   padding: 0;
   list-style: none;
 }
-
-@mixin border($color, $size) {
-  border: $color $size solid;
-}
-@mixin border-top($color, $size) {
-  border-top: $color $size solid;
-}
-@mixin border-right($color, $size) {
-  border-right: $color $size solid;
-}
-@mixin border-bottom($color, $size) {
-  border-bottom: $color $size solid;
-}
-@mixin border-left($color, $size) {
-  border-left: $color $size solid;
-}

@@ -9,7 +9,7 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  @include border($color-text, 2px);
+  border: 2px solid $color-text;
   box-sizing: border-box;
 
     &:hover {

@@ -1,6 +1,6 @@
 .slider-controls {
   width: 258px;
-  @include border(#ececec, 1px);
+  border: 1px solid #ececec;
 }
 
 .slider-controls__btn {

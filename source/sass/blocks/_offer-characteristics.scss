@@ -6,7 +6,7 @@
 }
 
 .offer-characteristics__row {
-  @include border-bottom(#ececec, 1px);
+  border-bottom: 1px solid #ececec;
 }
 
 .offer-characteristics__cell {
