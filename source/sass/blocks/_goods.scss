@@ -1,5 +1,10 @@
 .goods {
   @include reset-ul;
+  padding-top: 30px;
+}
+
+.goods__info {
+  border: 1px solid #ececec;
 }
 
 .goods__title {
