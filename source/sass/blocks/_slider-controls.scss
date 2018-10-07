@@ -1,12 +1,11 @@
 .slider-controls {
   width: 258px;
-  height: 52px;
   @include border(#ececec, 1px);
 }
 
 .slider-controls__btn {
   width: 129px;
-  height: 100%;
+  height: 52px;
   font-size: 0;
   border: none;
   background-color: #ffffff;
