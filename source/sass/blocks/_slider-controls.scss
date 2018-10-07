@@ -9,11 +9,13 @@
   font-size: 0;
   border: none;
   background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .slider-controls__btn--back {
-  background: url(../img/icon-left-arrow.svg) no-repeat center center;
+  background: url(../img/icon-left-arrow.svg);
 }
 .slider-controls__btn--forward {
-  background: url(../img/icon-right-arrow.svg) no-repeat center center;
+  background: url(../img/icon-right-arrow.svg);
 }
