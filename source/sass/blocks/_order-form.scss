@@ -30,7 +30,7 @@
   padding-left: 62px;
   padding-right: 20px;
   margin-bottom: 25px;
-  color: #000000;
+  color: $color-li;
   font-size: 17px;
   line-height: 18px;
 
@@ -65,3 +65,43 @@
   }
 }
 
+.order-form__color {
+  position: relative;
+  display: block;
+  margin-bottom: 45px;
+  padding-left: 62px;
+  padding-right: 20px;
+  color: $color-li;
+  font-size: 17px;
+  line-height: 18px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -12px;
+      left: 0;
+      display: block;
+      width: 40px;
+      height: 40px;
+      border: 2px solid #444444;
+    }
+
+    &::last-child {
+      margin-bottom: 0;
+    }
+}
+
+.order-form__checkbox {
+  &:checked + .order-form__color::after {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: -2px;
+    left: 10px;
+    background-image: url(../../img/icon-tick.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
