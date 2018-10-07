@@ -6,7 +6,7 @@
   border: none;
 
     &--text {
-      padding-bottom: 34px;
+      padding-bottom: 0;
     }
 }
 
@@ -128,5 +128,9 @@
 
     &::placeholder {
       opacity: 0.3;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
 }
