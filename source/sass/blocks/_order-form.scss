@@ -1,0 +1,66 @@
+.order-form__group {
+  margin: 0;
+  padding: 0;
+  padding-top: 35px;
+  padding-bottom: 45px;
+  border: none;
+}
+
+.order-form__group-title {
+  margin: 0;
+  padding: 0;
+  color: #63d1bb;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: uppercase;
+
+    &::after {
+      content: "";
+      display: block; //временно, до сеток
+      width: 150px;
+      height: 1px;
+      margin-left: 27px;
+      background-color: #62d1ba;
+    }
+}
+
+.order-form__label {
+  display: block;
+  position: relative;
+  padding-left: 62px;
+  padding-right: 20px;
+  margin-bottom: 25px;
+  color: #000000;
+  font-size: 17px;
+  line-height: 18px;
+
+    &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border: 2px solid $color-text;
+    border-radius: 50%;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+}
+
+.order-form__radio {
+  &:checked + .order-form__label::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 4px;
+    left: 15px;
+    background-color: #62d1ba;
+    border-radius: 50%;
+  }
+}
+
