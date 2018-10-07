@@ -1,32 +1,31 @@
 .size-form {
   width: 100%;
+}
 
-    label {
-      display: block;
-      width: 82px;
-      height: 52px;
-      padding: 17px;
-      font-size: 17px;
-      line-height: 17px;
-      text-transform: uppercase;
-      text-align: center;
-      box-sizing: border-box;
-      @include border(rgba($color-text, 0.1), 2px);
+.size-form__label {
+  display: block;
+  width: 82px;
+  height: 52px;
+  padding: 17px;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: uppercase;
+  text-align: center;
+  box-sizing: border-box;
+  @include border(rgba($color-text, 0.1), 2px);
 
-        &:hover {
-          cursor: pointer;
-          border-color: rgba($color-text, 0.3);
-        }
+    &:hover {
+      cursor: pointer;
+      border-color: rgba($color-text, 0.3);
     }
+}
 
-    input {
-      visibility: hidden;
+.size-form__radio {
+  visibility: hidden;
 
-      &:checked + label {
-        border-color: rgba(#63d1bb, 1);
-      }
-    }
-
+  &:checked + .size-form__label {
+    border-color: rgba(#63d1bb, 1);
+  }
 }
 
 .size-form__desc {
