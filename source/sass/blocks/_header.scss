@@ -1,12 +1,12 @@
 .header__title-wrapper {
   min-height: 356px;
   padding: 1px;
-  background: #f1f1f1 url(../img/hero-mobile@1x.jpg) no-repeat center center/cover;
+  background: #f1f1f1 url("../img/hero-mobile@1x.jpg") no-repeat center center/cover;
 
-    &--inner {
-      min-height: 177px;
-      background-image: none;
-    }
+  &--inner {
+    min-height: 177px;
+    background-image: none;
+  }
 }
 
 .header__title {

@@ -5,12 +5,12 @@
   padding-bottom: 45px;
   border: none;
 
-    &--text,
-    &--tel,
-    &--email,
-    &--textarea {
+  &--text,
+  &--tel,
+  &--email,
+  &--textarea {
     padding-bottom: 0;
-    }
+  }
 }
 
 .order-form__group-title {
@@ -108,7 +108,7 @@
     display: block;
     width: 22px;
     height: 22px;
-    background-image: url(../../img/icon-tick.svg);
+    background-image: url("../../img/icon-tick.svg");
     background-repeat: no-repeat;
     background-position: center center;
   }

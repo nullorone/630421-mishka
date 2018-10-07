@@ -7,13 +7,13 @@
   padding-top: 30px;
   padding-bottom: 30px;
 
-    &:nth-child(odd) {
-      background-color: #63d1bb;
-    }
+  &:nth-child(odd) {
+    background-color: #63d1bb;
+  }
 
-    &:nth-child(even) {
-      background-color: #56c3b2;
-    }
+  &:nth-child(even) {
+    background-color: #56c3b2;
+  }
 }
 
 .categories__link {
@@ -24,7 +24,7 @@
   line-height: 24px;
   text-decoration: none;
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
+  }
 }

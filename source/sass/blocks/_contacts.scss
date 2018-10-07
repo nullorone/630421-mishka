@@ -18,22 +18,22 @@
   font-weight: 400;
   line-height: 30px;
 
-    &:last-child {
-      width: 170px;
-    }
+  &:last-child {
+    width: 170px;
+  }
 }
 
 .contacts__text--email {
   border-bottom: 1px solid #46c1ae;
 
-    &:hover {
+  &:hover {
     cursor: pointer;
     color: #46c1ae;
-    }
+  }
 
-    &:active {
+  &:active {
     opacity: 0.3;
-    }
+  }
 }
 
 .contacts__btn {
