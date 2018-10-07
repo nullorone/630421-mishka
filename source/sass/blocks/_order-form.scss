@@ -155,4 +155,21 @@
 
 .order-form__email {
   font-style: 17px;
+  line-height: 18px;
+}
+
+.order-form__textarea {
+  padding: 18px 20px 5px 17px;
+  width: 260px;
+  min-height: 142px;
+  color:  $color-li;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  box-sizing: border-box;
+  border: 2px solid $color-text;
+
+    &::placeholder {
+      opacity: 0.3;
+    }
 }
