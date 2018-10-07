@@ -1,6 +1,6 @@
 .modal-buy {
   width: 320px;
-  height: 336px;
+  min-height: 336px;
   @include border(#c6c6c6, 1px);
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
 }
