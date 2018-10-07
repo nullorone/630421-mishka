@@ -11,6 +11,27 @@
   line-height: 24px;
 }
 
+.production__img {
+  position: relative;
+  margin-top: 25px;
+  z-index: 1;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      width: 101px;
+      height: 77px;
+      background-image: url(../../img/icon-play.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      transform: translate(-50px, -39px);
+    }
+}
+
 .production__description {
   margin: 0;
   margin-top: 30px;
