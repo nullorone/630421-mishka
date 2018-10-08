@@ -39,7 +39,7 @@
   padding-left: 62px;
   font-size: 17px;
   line-height: 18px;
-  color: $color-li;
+  color: #000000;
 
   &::before {
     content: "";
@@ -80,7 +80,7 @@
   padding-left: 62px;
   font-size: 17px;
   line-height: 18px;
-  color: $color-li;
+  color: #000000;
 
   &::before {
     content: "";
@@ -117,7 +117,7 @@
 .order-form__text {
   font-size: 17px;
   line-height: 18px;
-  color: $color-li;
+  color: #000000;
 }
 
 .order-form__input-text {
@@ -128,9 +128,9 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
-  color: $color-li;
+  color: #000000;
   border: none;
-  box-shadow: inset 0 -2px 0 $color-li;
+  box-shadow: inset 0 -2px 0 #000000;
 
   &::placeholder {
     opacity: 0.3;
@@ -150,9 +150,9 @@
   font-weight: 400;
   font-size: 19px;
   line-height: 19px;
-  color: $color-li;
+  color: #000000;
   border: none;
-  box-shadow: inset 0 -2px 0 $color-li;
+  box-shadow: inset 0 -2px 0 #000000;
 
   &::placeholder {
     opacity: 0.3;
@@ -173,7 +173,7 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
-  color: $color-li;
+  color: #000000;
   border: 2px solid $color-text;
 
   &::placeholder {
