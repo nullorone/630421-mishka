@@ -2,14 +2,11 @@
   margin: 0;
   padding: 0;
   padding-top: 35px;
-  padding-bottom: 45px;
+  
   border: none;
-
-  &--text,
-  &--tel,
-  &--email,
-  &--textarea {
-    padding-bottom: 0;
+  
+  &--padding-bottom {
+    padding-bottom: 45px;
   }
 }
 
