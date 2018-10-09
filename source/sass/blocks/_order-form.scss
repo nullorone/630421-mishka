@@ -68,7 +68,7 @@
   }
 }
 
-.order-form__color {
+.order-form__checkbox-label {
   position: relative;
   display: block;
   margin-bottom: 45px;
@@ -95,8 +95,8 @@
   }
 }
 
-.order-form__checkbox {
-  &:checked + .order-form__color::after {
+.order-form__checkbox-input {
+  &:checked + .order-form__checkbox-label::after {
     content: "";
     position: absolute;
     top: -2px;
