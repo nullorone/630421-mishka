@@ -110,13 +110,17 @@
   }
 }
 
-.order-form__text {
+.order-form__name-label
+.order-form__surname-label,
+.order-form__patronymic-label {
   font-size: 17px;
   line-height: 18px;
   color: #000000;
 }
 
-.order-form__customer-data {
+.order-form__name-input,
+.order-form__surname-input,
+.order-form__patronymic-input {
   box-sizing: border-box;
   width: 260px;
   margin-top: 9px;
