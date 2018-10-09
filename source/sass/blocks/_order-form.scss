@@ -27,7 +27,7 @@
   }
 }
 
-.order-form__label {
+.order-form__radio-label {
   position: relative;
   display: block;
   margin-bottom: 25px;
@@ -55,8 +55,8 @@
   }
 }
 
-.order-form__radio {
-  &:checked + .order-form__label::after {
+.order-form__radio-input {
+  &:checked + .order-form__radio-label::after {
     content: "";
     position: absolute;
     top: 4px;
