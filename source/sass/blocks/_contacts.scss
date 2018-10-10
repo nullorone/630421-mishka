@@ -1,5 +1,9 @@
 .contacts {
   padding-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 57px;
+  }
 }
 
 .contacts__caption {
@@ -7,10 +11,20 @@
   margin-top: 44px;
 }
 
+.contacts__info-wrapper {
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+}
+
 .contacts__info {
   display: flex;
   margin-top: 40px;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    width: 334px;
+  }
 }
 
 .contacts__text {
@@ -22,6 +36,11 @@
   &:last-child {
     margin-left: auto;
     width: 170px;
+
+    @media (min-width: $tablet) {
+      margin-left: 26px;
+      align-self: flex-start;
+    }
   }
 }
 
@@ -36,6 +55,13 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.contacts__map {
+  @media (min-width: $tablet) {
+  width: 768px;
+  height: 457px;
+}
 }
 
 .contacts__btn {
