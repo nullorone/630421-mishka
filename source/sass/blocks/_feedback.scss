@@ -12,6 +12,13 @@
   color: $color-li;
   font-size: 17px;
   font-weight: 700;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    flex-wrap: wrap;
+  }
 }
 
 .feedback__author-name {

@@ -1,20 +1,44 @@
 .feedbacks {
   padding-bottom: 45px;
+
+  @media (min-width: $tablet) {
+    .container {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-between;
+    }
+  }
 }
 
 .feedbacks__caption {
   margin: 0;
   margin-top: 34px;
+
+  @media (min-width: $tablet) {
+      order: 1;
+  }
 }
 
 .feedbacks__slider {
   margin-top: 38px;
+
+  @media (min-width: $tablet) {
+    order: 3;
+  }
 }
 
 .feedbacks__slider-controls {
   margin-top: 36px;
+
+  @media (min-width: $tablet) {
+    order: 4;
+  }
 }
 
 .feedbacks__btn {
   margin-top: 38px;
+
+  @media (min-width: $tablet) {
+    order: 2;
+  }
 }

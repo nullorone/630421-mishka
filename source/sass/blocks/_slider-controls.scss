@@ -2,6 +2,11 @@
   display: flex;
   width: 258px;
   border: 1px solid #ececec;
+
+  @media (min-width: $tablet) {
+    margin-left: auto;
+    margin-top: -55px;
+  }
 }
 
 .slider-controls__btn {
