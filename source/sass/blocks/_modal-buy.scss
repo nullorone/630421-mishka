@@ -3,6 +3,11 @@
   min-height: 336px;
   border: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  @media (min-width: $tablet) {
+    width: 566px;
+    margin: 0 auto;
+  }
 }
 
 .modal-buy__caption {
