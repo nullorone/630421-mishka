@@ -1,5 +1,9 @@
 .size-form {
   width: 100%;
+
+  @media (min-width: $tablet) {
+    width: 350px;
+  }
 }
 
 .size-form__field-group {
