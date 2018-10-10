@@ -24,16 +24,11 @@
 
 .header-nav__list {
   @include reset-ul;
-  display: flex;
-  flex-direction: column;
 }
 
 .header-nav__item {
+  display: flex;
   padding: 32px 0 30px  46px;
-
-  &--logo {
-    display: flex;
-  }
 }
 
 .header-nav__link {
