@@ -1,3 +1,8 @@
+.copyright {
+  display: flex;
+  padding-left: 40px;
+}
+
 .copyright__text {
   margin: 0;
   padding: 0;
@@ -9,6 +14,7 @@
   display: block;
   width: 27px;
   height: 34px;
+  margin-left: 30px;
   font-size: 0;
   background: url("../../img/logo-htmlacademy.svg") no-repeat center center;
 }
