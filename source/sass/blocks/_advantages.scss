@@ -1,0 +1,10 @@
+.advantages {
+  @include reset-ul;
+}
+
+.advantages__item {
+  padding-top: 60px;
+  color: $color-li;
+  font-size: 17px;
+  line-height: 20px;
+}

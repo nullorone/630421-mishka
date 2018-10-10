@@ -1,0 +1,16 @@
+.logo {
+  display: block;
+  font-size: 0;
+  width: 86px;
+  height: 35px;
+  background: url("../img/logo-mobile.svg") no-repeat center center;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+}

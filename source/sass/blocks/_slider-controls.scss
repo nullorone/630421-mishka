@@ -1,0 +1,22 @@
+.slider-controls {
+  width: 258px;
+  border: 1px solid #ececec;
+}
+
+.slider-controls__btn {
+  width: 129px;
+  height: 52px;
+  font-size: 0;
+  border: none;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.slider-controls__btn--back {
+  background-image: url("../../img/icon-left-arrow.svg");
+}
+
+.slider-controls__btn--forward {
+  background-image: url("../../img/icon-right-arrow.svg");
+}

@@ -1,0 +1,58 @@
+.goods {
+  @include reset-ul;
+  padding-top: 30px;
+}
+
+.goods__img-link {
+  display: block;
+  width: 260px;
+  height: 195px;
+}
+
+.goods__info {
+  padding-left: 28px;
+  border: 1px solid #ececec;
+}
+
+.goods__title {
+  margin: 0;
+}
+
+.goods__title-link {
+  color: $color-li;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.goods__link {
+  color: $color-li;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.goods__description {
+  margin: 0;
+  padding: 0;
+  color: $color-text;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.goods__price {
+  margin: 0;
+  padding: 0;
+  color: $color-li;
+}
+
+.goods__btn {
+  display: block;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  background-image: url("../../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.2;
+}

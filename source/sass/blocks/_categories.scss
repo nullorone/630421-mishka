@@ -1,0 +1,30 @@
+.categories {
+  @include reset-ul;
+  margin-top: -70px;
+}
+
+.categories__item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &:nth-child(odd) {
+    background-color: #63d1bb;
+  }
+
+  &:nth-child(even) {
+    background-color: #56c3b2;
+  }
+}
+
+.categories__link {
+  display: inline-block;
+  max-width: 150px;
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 24px;
+  text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
