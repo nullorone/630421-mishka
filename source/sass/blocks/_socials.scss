@@ -1,7 +1,14 @@
 .socials {
   @include reset-ul;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 180px;
   padding-left: 57px;
+
+  @media (min-width: $tablet) {
+    padding-left: 0;
+    margin-left: 159px;
+  }
 }
 
 .socials__item {

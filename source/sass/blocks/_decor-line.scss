@@ -4,4 +4,8 @@
     height: 1px;
     margin: 27px 0;
     background-color: #e5e5e5;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
 }

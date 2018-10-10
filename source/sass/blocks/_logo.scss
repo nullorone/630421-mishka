@@ -20,4 +20,8 @@
   width: 102px;
   height: 35px;
   background: url("../../img/logo-footer.svg") no-repeat center center;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }
