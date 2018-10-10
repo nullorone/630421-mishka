@@ -6,6 +6,7 @@
 }
 
 .header-nav__icon {
+  margin-left: auto;
   width: 20px;
   height: 20px;
   font-size: 0;
@@ -13,20 +14,26 @@
   background-color: transparent;
 
   &--open {
-    background: url("../../img/icon-menu-open.svg") no-repeat center center;
+    background: url("../../img/icon-menu-close.svg") no-repeat center center;
   }
 
   &--close {
-    background: url("../../img/icon-menu-close.svg") no-repeat center center;
+    background: url("../../img/icon-menu-open.svg") no-repeat center center;
   }
 }
 
 .header-nav__list {
   @include reset-ul;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-nav__item {
   padding: 32px 0 30px  46px;
+
+  &--logo {
+    display: flex;
+  }
 }
 
 .header-nav__link {
