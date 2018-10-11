@@ -6,6 +6,11 @@
   @media (min-width: $tablet) {
     margin-left: auto;
     margin-top: -55px;
+    border: none;
+  }
+
+  @media (min-width: $desktop) {
+    border: none;
   }
 }
 

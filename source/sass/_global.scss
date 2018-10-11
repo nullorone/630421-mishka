@@ -11,9 +11,9 @@ body {
     max-width: $tablet;
   }
 
-  // @media (min-width: $desktop) {
-  //   max-width: $desktop;
-  // }
+  @media (min-width: $desktop) {
+    max-width: $desktop;
+  }
 }
 
 .visually-hidden {

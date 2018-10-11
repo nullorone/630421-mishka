@@ -2,10 +2,21 @@
   padding-bottom: 45px;
 
   @media (min-width: $tablet) {
+    min-height: 357px;
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-bottom: 68px;
     .container {
       display: flex;
       flex-flow: wrap;
       justify-content: space-between;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    .container {
+      padding-left: 175px;
     }
   }
 }
