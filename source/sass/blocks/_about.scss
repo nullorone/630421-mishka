@@ -1,3 +1,9 @@
+.about {
+  @media (min-width: $desktop) {
+    padding-left: 175px;
+  }
+}
+
 .about__caption {
   margin: 0;
   margin-top: 34px;
