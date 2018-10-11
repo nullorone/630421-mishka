@@ -8,6 +8,16 @@
   color: $color-title;
   font-size: $font-size--h2;
   line-height: 30px;
+
+  @media (min-width: $tablet) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .offer__label {
