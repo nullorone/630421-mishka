@@ -7,11 +7,11 @@
 
   @media (min-width: $desktop) {
     .container {
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    padding-left: 175px;
-    width: 350px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 50px;
+      padding-left: 175px;
+      width: 350px;
     }
   }
 }

@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     background-position: left center;
     margin-bottom: 68px;
+
     .container {
       display: flex;
       flex-flow: wrap;
@@ -27,7 +28,7 @@
   margin-top: 34px;
 
   @media (min-width: $tablet) {
-      order: 1;
+    order: 1;
   }
 }
 

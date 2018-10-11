@@ -12,6 +12,7 @@
 
   @media (min-width: $desktop) {
     padding-top: 54px;
+
     .container {
       display: flex;
       position: relative;
@@ -92,14 +93,14 @@
     margin-top: -190px;
   }
 
-    @media (min-width: $desktop) {
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 525px;
-      height: 636px;
-      margin-top: 0;
-}
+  @media (min-width: $desktop) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 525px;
+    height: 636px;
+    margin-top: 0;
+  }
 }
 
 .offer__price {

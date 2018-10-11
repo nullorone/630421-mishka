@@ -5,10 +5,10 @@
 
   @media (min-width: $tablet) {
     .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 95px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 95px;
     }
   }
 }
