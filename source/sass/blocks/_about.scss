@@ -1,6 +1,10 @@
 .about {
   @media (min-width: $desktop) {
+    .container {
     padding-left: 175px;
+    padding-top: 70px;
+    padding-bottom: 89px;
+    }
   }
 }
 
@@ -11,4 +15,8 @@
 
 .about__advantages {
   margin-top: 31px;
+
+  @media (min-width: $desktop) {
+    width: 700px;
+  }
 }
