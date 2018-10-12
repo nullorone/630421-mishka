@@ -4,26 +4,28 @@
     0 1px 0 #ececec,
     inset 0 1px 0 #ececec;
 
-    @media (min-width: $tablet) {
-      position: absolute;
-      top: 0;
-      left: 0;
-      box-shadow: none;
-      .container {
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+
+    .container {
       display: flex;
       flex-wrap: wrap;
       width: 768px;
       flex-shrink: 0;
-      }
     }
+  }
 
-    @media (min-width: $desktop) {
-      box-shadow: none;
-      .container {
-        display: flex;
-        width: 1150px;
-      }
+  @media (min-width: $desktop) {
+    box-shadow: none;
+
+    .container {
+      display: flex;
+      width: 1150px;
     }
+  }
 }
 
 .header-nav__icon {
