@@ -12,4 +12,11 @@
   color: $color-text;
   font-size: 13px;
   font-weight: 400;
+
+  @media (min-width: $tablet) {
+    margin-top: 68px;
+    padding-right: 55px;
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
