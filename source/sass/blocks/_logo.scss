@@ -30,4 +30,8 @@
     margin: 0;
     background: url("../../img/logo-footer.svg") no-repeat center center;
   }
+
+  @media (min-width: $desktop) {
+    visibility: visible;
+  }
 }

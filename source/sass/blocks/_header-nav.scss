@@ -8,11 +8,20 @@
       position: absolute;
       top: 0;
       left: 0;
+      box-shadow: none;
       .container {
       display: flex;
       flex-wrap: wrap;
       width: 768px;
       flex-shrink: 0;
+      }
+    }
+
+    @media (min-width: $desktop) {
+      box-shadow: none;
+      .container {
+        display: flex;
+        width: 1150px;
       }
     }
 }
@@ -50,6 +59,11 @@
     flex-wrap: wrap;
     width: 768px;
   }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    width: 1150px;
+  }
 }
 
 .header-nav__item {
@@ -71,6 +85,13 @@
       margin-top: -120px;
       background-color: gray; //Временно до вставки иконки
     }
+
+    @media (min-width: $desktop) {
+      width: 82px;
+      height: 58px;
+      margin-top: 0;
+      margin-left: 380px;
+    }
   }
 
   &--cart {
@@ -79,6 +100,12 @@
       height: 58px;
       margin-top: -120px;
       padding-top: 30px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 0;
+      padding-top: 0;
+      height: 58px;
     }
   }
 
@@ -96,6 +123,33 @@
     width: 370px;
     height: 88px;
   }
+
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 0;
+    left: 500px;
+  }
+}
+
+.header-nav__new-goods {
+  visibility: hidden;
+
+  @media (min-width: $desktop) {
+    visibility: visible;
+    color: #000000;
+    margin-left: 50px;
+  }
+}
+
+.header-nav__sale {
+  visibility: hidden;
+
+  @media (min-width: $desktop) {
+    visibility: visible;
+    color: #000000;
+    margin-left: 60px;
+  }
 }
 
 .header-nav__tip {
@@ -109,5 +163,9 @@
     margin-left: auto;
     margin-right: 50px;
     margin-top: -52px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 0;
   }
 }
