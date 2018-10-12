@@ -3,6 +3,18 @@
   box-shadow:
     0 1px 0 #ececec,
     inset 0 1px 0 #ececec;
+
+    @media (min-width: $tablet) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      .container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 768px;
+      flex-shrink: 0;
+      }
+    }
 }
 
 .header-nav__icon {
@@ -20,10 +32,24 @@
   &--close {
     background: url("../../img/icon-menu-open.svg") no-repeat center center;
   }
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .header-nav__list {
   @include reset-ul;
+
+  @media (min-width: $tablet) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 768px;
+  }
 }
 
 .header-nav__item {
@@ -37,11 +63,51 @@
   line-height: 24px;
   text-decoration: none;
 
+  &--search {
+    @media (min-width: $tablet) {
+      width: 82px;
+      height: 88px;
+      font-size: 0;
+      margin-top: -120px;
+      background-color: gray; //Временно до вставки иконки
+    }
+  }
+
+  &--cart {
+    @media (min-width: $tablet) {
+      max-width: 218px;
+      height: 58px;
+      margin-top: -120px;
+      padding-top: 30px;
+    }
+  }
+
   &:hover {
     opacity: 0.6;
   }
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.header-nav__logo {
+  @media (min-width: $tablet) {
+    width: 370px;
+    height: 88px;
+  }
+}
+
+.header-nav__tip {
+  visibility: hidden;
+  color: $color-text;
+  font-size: $font-size--main;
+  font-weight: 400;
+
+  @media (min-width: $tablet) {
+    visibility: visible;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: -52px;
   }
 }

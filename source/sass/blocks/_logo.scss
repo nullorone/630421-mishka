@@ -14,14 +14,20 @@
     fill: #46c1ae;
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet) {
+    margin-top: 22px;
+    margin-left: 50px;
+  }
 }
 
 .footer__logo {
-  width: 102px;
-  height: 35px;
-  background: url("../../img/logo-footer.svg") no-repeat center center;
+  visibility: hidden;
 
   @media (min-width: $tablet) {
+    width: 102px;
+    height: 35px;
     margin: 0;
+    background: url("../../img/logo-footer.svg") no-repeat center center;
   }
 }

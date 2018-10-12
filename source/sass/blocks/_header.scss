@@ -1,3 +1,10 @@
+.header {
+  @media (min-width: $tablet) {
+    position: relative;
+    padding-top: 88px;
+  }
+}
+
 .header__title-wrapper {
   min-height: 177px;
   padding: 1px;
