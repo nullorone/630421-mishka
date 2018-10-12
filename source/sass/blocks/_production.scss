@@ -10,6 +10,13 @@
     width: 668px;
     margin-top: 53px;
   }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    width: 1050px;
+    min-height: 455px;
+    padding-bottom: 0;
+  }
 }
 
 .production__caption {
@@ -21,6 +28,13 @@
 
   @media (min-width: $tablet) {
     order: 2;
+  }
+
+  @media (min-width: $desktop) {
+    align-self: flex-end;
+    max-width: 148px;
+    margin-top: -370px;
+    padding-right: 140px;
   }
 }
 
@@ -57,6 +71,11 @@
     width: 668px;
     height: 455px;
   }
+
+  @media (min-width: $desktop) {
+    width: 682px;
+    height: 455px;
+  }
 }
 
 .production__description {
@@ -74,6 +93,15 @@
     order: 3;
     box-sizing: border-box;
   }
+
+  @media (min-width: $desktop) {
+    align-self: flex-end;
+    max-width: 290px;
+    margin-top: 42px;
+    padding-right: 67px;
+    box-sizing: border-box;
+    font-weight: 400;
+  }
 }
 
 .production__btn {
@@ -85,5 +113,12 @@
     width: 584px;
     order: 4;
     box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop) {
+    align-self: flex-end;
+    width: 230px;
+    margin-top: 50px;
+    margin-right: 57px;
   }
 }
