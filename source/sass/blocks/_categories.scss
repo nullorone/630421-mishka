@@ -1,6 +1,13 @@
 .categories {
   @include reset-ul;
   margin-top: -70px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    margin-top: -111px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .categories__item {
@@ -13,6 +20,17 @@
 
   &:nth-child(even) {
     background-color: #56c3b2;
+  }
+
+  @media (min-width: $tablet) {
+    width: 334px;
+    padding-left: 36px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop) {
+    width: 525px;
+    box-sizing: border-box;
   }
 }
 
