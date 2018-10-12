@@ -1,5 +1,9 @@
 .main {
   padding-bottom: 55px;
+
+  @media (min-width: $desktop) {
+    padding-bottom: 105px;
+  }
 }
 
 .main__description {
