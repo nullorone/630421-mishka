@@ -12,3 +12,19 @@
     }
   }
 }
+
+.footer__logo {
+  visibility: hidden;
+
+  @media (min-width: $tablet) {
+    visibility: visible;
+    width: 102px;
+    height: 35px;
+    margin: 0;
+    background: url("../../img/logo-footer.svg") no-repeat center center;
+  }
+
+  @media (min-width: $desktop) {
+    visibility: visible;
+  }
+}
