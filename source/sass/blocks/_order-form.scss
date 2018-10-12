@@ -1,3 +1,9 @@
+.order-form {
+  @media (min-width: $tablet) {
+    margin-top: 60px;
+  }
+}
+
 .order-form__group {
   margin: 0;
   padding: 0;
@@ -6,6 +12,26 @@
 
   &--modified {
     padding-bottom: 45px;
+  }
+
+  &--bg-gray {
+    @media (min-width: $tablet) {
+      background-color: #f1f1f1;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.order-form__group-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -24,6 +50,46 @@
     height: 1px;
     margin-left: 27px;
     background-color: #62d1ba;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    display: block;
+    width: 167px;
+    padding-top: 19px;
+  }
+}
+
+.order-form__fields-wrapper {
+  margin: 0;
+  &--text {
+    @media (min-width: $tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 500px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 700px;
+    }
+  }
+
+  &--row {
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 500px;
+      margin-left: 167px;
+    }
+
+    @media (min-width: $desktop) {
+    width: 875px;
+      margin-left: 175px;
+    }
   }
 }
 
@@ -31,6 +97,13 @@
   font-size: 17px;
   line-height: 18px;
   color: #000000;
+
+  @media (min-width: $desktop) {
+    display: inline-flex;
+    height: 20px;
+    margin-right: 25px;
+    align-self: center;
+  }
 
   &--radio {
     position: relative;
@@ -41,6 +114,10 @@
     font-size: 17px;
     line-height: 18px;
     color: #000000;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 45px;
+    }
 
     &::before {
       content: "";
@@ -84,6 +161,10 @@
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    @media (min-width: $tablet) {
+      width: 150px;
     }
   }
 }
@@ -136,6 +217,31 @@
       background-position: center center;
     }
   }
+
+  &--text {
+    @media (min-width: $tablet) {
+      width: 385px;
+      margin-left: 25px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 560px;
+    }
+  }
+
+  &--text[type="tel"],
+  &--text[type="email"] {
+    @media (min-width: $tablet) {
+      margin-top: 0;
+      width: 100%;
+      background-color: #f1f1f1;
+    }
+
+    @media (min-width: $desktop) {
+      margin-left: 0;
+      width: 700px;
+    }
+  }
 }
 
 .order-form__textarea {
@@ -153,6 +259,17 @@
   &::placeholder {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+    width: 500px;
+    min-height: 142px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 700px;
+    min-height: 142px;
+  }
 }
 
 .order-form__tip {
@@ -162,10 +279,20 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+
+  @media (min-width: $tablet) {
+    margin-left: auto;
+    align-self: center;
+    order: 2;
+  }
 }
 
 .order-form__btn {
   margin-top: 30px;
   font-weight: 700;
   background-color: #ffffff;
+
+  @media (min-width: $tablet) {
+    order: 1;
+  }
 }
