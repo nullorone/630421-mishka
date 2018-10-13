@@ -16,6 +16,10 @@
   }
 
   @media (min-width: $desktop) {
+    width: 1150px;
+    margin: 0 auto;
+    margin-bottom: 67px;
+    
     .container {
       box-sizing: border-box;
       padding-left: 175px;

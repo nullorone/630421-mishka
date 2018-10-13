@@ -6,6 +6,9 @@
   }
 
   @media (min-width: $desktop) {
+    width: 1250px;
+    margin: 0 auto;
+
     .container {
       display: flex;
       flex-direction: column;
@@ -21,6 +24,8 @@
   margin-top: 44px;
 
   @media (min-width: $desktop) {
+    font-size: 53px;
+    line-height: 57px;
     order: 1;
   }
 }

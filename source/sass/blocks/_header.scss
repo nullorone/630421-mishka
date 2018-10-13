@@ -3,6 +3,11 @@
     position: relative;
     padding-top: 88px;
   }
+
+  @media (min-width: $desktop) {
+    width: 1150px;
+    margin: 0 auto;
+  }
 }
 
 .header__title-wrapper {
