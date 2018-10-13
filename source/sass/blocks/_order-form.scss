@@ -38,6 +38,7 @@
 .order-form__group-title {
   margin: 0;
   padding: 0;
+  padding-bottom: 30px;
   font-size: 17px;
   line-height: 17px;
   color: #63d1bb;
@@ -53,6 +54,7 @@
 
     @media (min-width: $tablet) {
       display: none;
+      padding-bottom: 0;
     }
   }
 
@@ -60,6 +62,7 @@
     display: block;
     width: 167px;
     padding-top: 19px;
+    padding-bottom: 0;
   }
 }
 
