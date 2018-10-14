@@ -5,7 +5,15 @@
     border: none;
     background-color: #e5e5e5;
 
-    @media (min-width: $tablet) {
-      display: none;
+    &--footer {
+      @media (min-width: $tablet) {
+        display: none;
+      }
+    }
+
+    &--goods {
+      @media (min-width: $tablet) {
+        margin-top: 182px;
+      }
     }
 }
