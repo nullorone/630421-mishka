@@ -1,12 +1,10 @@
 .categories {
   @include reset-ul;
-  margin-top: -70px;
 
   @media (min-width: $tablet) {
     display: flex;
-    margin-top: -111px;
-    padding-left: 50px;
-    padding-right: 50px;
+    justify-content: center;
+    margin-top: 288px;
   }
 }
 

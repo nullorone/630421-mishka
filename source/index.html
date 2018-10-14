@@ -12,69 +12,85 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header class="header header--line-bottom">
       <nav class="header-nav header__nav">
-        <div class="container">
-          <div class="header-nav__logo">
+
+      <div class="container">
+        <ul class="header-nav__list">
+          <li class="header-nav__item header-nav__logo">
             <a class="logo">
               Магазин вязаных товаров «Мишка»
             </a>
 
             <button type="button" class="header-nav__icon header-nav__icon--open">Открыть навигацию по сайту</button>
-          </div>
+          </li>
+          <li class="header-nav__item header-nav__item--catalog">
+            <a href="catalog.html" class="header-nav__link header-nav__link--catalog">
+              Каталог товаров
+            </a>
+          </li>
 
-          <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <a href="catalog.html" class="header-nav__link">
-                Каталог товаров
-              </a>
-            </li>
+          <li class="header-nav__item header-nav__item--form">
+            <a href="form.html" class="header-nav__link header-nav__link--form">
+              Вязание на заказ
+            </a>
+          </li>
 
-            <li class="header-nav__item">
-              <a href="form.html" class="header-nav__link">
-                Вязание на заказ
-              </a>
-            </li>
+          <li class="header-nav__item header-nav__item--search">
+            <a href="search.html" class="header-nav__link header-nav__link--search">
+              Поиск по сайту
+            </a>
+          </li>
 
-            <li class="header-nav__item">
-              <a href="search.html" class="header-nav__link header-nav__link--search">
-                Поиск по сайту
-              </a>
-            </li>
+          <li class="header-nav__item header-nav__item--cart">
+            <a href="cart.html" class="header-nav__link header-nav__link--cart">
+              Корзина: пока пуста
+            </a>
+          </li>
 
-            <li class="header-nav__item">
-              <a href="cart.html" class="header-nav__link header-nav__link--cart">
-                Корзина: пока пуста
-              </a>
-            </li>
-          </ul>
+          <li class="header-nav__item header-nav__item--new-goods">
+            <a href="cart.html" class="header-nav__link header-nav__link--new-goods">
+              Новые поступления
+            </a>
+          </li>
 
-          <span class="header-nav__new-goods">Новые поступления</span>
-          <span class="header-nav__sale">Распродажа</span>
-          <span class="header-nav__tip">Бесплатная доставка по России</span>
-        </div>
-      </nav>
+          <li class="header-nav__item header-nav__item--sale">
+            <a href="cart.html" class="header-nav__link header-nav__link--sale">
+              Распродажа
+            </a>
+          </li>
 
-      <div class="header__title-wrapper header__title-wrapper--index">
-        <div class="container">
-          <h1 class="header__title">
+          <li class="header-nav__item header-nav__item--tip">
+            <a href="cart.html" class="header-nav__link header-nav__link--tip">
+              Бесплатная доставка по России
+            </a>
+          </li>
+        </ul>
+        <h1 class="header__title">
             Милые штуки ручной<br> работы для дома
           </h1>
-        </div>
+
+          <ul class="categories header__categories">
+              <li class="categories__item">
+                <a href="interior.html" class="categories__link categories__link--icon categories__link--icon--interior">
+                  Предметы интерьера
+                </a>
+              </li>
+              <li class="categories__item">
+                <a href="toy.html" class="categories__link categories__link--icon categories__link--icon--toy">
+                  Детские игрушки
+                </a>
+              </li>
+            </ul>
       </div>
 
-      <ul class="categories header__categories">
-        <li class="categories__item">
-            <a href="interior.html" class="categories__link categories__link--icon categories__link--icon--interior">
-              Предметы интерьера
-            </a>
-        </li>
-        <li class="categories__item">
-            <a href="toy.html" class="categories__link categories__link--icon categories__link--icon--toy">
-              Детские игрушки
-            </a>
-        </li>
-      </ul>
+      </nav>
+
+      <!-- <div class="header__title-wrapper header__title-wrapper--index ">
+        <div class="container">
+
+        </div>
+      </div> -->
     </header>
 
     <section class="offer">

@@ -1,30 +1,19 @@
 .header-nav {
+  display: flex;
   min-height: 79px;
-  box-shadow:
-    0 1px 0 #ececec,
-    inset 0 1px 0 #ececec;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
   @media (min-width: $tablet) {
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: block;
+    height: 88px;
+    background-color: #ffffff;
     box-shadow: none;
-
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      width: 768px;
-      flex-shrink: 0;
-    }
+    border-bottom: 1px solid #e7e7e7;
   }
 
   @media (min-width: $desktop) {
     box-shadow: none;
-
-    .container {
-      display: flex;
-      width: 1150px;
-    }
+    width: 1150px;
   }
 }
 
@@ -57,20 +46,78 @@
   @include reset-ul;
 
   @media (min-width: $tablet) {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-    width: 768px;
+    justify-content: space-between;
+    align-items: center;
+    width: 668px;
   }
 
   @media (min-width: $desktop) {
     display: flex;
-    width: 1150px;
+    width: 1050px;
   }
 }
 
 .header-nav__item {
-  display: flex;
-  padding: 32px 0 30px  46px;
+  // display: flex;
+
+  @media (min-width: $tablet) {
+    // padding: 32px 0 30px  46px;
+    display: flex;
+    align-items: center;
+    min-height: 88px;
+    word-break: break-all;
+  }
+
+  &--catalog {
+    @media (min-width: $tablet) {
+      order: 4;
+    }
+  }
+
+  &--form {
+    @media (min-width: $tablet) {
+      order: 5;
+    }
+  }
+
+  &--search {
+    @media (min-width: $tablet) {
+      width: 82px;
+      height: 88px;
+      order: 2;
+      background-color: gray; //Временно до вставки иконки
+    }
+  }
+
+  &--cart {
+    @media (min-width: $tablet) {
+      order: 3;
+    }
+  }
+
+  &--new-goods {
+    @media (min-width: $tablet) {
+      display: none;
+      order: 7;
+    }
+  }
+
+  &--sale {
+    @media (min-width: $tablet) {
+      display: none;
+      order: 8;
+    }
+  }
+
+  &--tip {
+    @media (min-width: $tablet) {
+      max-width: 250px;
+      margin-left: 100px;
+      order: 6;
+    }
+  }
 }
 
 .header-nav__link {
@@ -79,13 +126,15 @@
   line-height: 24px;
   text-decoration: none;
 
+  @media (min-width: $tablet) {
+    max-width: 160px;
+    padding-left: 0;
+    box-sizing: border-box;
+  }
+
   &--search {
     @media (min-width: $tablet) {
-      width: 82px;
-      height: 88px;
       font-size: 0;
-      margin-top: -120px;
-      background-color: gray; //Временно до вставки иконки
     }
 
     @media (min-width: $desktop) {
@@ -98,16 +147,66 @@
 
   &--cart {
     @media (min-width: $tablet) {
-      max-width: 218px;
-      height: 58px;
-      margin-top: -120px;
-      padding-top: 30px;
+      max-width: 264px;
+      padding-left: 83px;
     }
 
     @media (min-width: $desktop) {
       margin-top: 0;
       padding-top: 0;
       height: 58px;
+    }
+  }
+
+  &--new-goods {
+    display: none;
+
+    @media (min-width: $tablet) {
+      width: 160px;
+      text-decoration: none;
+      color: #000000;
+      order: 8;
+    }
+
+    @media (min-width: $desktop) {
+      display: block;
+      color: #000000;
+      margin-left: 50px;
+    }
+  }
+
+  &--sale {
+    display: none;
+
+    @media (min-width: $tablet) {
+      width: 160px;
+      text-decoration: none;
+      color: #000000;
+      order: 7;
+    }
+
+    @media (min-width: $desktop) {
+      display: block;
+      color: #000000;
+      margin-left: 60px;
+    }
+  }
+
+  &--tip {
+    display: none;
+    color: $color-text;
+    font-size: $font-size--main;
+    font-weight: 400;
+
+    @media (min-width: $tablet) {
+      display: list-item;
+      margin-right: 0;
+      order: 6;
+      max-width: 250px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 0;
     }
   }
 
@@ -121,56 +220,19 @@
 }
 
 .header-nav__logo {
-  display: flex;
-  align-items: center;
   padding-top: 22px;
 
   @media (min-width: $tablet) {
-    width: 370px;
+    width: 320px;
     height: 88px;
+    order: 1;
+    padding-top: 0;
+    box-sizing: border-box;
   }
 
   @media (min-width: $desktop) {
     position: absolute;
     top: 0;
     left: 500px;
-  }
-}
-
-.header-nav__new-goods {
-  visibility: hidden;
-
-  @media (min-width: $desktop) {
-    visibility: visible;
-    color: #000000;
-    margin-left: 50px;
-  }
-}
-
-.header-nav__sale {
-  visibility: hidden;
-
-  @media (min-width: $desktop) {
-    visibility: visible;
-    color: #000000;
-    margin-left: 60px;
-  }
-}
-
-.header-nav__tip {
-  visibility: hidden;
-  color: $color-text;
-  font-size: $font-size--main;
-  font-weight: 400;
-
-  @media (min-width: $tablet) {
-    visibility: visible;
-    margin-left: auto;
-    margin-right: 50px;
-    margin-top: -52px;
-  }
-
-  @media (min-width: $desktop) {
-    margin-top: 0;
   }
 }
