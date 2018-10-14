@@ -1,19 +1,9 @@
 body {
-  max-width: 320px; //временно для стилизации под планшет
-  margin: 0 auto;
   color: $color-text;
   font-family: $font-family--main;
   font-size: $font-size--main;
   font-weight: 700;
   line-height: 24px;
-
-  @media (min-width: $tablet) {
-    max-width: $tablet;
-  }
-
-  @media (min-width: $desktop) {
-    max-width: $desktop;
-  }
 }
 
 .visually-hidden {
