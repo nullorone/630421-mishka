@@ -1,11 +1,14 @@
 .copyright {
   display: flex;
+  flex-wrap: wrap;
   padding-left: 40px;
 }
 
 .copyright__text {
   margin: 0;
   padding: 0;
+  max-width: 130px;
+  word-break: break-all;
   font-size: 19px;
   line-height: 19px;
 
