@@ -3,29 +3,31 @@
 @import "mixin";
 @import "fonts";
 @import "global";
+// Стилизация отдельных элементов
+@import "blocks/btn";
+@import "blocks/logo";
+@import "blocks/caption";
+@import "blocks/decor-line";
+@import "blocks/decor-separator";
+@import "blocks/categories";
+@import "blocks/header-nav";
+@import "blocks/offer-characteristics";
+@import "blocks/advantages";
+@import "blocks/slider";
+@import "blocks/slider-controls";
+@import "blocks/feedback";
+@import "blocks/socials";
+@import "blocks/size-form";
+@import "blocks/copyright";
+// Стилизация секций
 @import "blocks/container";
 @import "blocks/header";
-@import "blocks/logo";
-@import "blocks/header-nav";
-@import "blocks/categories";
 @import "blocks/offer";
-@import "blocks/caption";
-@import "blocks/offer-characteristics";
-@import "blocks/btn";
-@import "blocks/decor-separator";
-@import "blocks/advantages";
 @import "blocks/about";
-@import "blocks/slider";
-@import "blocks/feedback";
 @import "blocks/feedbacks";
-@import "blocks/slider-controls";
 @import "blocks/contacts";
-@import "blocks/socials";
-@import "blocks/decor-line";
-@import "blocks/copyright";
 @import "blocks/footer";
 // Стилизация модального окна добавления товара в корзину
-@import "blocks/size-form";
 @import "blocks/modal-buy";
 // Стилизация внутренней страницы каталога
 @import "blocks/main";
