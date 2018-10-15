@@ -18,6 +18,7 @@
 
   @media (min-width: $tablet) {
     visibility: visible;
+    flex-shrink: 0;
     width: 102px;
     height: 35px;
     margin: 0;
