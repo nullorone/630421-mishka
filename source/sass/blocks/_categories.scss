@@ -1,10 +1,26 @@
 .categories {
   @include reset-ul;
+  position: relative;
 
   @media (min-width: $tablet) {
     display: flex;
     justify-content: center;
-    margin-top: 288px;
+    margin-top: 355px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      // left: 0;
+      width: 1150px;
+      height: 756px;
+      z-index: -1;
+      background-image: url("../img/hero-mobile@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: cover;
+    }
+
   }
 }
 
