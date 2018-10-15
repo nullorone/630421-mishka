@@ -19,6 +19,12 @@
   }
 }
 
+.contacts__caption {
+  @media (min-width: $desktop) {
+    order: 1;
+  }
+}
+
 .contacts__info-wrapper {
   @media (min-width: $tablet) {
     display: flex;
