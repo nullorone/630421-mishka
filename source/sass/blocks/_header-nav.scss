@@ -1,5 +1,6 @@
 .header-nav {
   display: flex;
+  flex-direction: column;
   min-height: 79px;
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
@@ -7,10 +8,6 @@
     display: block;
     min-height: 88px;
     box-shadow: none;
-    border-bottom: 1px solid #e7e7e7;
-  }
-
-  @media (min-width: $desktop) {
   }
 }
 
@@ -33,42 +30,43 @@
   @media (min-width: $tablet) {
     display: none;
   }
-
-  @media (min-width: $desktop) {
-    display: none;
-  }
 }
 
 .header-nav__list {
   @include reset-ul;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: $tablet) {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     width: 668px;
   }
 
   @media (min-width: $desktop) {
-    display: flex;
     width: 1050px;
   }
 }
 
 .header-nav__item {
   display: flex;
+  width: 260px;
+  align-items: center;
+  min-height: 80px;
+  word-break: break-word;
 
   @media (min-width: $tablet) {
-    // padding: 32px 0 30px  46px;
-    display: flex;
     align-items: center;
     min-height: 88px;
-    word-break: break-all;
   }
 
   &--catalog {
     @media (min-width: $tablet) {
+      width: 167px;
+      box-sizing: border-box;
       order: 4;
     }
 
@@ -80,6 +78,8 @@
 
   &--form {
     @media (min-width: $tablet) {
+      width: 167px;
+      box-sizing: border-box;
       order: 5;
     }
 
@@ -90,14 +90,19 @@
   }
 
   &--search {
+    background-image: url(../../img/icon-search.svg);
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: left center;
+
     @media (min-width: $tablet) {
       width: 82px;
       height: 88px;
       order: 2;
-      background-color: gray; //Временно до вставки иконки
+      background-position: center center;
     }
 
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop) {
       order: 4;
     }
   }
@@ -107,49 +112,45 @@
       order: 3;
     }
 
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop) {
       width: 265px;
       order: 5;
     }
   }
 
   &--new-goods {
-    @media (min-width: $tablet) {
-      display: none;
-      order: 7;
-    }
+    display: none;
 
-    @media (min-width: $tablet) {
-      display: list-item;
+    @media (min-width: $desktop) {
+      display: flex;
       width: 184px;
       order: 6;
     }
   }
 
   &--sale {
-    @media (min-width: $tablet) {
-      display: none;
-      order: 8;
-    }
+    display: none;
 
-    @media (min-width: $tablet) {
-      display: list-item;
+    @media (min-width: $desktop) {
+      display: flex;
+      margin-right: auto;
+      margin-left: 27px;
       width: 170px;
       order: 7;
     }
   }
 
   &--delivery {
+    display: none;
     @media (min-width: $tablet) {
-      display: list-item;
+      display: flex;
       width: 250px;
-      margin-left: 100px;
+      margin-left: auto;
       order: 6;
     }
 
     @media (min-width: $desktop) {
       margin-left: 350px;
-      text-align: right;
       order: 8;
     }
   }
@@ -160,21 +161,18 @@
   font-size: 17px;
   line-height: 24px;
   text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet) {
     padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   &--search {
     @media (min-width: $tablet) {
       font-size: 0;
-    }
-
-    @media (min-width: $desktop) {
-      width: 82px;
-      height: 58px;
-      margin-top: 0;
-      margin-left: 380px;
     }
   }
 
@@ -182,51 +180,34 @@
     @media (min-width: $tablet) {
       margin-left: auto;
     }
-
-    @media (min-width: $desktop) {
-    }
   }
 
   &--new-goods {
-    display: none;
-
-    @media (min-width: $tablet) {
-      text-decoration: none;
-      color: #000000;
-      order: 8;
-    }
+    font-size: $font-size--main;
+    color: #000000;
 
     @media (min-width: $desktop) {
-      display: list-item;
+      display: flex;
     }
   }
 
   &--sale {
-    display: none;
-
-    @media (min-width: $tablet) {
-      text-decoration: none;
-      color: #000000;
-      order: 7;
-    }
+    font-size: $font-size--main;
+    color: #000000;
 
     @media (min-width: $desktop) {
-      display: block;
-      color: #000000;
-      margin-left: 60px;
+      display: flex;
     }
   }
 
   &--delivery {
-    color: $color-text;
     font-size: $font-size--main;
+    color: $color-text;
     font-weight: 400;
 
     @media (min-width: $tablet) {
-      margin-right: 0;
-    }
-
-    @media (min-width: $desktop) {
+      display: flex;
+      margin-left: auto;
     }
   }
 

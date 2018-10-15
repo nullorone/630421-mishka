@@ -1,26 +1,19 @@
 .categories {
   @include reset-ul;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 137px;
 
   @media (min-width: $tablet) {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin-top: 355px;
+    margin-top: 340px;
+  }
 
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      // left: 0;
-      width: 1150px;
-      height: 756px;
-      z-index: -1;
-      background-image: url("../img/hero-mobile@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: center bottom;
-      background-size: cover;
-    }
-
+  @media (min-width: $desktop) {
+    margin-top: 213px;
   }
 }
 
@@ -37,23 +30,23 @@
 
   @media (min-width: $tablet) {
     width: 334px;
-    padding-left: 36px;
+    padding: 35px;
     box-sizing: border-box;
   }
 
   @media (min-width: $desktop) {
     width: 525px;
-    box-sizing: border-box;
   }
 }
 
 .categories__link {
-  display: inline-block;
-  max-width: 150px;
+  display: flex;
+  width: 150px;
   color: #ffffff;
   font-size: 19px;
   line-height: 24px;
   text-decoration: none;
+  word-break: break-word;
 
   &:active {
     opacity: 0.3;
