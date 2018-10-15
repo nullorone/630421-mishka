@@ -1,8 +1,9 @@
 .socials {
   @include reset-ul;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  max-width: 188px;
+  width: 188px;
   margin-left: 57px;
 
   @media (min-width: $tablet) {
