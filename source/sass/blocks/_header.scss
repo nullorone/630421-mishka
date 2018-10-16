@@ -3,9 +3,9 @@
 
   @media (min-width: $tablet) {
     position: relative;
-    min-height: 839px;
+    min-height: 345px;
     z-index: 1;
-    background-color: #f9f9f9;
+    background-color: #f1f1f1;
     background-image: linear-gradient(
       to bottom,
       #ffffff 0,
@@ -47,11 +47,10 @@
   background-color: #f1f1f1;
 
   @media (min-width: $tablet) {
-    min-height: 425px;
-    padding-top: 105px;
-    padding-bottom: 10px;
+    padding-top: 20px;
     font-size: 43px;
     line-height: 50px;
+    background-color: transparent;
   }
 
   @media (min-width: $desktop) {
@@ -62,6 +61,10 @@
   &--bg-image {
     background-color: transparent;
     min-height: 215px;
+
+    @media (min-width: $tablet) {
+      min-height: 400px;
+    }
 
     &::before {
       content: "";
