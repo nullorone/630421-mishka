@@ -1,4 +1,6 @@
 .header {
+  min-height: 250px;
+
   @media (min-width: $tablet) {
     position: relative;
     min-height: 839px;
@@ -31,15 +33,18 @@
 
 .header__title {
   position: relative;
-  margin: 0 auto;
+  min-height: 90px;
+  margin: 0;
   padding-top: 75px;
   padding-left: 8px;
   padding-right: 8px;
+  padding-bottom: 10px;
   color: $color-title;
   font-size: $font-size--h1;
   line-height: 30px;
   text-align: center;
   word-break: break-word;
+  background-color: #f1f1f1;
 
   @media (min-width: $tablet) {
     min-height: 425px;
@@ -55,6 +60,9 @@
   }
 
   &--bg-image {
+    background-color: transparent;
+    min-height: 215px;
+
     &::before {
       content: "";
       position: absolute;
