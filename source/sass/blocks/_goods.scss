@@ -10,7 +10,7 @@
 
 .goods__item {
   margin-bottom: 30px;
-  
+
   @media (min-width: $tablet) {
     display: flex;
     width: 668px;
@@ -55,8 +55,11 @@
   @media (min-width: $desktop) {
     width: 316px;
     min-height: 197px;
-    box-sizing: border-box;
   }
+}
+
+.goods__desc-wrapper {
+  padding-bottom: 24px;
 }
 
 .goods__title {
@@ -88,6 +91,7 @@
 .goods__price-wrapper {
   display: flex;
   justify-content: space-between;
+  padding-top: 24px;
 
   @media (min-width: $tablet) {
     margin-top: auto;
