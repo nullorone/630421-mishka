@@ -2,13 +2,14 @@
   @media (min-width: $tablet) {
     position: relative;
     min-height: 839px;
-    z-index: 2;
-    background: linear-gradient(
+    z-index: 1;
+    background-color: #f9f9f9;
+    background-image: linear-gradient(
       to bottom,
       #ffffff 0,
       #ffffff 88px,
-      #f9f9f9 88px,
-      #f9f9f9 200px
+      transparent 88px,
+      transparent 100%
     );
   }
 
