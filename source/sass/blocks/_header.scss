@@ -15,6 +15,12 @@
     );
   }
 
+  &--index-page {
+    @media (min-width: $desktop) {
+      background-color: #f9f9f9;
+    }
+  }
+
   &--line-bottom {
     @media (min-width: $tablet) {
       &::after {
