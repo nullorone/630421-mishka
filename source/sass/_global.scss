@@ -4,15 +4,6 @@ body {
   font-size: $font-size--main;
   font-weight: 700;
   line-height: 24px;
-  // background: linear-gradient(
-  //     to bottom,
-  //     #ffffff 0,
-  //     #ffffff 88px,
-  //     #f1f1f1 89px,
-  //     #f1f1f1 764px,
-  //     #ffffff 765px,
-  //     #ffffff 100%
-  //   );
 }
 
 .visually-hidden {
@@ -22,7 +13,7 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
-  white-space: nowrap;
+  // white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0, 0, 0, 0);
   visibility: hidden;
