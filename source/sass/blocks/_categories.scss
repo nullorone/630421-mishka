@@ -3,17 +3,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 137px;
 
   @media (min-width: $tablet) {
-    display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 340px;
-  }
-
-  @media (min-width: $desktop) {
-    margin-top: 213px;
   }
 }
 
