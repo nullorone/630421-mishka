@@ -44,6 +44,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 668px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop) {
@@ -53,20 +54,39 @@
 
 .header-nav__item {
   display: flex;
-  width: 260px;
+  width: 320px;
+  padding-left: 30px;
+  padding-right: 30px;
   align-items: center;
   min-height: 80px;
   word-break: break-word;
+  box-sizing: border-box;
 
   @media (min-width: $tablet) {
-    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
     min-height: 88px;
+  }
+
+  &--logo {
+    padding-top: 22px;
+
+    @media (min-width: $tablet) {
+      width: 320px;
+      order: 1;
+    }
+
+    @media (min-width: $desktop) {
+      width: 150px;
+      padding-top: 0;
+      padding-left: 5px;
+      order: 3;
+    }
   }
 
   &--catalog {
     @media (min-width: $tablet) {
       width: 167px;
-      box-sizing: border-box;
       order: 4;
     }
 
@@ -79,7 +99,6 @@
   &--form {
     @media (min-width: $tablet) {
       width: 167px;
-      box-sizing: border-box;
       order: 5;
     }
 
@@ -109,11 +128,11 @@
 
   &--cart {
     @media (min-width: $tablet) {
+      width: 265px;
       order: 3;
     }
 
     @media (min-width: $desktop) {
-      width: 265px;
       order: 5;
     }
   }
@@ -121,36 +140,43 @@
   &--new-goods {
     display: none;
 
-    @media (min-width: $desktop) {
+    @media (min-width: $tablet) {
       display: flex;
-      width: 184px;
+      visibility: hidden;
+      width: 20px;
       order: 6;
+    }
+
+    @media (min-width: $desktop) {
+      visibility: visible;
+      width: 184px;
+      margin-right: 27px;
     }
   }
 
   &--sale {
     display: none;
 
-    @media (min-width: $desktop) {
+    @media (min-width: $tablet) {
       display: flex;
-      margin-right: auto;
-      margin-left: 27px;
-      width: 170px;
+      visibility: hidden;
+      width: 20px;
       order: 7;
+    }
+
+    @media (min-width: $desktop) {
+      visibility: visible;
+      margin-right: auto;
+      width: 170px;
     }
   }
 
   &--delivery {
     display: none;
+
     @media (min-width: $tablet) {
       display: flex;
       width: 250px;
-      margin-left: auto;
-      order: 6;
-    }
-
-    @media (min-width: $desktop) {
-      margin-left: 350px;
       order: 8;
     }
   }
@@ -183,20 +209,20 @@
   }
 
   &--new-goods {
-    font-size: $font-size--main;
+    font-size: 0;
     color: #000000;
 
     @media (min-width: $desktop) {
-      display: flex;
+      font-size: $font-size--main;
     }
   }
 
   &--sale {
-    font-size: $font-size--main;
+    font-size: 0;
     color: #000000;
 
     @media (min-width: $desktop) {
-      display: flex;
+      font-size: $font-size--main;
     }
   }
 
@@ -217,23 +243,5 @@
 
   &:active {
     opacity: 0.3;
-  }
-}
-
-.header-nav__logo {
-  padding-top: 22px;
-
-  @media (min-width: $tablet) {
-    width: 320px;
-    height: 88px;
-    order: 1;
-    padding-top: 0;
-    box-sizing: border-box;
-  }
-
-  @media (min-width: $desktop) {
-    width: 150px;
-    padding-left: 5px;
-    order: 3;
   }
 }
