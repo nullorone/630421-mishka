@@ -9,6 +9,8 @@
 }
 
 .goods__item {
+  margin-bottom: 30px;
+  
   @media (min-width: $tablet) {
     display: flex;
     width: 668px;
