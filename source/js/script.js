@@ -1,8 +1,6 @@
-var btnOpen = document.querySelector('.header-nav__icon--open');
-var btnClose = document.querySelector('.header-nav__icon--close');
+var btnToggle = document.querySelector('.header-nav__toggle');
 
-btnOpen.classList.add('header-nav__icon--close');
-btnOpen.classList.remove('header-nav__icon--open');
+btnToggle.classList.add('header-nav__icon--close');
 
 function isNavItemsToggle() {
   var navItem = document.querySelectorAll('.header-nav__item:not(.header-nav__item--logo)');
@@ -13,14 +11,8 @@ function isNavItemsToggle() {
 
 isNavItemsToggle();
 
-btnOpen.addEventListener('click', function (evt) {
+btnToggle.addEventListener('click', function (evt) {
   evt.preventDefault();
   isNavItemsToggle();
-  if (btnOpen.classList.contains('header-nav__icon--close')) {
-    btnOpen.classList.add('header-nav__icon--open');
-    btnOpen.classList.remove('header-nav__icon--close');
-  } else if (btnOpen.classList.contains('header-nav__icon--open')) {
-    btnOpen.classList.add('header-nav__icon--close');
-    btnOpen.classList.remove('header-nav__icon--open');
-  }
+  btnToggle.classList.toggle('header-nav__icon--close');
 });
