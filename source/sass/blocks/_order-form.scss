@@ -4,13 +4,35 @@
   }
 }
 
+.order-form__description {
+  margin: 0;
+  margin-top: 30px;
+  color: $color-text;
+  font-size: 13px;
+  font-weight: 400;
+
+  @media (min-width: $tablet) {
+    margin-top: 68px;
+    padding-right: 55px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 25px;
+    padding-right: 200px;
+  }
+}
+
 .order-form__group {
   margin: 0;
-  padding: 0;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 35px;
+  padding: 35px 30px;
   border: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    padding: 50px;
+  }
 
   &--modified {
     padding-bottom: 45px;
@@ -21,12 +43,6 @@
       background-color: #f1f1f1;
     }
   }
-
-  @media (min-width: $tablet) {
-    display: flex;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
 }
 
 .order-form__group-wrapper {
@@ -36,6 +52,20 @@
   @media (min-width: $tablet) {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+.order-form__fields-wrapper {
+  &--row {
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      width: 500px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 800px;
+    }
   }
 }
 
@@ -70,13 +100,11 @@
   }
 }
 
-.order-form__fields-wrapper {
+.order-form__field-wrapper {
   margin: 0;
 
-  &--text {
     @media (min-width: $tablet) {
-      flex-direction: row;
-      flex-wrap: wrap;
+      display: flex;
       width: 500px;
     }
 
@@ -85,29 +113,16 @@
     }
   }
 
-  &--row {
-    @media (min-width: $tablet) {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 500px;
-      margin-left: 167px;
-    }
-
-    @media (min-width: $desktop) {
-      width: 875px;
-      margin-left: 175px;
-    }
-  }
-}
-
 .order-form__label {
   font-size: 17px;
   line-height: 18px;
   color: #000000;
 
+  @media (min-width: $tablet) {
+    align-self: center;
+  }
+
   @media (min-width: $desktop) {
-    display: inline-flex;
     height: 20px;
     margin-right: 25px;
     align-self: center;
@@ -203,7 +218,7 @@
       content: "";
       position: absolute;
       top: 4px;
-      left: 15px;
+      left: 14px;
       width: 16px;
       height: 16px;
       background-color: #62d1ba;
@@ -228,12 +243,12 @@
 
   &--text {
     @media (min-width: $tablet) {
-      width: 385px;
+      width: 100%;
       margin-left: 25px;
     }
 
     @media (min-width: $desktop) {
-      width: 560px;
+      width: 100%;
     }
   }
 
@@ -253,7 +268,6 @@
 }
 
 .order-form__textarea {
-  box-sizing: border-box;
   width: 260px;
   min-height: 142px;
   margin-top: 23px;
@@ -263,6 +277,8 @@
   line-height: 18px;
   color: #000000;
   border: 2px solid $color-text;
+  box-sizing: border-box;
+  resize: vertical;
 
   &::placeholder {
     opacity: 0.3;
