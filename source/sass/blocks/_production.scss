@@ -68,12 +68,11 @@
 
 .production__img {
   @media (min-width: $tablet) {
-    width: 668px;
+    width: 100%;
     height: 455px;
   }
 
   @media (min-width: $desktop) {
-    width: 682px;
     height: 455px;
   }
 }
