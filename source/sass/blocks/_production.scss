@@ -1,5 +1,4 @@
 .production {
-  width: 260px;
   margin-top: 30px;
   padding-bottom: 33px;
   border: 1px solid #ececec;
@@ -7,13 +6,11 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: column;
-    width: 668px;
     margin-top: 53px;
   }
 
   @media (min-width: $desktop) {
     display: flex;
-    width: 1050px;
     min-height: 455px;
     padding-bottom: 0;
   }
