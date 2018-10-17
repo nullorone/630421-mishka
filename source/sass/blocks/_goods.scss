@@ -59,14 +59,12 @@
 }
 
 .goods__desc-wrapper {
-  padding-bottom: 24px;
-
   @media (min-width: $tablet) {
     min-height: 200px;
   }
 
   @media (min-width: $desktop) {
-    min-height: 60px;
+    min-height: 50px;
   }
 }
 
