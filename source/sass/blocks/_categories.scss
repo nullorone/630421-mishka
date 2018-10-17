@@ -12,6 +12,7 @@
 
 .categories__item {
   padding: 30px;
+  min-height: 103px;
 
   &:nth-child(odd) {
     background-color: #63d1bb;
@@ -23,6 +24,7 @@
 
   @media (min-width: $tablet) {
     width: 334px;
+    min-height: 119px;
     padding: 35px;
     box-sizing: border-box;
   }
