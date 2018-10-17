@@ -11,7 +11,6 @@
 }
 
 .categories__item {
-  padding: 30px;
   min-height: 103px;
 
   &:nth-child(odd) {
@@ -23,25 +22,30 @@
   }
 
   @media (min-width: $tablet) {
-    width: 334px;
     min-height: 119px;
-    padding: 35px;
     box-sizing: border-box;
-  }
-
-  @media (min-width: $desktop) {
-    width: 525px;
   }
 }
 
 .categories__link {
   display: flex;
   width: 150px;
+  padding: 30px;
   color: #ffffff;
   font-size: 19px;
   line-height: 24px;
   text-decoration: none;
   word-break: break-word;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet) {
+    width: 334px;
+    padding: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 525px;
+  }
 
   &:active {
     opacity: 0.3;
