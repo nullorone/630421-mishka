@@ -11,17 +11,14 @@
   }
 }
 
-.header-nav__icon {
+.header-nav__toggle {
   margin-left: auto;
   width: 20px;
   height: 20px;
   font-size: 0;
   border: none;
   background-color: transparent;
-
-  &--open {
-    background: url("../../img/icon-menu-close.svg") no-repeat center center;
-  }
+  background: url("../../img/icon-menu-close.svg") no-repeat center center;
 
   &--close {
     background: url("../../img/icon-menu-open.svg") no-repeat center center;
