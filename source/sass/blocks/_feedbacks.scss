@@ -7,23 +7,25 @@
     background-repeat: no-repeat;
     background-position: left center;
     margin-bottom: 68px;
-
-    .container {
-      display: flex;
-      flex-flow: wrap;
-      justify-content: space-between;
-    }
   }
 
   @media (min-width: $desktop) {
     width: 1150px;
     margin: 0 auto;
     margin-bottom: 67px;
+  }
+}
 
-    .container {
-      box-sizing: border-box;
-      padding-left: 175px;
-    }
+.feedbacks__container {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    box-sizing: border-box;
+    padding-left: 175px;
   }
 }
 
