@@ -128,6 +128,7 @@
   &--form {
     @media (min-width: $tablet) {
       width: 167px;
+      margin-right: auto;
       order: 5;
     }
 
@@ -170,16 +171,12 @@
     display: none;
 
     @media (min-width: $tablet) {
-      display: flex;
-      visibility: hidden;
-      width: 20px;
       order: 6;
     }
 
     @media (min-width: $desktop) {
-      visibility: visible;
+      display: flex;
       width: 184px;
-      margin-right: 27px;
     }
   }
 
@@ -187,14 +184,11 @@
     display: none;
 
     @media (min-width: $tablet) {
-      display: flex;
-      visibility: hidden;
-      width: 20px;
       order: 7;
     }
 
     @media (min-width: $desktop) {
-      visibility: visible;
+      display: flex;
       margin-right: auto;
       width: 170px;
     }
