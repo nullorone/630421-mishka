@@ -1,25 +1,24 @@
 .offer {
   padding-bottom: 36px;
 
+  @media (min-width: $desktop) {
+    padding-top: 54px;
+  }
+}
+
+.offer__container {
   @media (min-width: $tablet) {
-    .container {
-      display: flex;
-      flex-direction: column;
-      min-height: 470px;
-      padding-bottom: 52px;
-    }
+    display: flex;
+    flex-direction: column;
+    min-height: 470px;
+    padding-bottom: 52px;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 54px;
-
-    .container {
-      display: flex;
-      position: relative;
-      min-height: 700px;
-      padding-left: 175px;
-      box-sizing: border-box;
-    }
+    position: relative;
+    min-height: 700px;
+    padding-left: 175px;
+    box-sizing: border-box;
   }
 }
 
