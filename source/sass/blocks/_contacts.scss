@@ -62,7 +62,7 @@
   font-weight: 400;
   line-height: 30px;
 
-  &:last-child {
+  &--last{
     margin-left: auto;
     width: 170px;
 
@@ -103,7 +103,7 @@
 
 .contacts__map {
   width: 100%;
-  
+
   @media (min-width: $tablet) {
     height: 457px;
   }
