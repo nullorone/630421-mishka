@@ -11,9 +11,11 @@
   }
 }
 .contacts__container {
+  width: 260px;
+  margin: 0 auto;
+
   @media (min-width: $tablet) {
     width: 668px;
-    margin: 0 auto;
   }
 
   @media (min-width: $desktop) {
