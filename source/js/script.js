@@ -4,7 +4,7 @@ var overlay = document.querySelector('.overlay');
 var btnModalBuy = [];
 btnModalBuy = document.querySelectorAll('.js-modal-buy');
 
-btnToggle.classList.add('header-nav__icon--close');//Добавляет иконку закрытого меню по-умолчанию
+btnToggle.classList.add('header-nav__toggle--close');//Добавляет иконку закрытого меню по-умолчанию
 
 // Функция скрытия пунктов меню, кроме пункта с логотипом
 function isNavItemsToggle() {
@@ -36,7 +36,7 @@ function hideModal(evt) {
 }
 
 // Скрываем пункты меню, если ширина окна меньше 768px
-if (window.matchMedia('(max-width < 768px)').matches) {
+if (window.matchMedia('(max-width: 767px)').matches) {
   isNavItemsToggle();//Скрывает пункты меню по-умолчанию
 }
 
@@ -48,7 +48,7 @@ modal.style.display = 'none';
 btnToggle.addEventListener('click', function (evt) {
   evt.preventDefault();
   isNavItemsToggle();
-  btnToggle.classList.toggle('header-nav__icon--close');
+  btnToggle.classList.toggle('header-nav__toggle--close');
 });
 
 // При нажатии на кнопку заказать в блоке оффер главной страницы, меняет отображение окна и оверлея
