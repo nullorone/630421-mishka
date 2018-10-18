@@ -49,16 +49,6 @@
   }
 }
 
-.order-form__group-wrapper {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $tablet) {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
 .order-form__fields-wrapper {
   &--row {
     @media (min-width: $tablet) {
