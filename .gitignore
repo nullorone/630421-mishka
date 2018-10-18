@@ -9,5 +9,6 @@
 node_modules/
 npm-debug.*
 source/img/temp/
+source/pixel-glass/
 source/css/*.css
 Thumbs.db
