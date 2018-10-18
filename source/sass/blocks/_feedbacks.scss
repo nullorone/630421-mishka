@@ -1,20 +1,64 @@
 .feedbacks {
   padding-bottom: 45px;
+
+  @media (min-width: $tablet) {
+    min-height: 357px;
+    background-image: url("../../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1150px;
+    margin: 0 auto;
+    margin-bottom: 67px;
+  }
+}
+
+.feedbacks__container {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    box-sizing: border-box;
+    padding-left: 175px;
+  }
 }
 
 .feedbacks__caption {
   margin: 0;
   margin-top: 34px;
+
+  @media (min-width: $tablet) {
+    order: 1;
+  }
 }
 
 .feedbacks__slider {
   margin-top: 38px;
+
+  @media (min-width: $tablet) {
+    order: 3;
+  }
 }
 
 .feedbacks__slider-controls {
   margin-top: 36px;
+
+  @media (min-width: $tablet) {
+    order: 4;
+  }
 }
 
 .feedbacks__btn {
   margin-top: 38px;
+
+  @media (min-width: $tablet) {
+    width: 175px;
+    order: 2;
+  }
 }

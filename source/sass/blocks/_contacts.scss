@@ -1,15 +1,60 @@
 .contacts {
   padding-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1050px;
+    margin: 0 auto;
+  }
+}
+
+.contacts__container {
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 668px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 0;
+    padding-left: 175px;
+  }
 }
 
 .contacts__caption {
-  font-size: 18px;
-  margin-top: 44px;
+  @media (min-width: $desktop) {
+    order: 1;
+  }
+}
+
+.contacts__info-wrapper {
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
 }
 
 .contacts__info {
+  display: flex;
+  max-width: 350px;
   margin-top: 40px;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    width: 334px;
+  }
 }
 
 .contacts__text {
@@ -18,12 +63,33 @@
   font-weight: 400;
   line-height: 30px;
 
-  &:last-child {
+  &--last {
+    margin-left: auto;
     width: 170px;
+
+    @media (min-width: $tablet) {
+      margin-left: 26px;
+      align-self: flex-start;
+    }
   }
 }
 
-.contacts__text--email {
+.contacts__link {
+  width: 175px;
+  margin-left: auto;
+  font-weight: 400;
+  line-height: 30px;
+  color: $color-text;
+  text-decoration: none;
+  word-break: break-word;
+
+  @media (min-width: $tablet) {
+    margin-left: 26px;
+    align-self: flex-start;
+  }
+}
+
+.contacts__link--email {
   border-bottom: 1px solid #46c1ae;
 
   &:hover {
@@ -36,7 +102,30 @@
   }
 }
 
+.contacts__map {
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    height: 457px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 525px;
+    height: 457px;
+    margin-left: 525px;
+    margin-top: -350px;
+    order: 4;
+  }
+}
+
 .contacts__btn {
   margin: 0 auto;
   margin-top: 40px;
+
+  @media (min-width: $desktop) {
+    width: 230px;
+    margin-top: -68px;
+    margin-left: 175px;
+    order: 3;
+  }
 }

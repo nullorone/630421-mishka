@@ -1,3 +1,10 @@
+.about__container {
+  @media (min-width: $desktop) {
+    padding: 70px 50px 89px 175px;
+    box-sizing: border-box;
+  }
+}
+
 .about__caption {
   margin: 0;
   margin-top: 34px;
@@ -5,4 +12,8 @@
 
 .about__advantages {
   margin-top: 31px;
+
+  @media (min-width: $desktop) {
+    width: 700px;
+  }
 }

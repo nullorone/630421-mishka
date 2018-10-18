@@ -1,5 +1,15 @@
 .size-form {
   width: 100%;
+
+  @media (min-width: $tablet) {
+    width: 350px;
+    margin: 0 auto;
+  }
+}
+
+.size-form__inputs-group {
+  display: flex;
+  justify-content: space-between;
 }
 
 .size-form__label {
@@ -21,8 +31,6 @@
 }
 
 .size-form__radio {
-  visibility: hidden;
-
   &:checked + .size-form__label {
     border-color: rgba(#63d1bb, 1);
   }
@@ -39,4 +47,9 @@
 
 .size-form__btn {
   margin-top: 31px;
+
+  @media (min-width: $tablet) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

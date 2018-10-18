@@ -12,71 +12,80 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
-      <nav class="header-nav header__nav">
-        <div class="container">
-          <a class="logo header-nav__logo">
-            Магазин вязаных товаров «Мишка»
-          </a>
-
-          <button type="button" class="header-nav__icon header-nav__icon--open">Открыть навигацию по сайту</button>
-
+    <header class="header header--index-page">
+      <nav class="header-nav header__nav header-nav--bg-image">
           <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <a href="catalog.html" class="header-nav__link">
+            <li class="header-nav__item header-nav__item--logo">
+              <a class="logo">
+                Магазин вязаных товаров «Мишка»
+              </a>
+
+              <button type="button" class="header-nav__toggle">Открыть навигацию по сайту</button>
+            </li>
+            <li class="header-nav__item header-nav__item--catalog">
+              <a href="catalog.html" class="header-nav__link header-nav__link--catalog">
                 Каталог товаров
               </a>
             </li>
 
-            <li class="header-nav__item">
-              <a href="form.html" class="header-nav__link">
+            <li class="header-nav__item header-nav__item--form">
+              <a href="form.html" class="header-nav__link header-nav__link--form">
                 Вязание на заказ
               </a>
             </li>
 
-            <li class="header-nav__item">
-              <a href="search.html" class="header-nav__link header-nav__link--icon header-nav__link--icon--search">
+            <li class="header-nav__item header-nav__item--search">
+              <a href="search.html" class="header-nav__link header-nav__link--search">
                 Поиск по сайту
               </a>
             </li>
 
-            <li class="header-nav__item">
-              <a href="cart.html" class="header-nav__link header-nav__link--icon header-nav__link--icon--cart">
+            <li class="header-nav__item header-nav__item--cart">
+              <a href="cart.html" class="header-nav__link header-nav__link--cart">
                 Корзина: пока пуста
               </a>
             </li>
-          </ul>
-        </div>
-      </nav>
 
-      <div class="header__title-wrapper header__title-wrapper--index">
-        <div class="container">
+            <li class="header-nav__item header-nav__item--new-goods">
+              <a href="new-goods.html" class="header-nav__link header-nav__link--new-goods">
+                Новые поступления
+              </a>
+            </li>
+
+            <li class="header-nav__item header-nav__item--sale">
+              <a href="sale.html" class="header-nav__link header-nav__link--sale">
+                Распродажа
+              </a>
+            </li>
+
+            <li class="header-nav__item header-nav__item--delivery">
+              <a href="delivery.html" class="header-nav__link header-nav__link--delivery">
+                Бесплатная доставка по России
+              </a>
+            </li>
+          </ul>
           <h1 class="header__title">
             Милые штуки ручной<br> работы для дома
           </h1>
-        </div>
-      </div>
 
-      <ul class="categories header__categories">
-        <li class="categories__item">
-          <div class="container">
+        <ul class="categories header__categories">
+          <li class="categories__item">
             <a href="interior.html" class="categories__link categories__link--icon categories__link--icon--interior">
               Предметы интерьера
             </a>
-          </div>
-        </li>
-        <li class="categories__item">
-          <div class="container">
+          </li>
+          <li class="categories__item">
             <a href="toy.html" class="categories__link categories__link--icon categories__link--icon--toy">
               Детские игрушки
             </a>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+
+      </nav>
     </header>
 
     <section class="offer">
-      <div class="container">
+      <div class="container offer__container">
         <h2 class="visually-hidden">
           Специальное предложение магазина
         </h2>
@@ -115,14 +124,14 @@
           Цена: 990 руб.
         </p>
 
-        <a href="buy.html" class="btn offer__btn">
+        <a href="#offer" class="btn offer__btn js-modal-buy">
           Заказать
         </a>
       </div>
     </section>
 
     <section class="about decor-separator">
-      <div class="container">
+      <div class="container about__container">
         <h2 class="caption about__caption">
           Коротко о нас:
         </h2>
@@ -151,7 +160,7 @@
     </section>
 
     <section class="feedbacks">
-      <div class="container">
+      <div class="container feedbacks__container">
         <h2 class="caption feedbacks__caption">
           Отзывы
         </h2>
@@ -187,37 +196,38 @@
     </section>
 
     <section class="contacts decor-separator">
-      <div class="container">
+      <div class="contacts__container">
         <h2 class="caption contacts__caption caption--size">
           Контакты
         </h2>
+        <div class="contacts__info-wrapper">
+          <div class="contacts__info">
+            <p class="contacts__text">e-mail:</p>
+            <a href="mailto:info@mimimishkashop.ru" class="contacts__link contacts__link--email">info@mimimishkashop.ru</a>
+          </div>
 
-        <div class="contacts__info">
-          <p class="contacts__text">e-mail:</p>
-          <p class="contacts__text contacts__text--email">info@mimimishkashop.ru</p>
-        </div>
-
-        <div class="contacts__info">
-          <p class="contacts__text">адрес:</p>
-          <p class="contacts__text">
-            г. Санкт-Петербург,
-            ул. Большая Конюшенная,
-            д. 19/8, офис 101</p>
+          <div class="contacts__info">
+            <p class="contacts__text">адрес:</p>
+            <p class="contacts__text contacts__text--last">
+              г. Санкт-Петербург,<br>
+              ул. Большая Конюшенная,<br>
+              д. 19/8, офис 101</p>
+          </div>
         </div>
       </div>
       <img src="img/map-mobile@1x.jpg" alt="Местоположение нашего офиса на карте" class="contacts__map" width="320"
         height="457">
-      <div class="container">
-        <a href="write-us.html" class="btn contacts__btn">
-          Напишите нам
-        </a>
-      </div>
+      <a href="write-us.html" class="btn contacts__btn">
+        Напишите нам
+      </a>
     </section>
   </div>
 
   <footer class="footer">
-    <div class="container">
-      <ul class="socials footer__socials decor-line">
+    <div class="container footer__container">
+      <a class="logo footer__logo">Магазин вязаных товаров «Мишка»</a>
+
+      <ul class="socials footer__socials">
         <li class="socials__item">
           <a href="https://instagram.com" class="socials__icon socials__icon--instagram">
             Инстаграм магазина «Мишка»
@@ -246,30 +256,30 @@
     </div>
   </footer>
 
-  <div class="modal-buy">
-    <div class="container">
-      <h2 class="caption modal-buy__caption">
-        Добавить в&nbsp;корзину
-      </h2>
+  <div class="modal-buy" id="offer">
+    <h2 class="caption modal-buy__caption">
+      Добавить в&nbsp;корзину
+    </h2>
 
-      <form action="https://echo.htmlacademy.ru" method="post" class="size-form modal-buy__size-form">
-        <p class="size-form__desc">
-          Выберите размер:
-        </p>
-
-        <input type="radio" class="size-form__radio" name="size" id="s">
+    <form action="https://echo.htmlacademy.ru" method="post" class="size-form modal-buy__size-form">
+      <p class="size-form__desc">
+        Выберите размер:
+      </p>
+      <div class="size-form__inputs-group">
+        <input type="radio" class="size-form__radio visually-hidden" name="size" id="s" value="S">
         <label class="size-form__label" for="s">S</label>
 
-        <input type="radio" class="size-form__radio" name="size" id="m">
+        <input type="radio" class="size-form__radio visually-hidden" name="size" id="m" value="M">
         <label class="size-form__label" for="m">M</label>
 
-        <input type="radio" class="size-form__radio" name="size" id="l">
+        <input type="radio" class="size-form__radio visually-hidden" name="size" id="l" value="L">
         <label class="size-form__label" for="l">L</label>
-
-        <button type="submit" class="btn btn--form size-form__btn">Добавить</button>
-      </form>
-    </div>
+      </div>
+      <button type="submit" class="btn btn--form size-form__btn">Добавить</button>
+    </form>
   </div>
+  <div class="overlay visually-hidden"></div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -1,26 +1,36 @@
 .socials {
   @include reset-ul;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 188px;
+  margin-left: 57px;
+
+  @media (min-width: $tablet) {
+    padding-left: 0;
+    margin-left: 159px;
+  }
+}
+
+.socials__item {
+  margin-right: 37px;
 }
 
 .socials__icon {
   display: block;
   font-size: 0;
+  width: 22px;
+  height: 28px;
 
   &--instagram {
-    width: 22px;
-    height: 21px;
     background: url("../../img/icon-insta.svg") no-repeat center center;
   }
 
   &--facebook {
-    width: 15px;
-    height: 28px;
     background: url("../../img/icon-fb.svg") no-repeat center center;
   }
 
   &--twitter {
-    width: 23px;
-    height: 20px;
     background: url("../../img/icon-twitter.svg") no-repeat center center;
   }
 }

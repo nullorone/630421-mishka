@@ -1,6 +1,15 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 40px;
+}
+
 .copyright__text {
   margin: 0;
   padding: 0;
+  width: 130px;
+  word-break: break-word;
   font-size: 19px;
   line-height: 19px;
 }
@@ -9,6 +18,7 @@
   display: block;
   width: 27px;
   height: 34px;
+  margin-left: 20px;
   font-size: 0;
   background: url("../../img/logo-htmlacademy.svg") no-repeat center center;
 }

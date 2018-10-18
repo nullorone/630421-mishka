@@ -1,17 +1,72 @@
 .goods {
   @include reset-ul;
   padding-top: 30px;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.goods__item {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    width: 668px;
+    margin-top: 54px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    width: 315px;
+  }
 }
 
 .goods__img-link {
   display: block;
   width: 260px;
   height: 195px;
+
+  @media (min-width: $tablet) {
+    width: 334px;
+    height: 334px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 315px;
+    height: 462px;
+  }
 }
 
 .goods__info {
-  padding-left: 28px;
+  padding: 30px 28px;
   border: 1px solid #ececec;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    width: 334px;
+    min-height: 334px;
+    padding-right: 32px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop) {
+    width: 316px;
+    min-height: 197px;
+  }
+}
+
+.goods__desc-wrapper {
+  @media (min-width: $tablet) {
+    min-height: 200px;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 50px;
+  }
 }
 
 .goods__title {
@@ -40,10 +95,26 @@
   line-height: 30px;
 }
 
+.goods__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+
+  @media (min-width: $tablet) {
+    margin-top: auto;
+  }
+}
+
 .goods__price {
+  max-width: 120px;
   margin: 0;
   padding: 0;
   color: $color-li;
+  word-break: break-word;
+
+  @media (min-width: $tablet) {
+    max-width: 180px;
+  }
 }
 
 .goods__btn {

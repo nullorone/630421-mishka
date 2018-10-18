@@ -1,5 +1,10 @@
 .advantages {
   @include reset-ul;
+
+  @media (min-width: $tablet) {
+    height: 340px;
+    column-count: 2;
+  }
 }
 
 .advantages__item {
@@ -7,4 +12,17 @@
   color: $color-li;
   font-size: 17px;
   line-height: 20px;
+
+  @media (min-width: $tablet) {
+    width: 334px;
+    padding-right: 55px;
+    margin-right: 0;
+    font-size: 20px;
+    line-height: 22px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop) {
+    width: 350px;
+  }
 }

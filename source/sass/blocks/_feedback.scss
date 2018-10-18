@@ -3,6 +3,10 @@
   color: $color-text;
   line-height: 30px;
   font-weight: 400;
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+  }
 }
 
 .feedback__author {
@@ -12,6 +16,13 @@
   color: $color-li;
   font-size: 17px;
   font-weight: 700;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    flex-wrap: wrap;
+  }
 }
 
 .feedback__author-name {

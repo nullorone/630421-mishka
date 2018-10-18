@@ -1,8 +1,26 @@
 .modal-buy {
   width: 320px;
   min-height: 336px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 46px;
+  box-sizing: border-box;
   border: 1px solid #c6c6c6;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  background-color: #ffffff;
+
+  @media (min-width: $tablet) {
+    width: 566px;
+    margin: 0 auto;
+  }
+
+  &--show {
+    position: fixed;
+    z-index: 1001;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .modal-buy__caption {

@@ -1,4 +1,12 @@
 .container {
   width: $mobile - 30 * 2;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: $tablet - 50 * 2;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop - 50 * 2;
+  }
 }
