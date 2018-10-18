@@ -1,6 +1,7 @@
 .about__container {
   @media (min-width: $desktop) {
     padding: 70px 50px 89px 175px;
+    box-sizing: border-box;
   }
 }
 
