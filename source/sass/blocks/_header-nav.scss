@@ -83,11 +83,13 @@
 
 .header-nav__item {
   display: flex;
+  width: 260px;
   padding-left: 30px;
   padding-right: 30px;
   align-items: center;
   min-height: 80px;
   word-break: break-word;
+  box-sizing: border-box;
 
   @media (min-width: $tablet) {
     padding-left: 0;
@@ -97,6 +99,7 @@
 
   &--logo {
     padding-top: 22px;
+    padding-right: 0;
 
     @media (min-width: $tablet) {
       width: 320px;
