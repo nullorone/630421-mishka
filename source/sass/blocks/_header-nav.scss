@@ -49,8 +49,8 @@
   height: 20px;
   font-size: 0;
   border: none;
-  background-color: transparent;
   background: url("../../img/icon-menu-close.svg") no-repeat center center;
+  background-color: transparent;
 
   &--close {
     background: url("../../img/icon-menu-open.svg") no-repeat center center;
@@ -140,7 +140,7 @@
   }
 
   &--search {
-    background-image: url(../../img/icon-search.svg);
+    background-image: url("../../img/icon-search.svg");
     background-size: 18px 18px;
     background-repeat: no-repeat;
     background-position: left center;
