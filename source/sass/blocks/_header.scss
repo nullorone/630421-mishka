@@ -23,6 +23,7 @@
   &--index-page {
     .header__title {
       min-height: 200px;
+      padding-bottom: 12px;
       background-color: transparent;
 
       @media (min-width: $tablet) {
@@ -41,10 +42,10 @@
   position: relative;
   min-height: 100px;
   margin: 0;
-  padding-top: 75px;
+  padding-top: 70px;
   padding-left: 8px;
   padding-right: 8px;
-  padding-bottom: 10px;
+  padding-bottom: 6px;
   color: $color-title;
   font-size: $font-size--h1;
   line-height: 30px;

@@ -41,7 +41,8 @@
 }
 
 .goods__info {
-  padding: 30px 28px;
+  padding: 25px 28px;
+  padding-bottom: 27px;
   border: 1px solid #ececec;
 
   @media (min-width: $tablet) {
@@ -60,6 +61,8 @@
 }
 
 .goods__desc-wrapper {
+  padding-bottom: 20px;
+
   @media (min-width: $tablet) {
     min-height: 200px;
   }
@@ -88,6 +91,7 @@
 
 .goods__description {
   margin: 0;
+  margin-top: 5px;
   padding: 0;
   color: $color-text;
   font-size: 13px;
@@ -98,7 +102,7 @@
 .goods__price-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 24px;
+  padding-top: 21px;
 
   @media (min-width: $tablet) {
     margin-top: auto;

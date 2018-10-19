@@ -21,7 +21,7 @@
     &::before {
       content: "";
       position: absolute;
-      bottom: 145px;
+      bottom: 133px;
       left: 0;
       width: 100%;
       height: 373px;
@@ -45,12 +45,12 @@
 
 .header-nav__toggle {
   margin-left: auto;
+  margin-top: 7px;
   width: 20px;
   height: 20px;
   font-size: 0;
   border: none;
   background: url("../../img/icon-menu-close.svg") no-repeat center center;
-  background-color: transparent;
 
   &--close {
     background: url("../../img/icon-menu-open.svg") no-repeat center center;
@@ -66,6 +66,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ffffff;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -84,9 +85,8 @@
 .header-nav__item {
   display: flex;
   width: 260px;
-  padding-left: 30px;
+  padding-left: 26px;
   padding-right: 30px;
-  align-items: center;
   min-height: 80px;
   word-break: break-word;
   box-sizing: border-box;

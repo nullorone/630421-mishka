@@ -37,7 +37,7 @@
 
 .production__img-wrapper {
   position: relative;
-  margin-top: 25px;
+  margin-top: 21px;
   z-index: 1;
 
   &::before {
@@ -52,7 +52,7 @@
     background-image: url("../../img/icon-play.svg");
     background-repeat: no-repeat;
     background-position: center center;
-    transform: translate(-50px, -39px);
+    transform: translate(-51px, -41px);
   }
 
   @media (min-width: $tablet) {
@@ -76,9 +76,10 @@
 
 .production__description {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 21px;
   margin-left: 28px;
   padding-left: 6px;
+  padding-right: 35px;
   font-size: 13px;
   font-weight: 400;
 
@@ -103,7 +104,7 @@
 .production__btn {
   width: 192px;
   margin-top: 25px;
-  margin-left: 34px;
+  margin-left: 33px;
 
   @media (min-width: $tablet) {
     width: 584px;

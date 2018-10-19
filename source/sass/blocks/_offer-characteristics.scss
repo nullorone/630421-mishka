@@ -10,14 +10,17 @@
 }
 
 .offer-characteristics__row {
+  display: block;
+  margin-bottom: 8px;
   border-bottom: 1px solid #ececec;
 }
 
 .offer-characteristics__cell {
-  word-break: break-all;
+  word-break: break-word;
+  padding-bottom: 10px;
   padding-right: 10px;
 
   &:first-child {
-    width: 100px;
+    width: 84px;
   }
 }

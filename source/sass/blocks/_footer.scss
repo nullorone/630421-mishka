@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 25px;
+  padding-top: 28px;
   padding-bottom: 23px;
   background-color: #f1f1f1;
 }
@@ -14,14 +14,18 @@
 }
 
 .footer__logo {
-  visibility: hidden;
+  display: none;
 
   @media (min-width: $tablet) {
-    visibility: visible;
+    display: flex;
     flex-shrink: 0;
     width: 102px;
     height: 35px;
     margin: 0;
     background: url("../../img/logo-footer.svg") no-repeat center center;
   }
+}
+
+.footer__socials {
+  padding-bottom: 25px;
 }
