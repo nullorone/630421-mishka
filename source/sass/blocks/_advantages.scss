@@ -2,7 +2,7 @@
   @include reset-ul;
 
   @media (min-width: $tablet) {
-    height: 340px;
+    min-height: 340px;
     column-count: 2;
   }
 }
