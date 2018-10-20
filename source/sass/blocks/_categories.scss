@@ -41,8 +41,11 @@
 
   @media (min-width: $tablet) {
     width: 334px;
-    padding: 35px;
+    padding: 28px;
+    padding-left: 35px;
     padding-right: 160px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop) {

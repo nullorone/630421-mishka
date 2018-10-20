@@ -2,11 +2,10 @@
   padding-bottom: 45px;
 
   @media (min-width: $tablet) {
-    min-height: 357px;
+    min-height: 470px;
     background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-position: left center;
-    margin-bottom: 68px;
+    background-position: left 30px;padding-bottom: 85px;
   }
 
   @media (min-width: $desktop) {
@@ -34,6 +33,7 @@
   margin-top: 55px;
 
   @media (min-width: $tablet) {
+    margin-top: 106px;
     order: 1;
   }
 }
@@ -42,6 +42,7 @@
   margin-top: 24px;
 
   @media (min-width: $tablet) {
+    margin-top: 45px;
     order: 3;
   }
 }
@@ -50,6 +51,7 @@
   margin-top: 30px;
 
   @media (min-width: $tablet) {
+    margin-top: -54px;
     order: 4;
   }
 }
@@ -59,6 +61,7 @@
 
   @media (min-width: $tablet) {
     width: 175px;
+    margin-top: 107px;
     order: 2;
   }
 }

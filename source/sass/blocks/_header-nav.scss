@@ -14,10 +14,6 @@
     background-color: transparent;
     min-height: 215px;
 
-    @media (min-width: $tablet) {
-      min-height: 848px;
-    }
-
     &::before {
       content: "";
       position: absolute;
@@ -32,7 +28,7 @@
 
       @media (min-width: $tablet) {
         bottom: 0;
-        height: 746px;
+        height: 732px;
         background-image: url("../../img/hero-tablet@1x.jpg");
       }
 
@@ -75,6 +71,7 @@
     justify-content: space-between;
     width: 668px;
     margin: 0 auto;
+    background-color: transparent;
   }
 
   @media (min-width: $desktop) {
@@ -92,6 +89,7 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
+    padding-top: 18px;
     padding-left: 0;
     padding-right: 0;
     min-height: 88px;
@@ -103,6 +101,7 @@
 
     @media (min-width: $tablet) {
       width: 320px;
+      padding-top: 9px;
       order: 1;
     }
 
@@ -160,6 +159,7 @@
   &--cart {
     @media (min-width: $tablet) {
       width: 265px;
+      padding-top: 30px;
       order: 3;
     }
 
@@ -258,6 +258,18 @@
     @media (min-width: $tablet) {
       display: flex;
       margin-left: auto;
+    }
+  }
+
+  &--catalog {
+    @media (min-width: $tablet) {
+     font-size: 15px;
+    }
+  }
+
+  &--form {
+    @media (min-width: $tablet) {
+      font-size: 15px;
     }
   }
 

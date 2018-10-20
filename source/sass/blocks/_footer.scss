@@ -2,13 +2,16 @@
   padding-top: 26px;
   padding-bottom: 23px;
   background-color: #f1f1f1;
+
+  @media (min-width: $tablet) {
+    padding-top: 39px;
+  }
 }
 
 .footer__container {
   @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     min-height: 95px;
   }
 }
@@ -18,10 +21,9 @@
 
   @media (min-width: $tablet) {
     display: flex;
-    flex-shrink: 0;
     width: 102px;
     height: 35px;
-    margin: 0;
+    margin-top: 12px;
     background: url("../../img/logo-footer.svg") no-repeat center center;
   }
 }

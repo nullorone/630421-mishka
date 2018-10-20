@@ -1,18 +1,26 @@
 .copyright {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   padding-top: 22px;
   padding-left: 38px;
+
+  @media (min-width: $tablet) {
+    padding-top: 20px;
+    padding-left: 36px;
+  }
 }
 
 .copyright__text {
   margin: 0;
-  padding: 0;
+  padding-top: 9px;
   width: 130px;
   word-break: break-word;
   font-size: 19px;
   line-height: 19px;
+
+  @media (min-width: $tablet) {
+    padding-top: 5px;
+  }
 }
 
 .copyright__logo {
@@ -23,4 +31,8 @@
   margin-left: 26px;
   font-size: 0;
   background: url("../../img/logo-htmlacademy.svg") no-repeat center center;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+  }
 }

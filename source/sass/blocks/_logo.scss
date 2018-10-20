@@ -17,6 +17,9 @@
   }
 
   @media (min-width: $tablet) {
+    width: 111px;
+    height: 72px;
     margin-left: 0;
+    background: url("../../img/logo-tablet.svg") no-repeat center center;
   }
 }

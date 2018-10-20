@@ -4,10 +4,11 @@
     display: block;
     width: 100%;
     height: 6px;
-    background: url("../../img/bg-zigzag-line.svg") repeat center/contain;
+    background: url("../../img/bg-zigzag-line.svg") repeat;
+    background-size: contain;
 
     @media (min-width: $tablet) {
-      height: 17px;
+      height: 15px;
       opacity: 0.3;
     }
   }

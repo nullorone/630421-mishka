@@ -17,8 +17,9 @@
   word-break: break-word;
 
   @media (min-width: $tablet) {
-    width: 334px;
+    width: 300px;
     margin-right: 0;
+    margin-bottom: 56px;
     font-size: 20px;
     line-height: 22px;
   }
