@@ -19,12 +19,13 @@
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center center;
+
+  &--back {
+    background-image: url("../../img/icon-left-arrow.svg");
+  }
+
+  &--forward {
+    background-image: url("../../img/icon-right-arrow.svg");
+  }
 }
 
-.slider-controls__btn--back {
-  background-image: url("../../img/icon-left-arrow.svg");
-}
-
-.slider-controls__btn--forward {
-  background-image: url("../../img/icon-right-arrow.svg");
-}
