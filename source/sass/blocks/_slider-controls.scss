@@ -20,6 +20,15 @@
   background-repeat: no-repeat;
   background-position: center center;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--back {
     background-image: url("../../img/icon-left-arrow.svg");
   }
