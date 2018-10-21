@@ -145,16 +145,10 @@
   }
 
   &--search {
-    background-image: url("../../img/icon-search.svg");
-    background-size: 18px 18px;
-    background-repeat: no-repeat;
-    background-position: left center;
-
     @media (min-width: $tablet) {
       width: 82px;
       height: 88px;
       order: 2;
-      background-position: center center;
     }
 
     @media (min-width: $desktop) {
