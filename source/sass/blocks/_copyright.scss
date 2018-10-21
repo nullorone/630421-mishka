@@ -17,6 +17,11 @@
   word-break: break-word;
   font-size: 19px;
   line-height: 19px;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet) {
     padding-top: 5px;
