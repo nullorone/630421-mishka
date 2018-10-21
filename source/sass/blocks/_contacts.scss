@@ -8,6 +8,7 @@
   @media (min-width: $desktop) {
     width: 1050px;
     margin: 0 auto;
+    padding-bottom: 105px;
   }
 }
 
@@ -57,6 +58,11 @@
     margin-top: 49px;
     font-size: 17px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 29px;
+    margin-bottom: 0;
   }
 }
 
@@ -118,7 +124,7 @@
     width: 525px;
     height: 457px;
     margin-left: 525px;
-    margin-top: -350px;
+    margin-top: -325px;
     order: 4;
   }
 }
@@ -134,7 +140,7 @@
 
   @media (min-width: $desktop) {
     width: 230px;
-    margin-top: -68px;
+    margin-top: -58px;
     margin-left: 175px;
     order: 3;
   }

@@ -22,4 +22,10 @@
     margin-left: 0;
     background: url("../../img/logo-tablet.svg") no-repeat center center;
   }
+
+  @media (min-width: $desktop) {
+    width: 149px;
+    height: 72px;
+    background: url("../../img/logo-desktop.svg") no-repeat center center;
+  }
 }

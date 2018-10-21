@@ -26,6 +26,10 @@
     margin-top: 12px;
     background: url("../../img/logo-footer.svg") no-repeat center center;
   }
+
+  @media (min-width: $desktop) {
+    margin-right: 158px;
+  }
 }
 
 .footer__socials {

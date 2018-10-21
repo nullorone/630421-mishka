@@ -4,6 +4,13 @@
   line-height: 30px;
   font-weight: 400;
 
+  br {
+    display: none;
+    @media (min-width: $desktop) {
+      display: block;
+    }
+  }
+
   @media (min-width: $tablet) {
     font-size: 17px;
   }
@@ -25,6 +32,11 @@
     flex-wrap: wrap;
     font-size: 18px;
   }
+
+  @media (min-width: $desktop) {
+    margin-top: 40px;
+    font-size: 17px;
+  }
 }
 
 .feedback__author-name {
@@ -39,4 +51,8 @@
   line-height: 30px;
   text-decoration: none;
   word-break: break-word;
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+  }
 }

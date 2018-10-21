@@ -4,13 +4,9 @@
   border: 1px solid #ececec;
 
   @media (min-width: $tablet) {
-    width: 167px;
+    width: 175px;
     margin-left: auto;
     margin-top: -55px;
-    border: none;
-  }
-
-  @media (min-width: $desktop) {
     border: none;
   }
 }

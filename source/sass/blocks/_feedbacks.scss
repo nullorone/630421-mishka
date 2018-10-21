@@ -11,7 +11,7 @@
   @media (min-width: $desktop) {
     width: 1150px;
     margin: 0 auto;
-    margin-bottom: 67px;
+    background-position: 50px 30px;
   }
 }
 
@@ -35,6 +35,10 @@
   @media (min-width: $tablet) {
     margin-top: 106px;
     order: 1;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 101px;
   }
 }
 

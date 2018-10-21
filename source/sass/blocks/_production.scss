@@ -13,6 +13,7 @@
   @media (min-width: $desktop) {
     display: flex;
     min-height: 455px;
+    margin-top: 57px;
     padding-bottom: 0;
   }
 }
@@ -34,7 +35,7 @@
   @media (min-width: $desktop) {
     align-self: flex-end;
     max-width: 148px;
-    margin-top: -370px;
+    margin-top: -360px;
     padding-right: 140px;
   }
 }
@@ -64,6 +65,10 @@
     height: 455px;
     margin-top: 0;
     order: 1;
+  }
+
+  @media (min-width: $desktop) {
+    width: 682px;
   }
 }
 
@@ -101,7 +106,8 @@
   @media (min-width: $desktop) {
     align-self: flex-end;
     max-width: 290px;
-    margin-top: 42px;
+    margin-top: 34px;
+    padding-left: 0;
     padding-right: 67px;
     box-sizing: border-box;
     font-weight: 400;
@@ -124,7 +130,7 @@
   @media (min-width: $desktop) {
     align-self: flex-end;
     width: 230px;
-    margin-top: 50px;
+    margin-top: 47px;
     margin-right: 57px;
   }
 }
