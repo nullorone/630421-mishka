@@ -7,12 +7,12 @@
   height: 35px;
   background: url("../../img/logo-mobile.svg") no-repeat center center;
 
-  &:hover {
-    fill: #46c1ae;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
   }
 
   &:active {
-    fill: #46c1ae;
     opacity: 0.3;
   }
 
