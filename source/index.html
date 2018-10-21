@@ -34,6 +34,11 @@
 </head>
 
 <body>
+  <svg style="display: none">
+    <symbol id="search" viewBox="-0.8 -0.8 17.6 17.6">
+        <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+    </symbol>
+  </svg>
   <div class="wrapper">
     <header class="header header--index-page">
       <nav class="header-nav header__nav header-nav--bg-image">
@@ -59,6 +64,9 @@
 
             <li class="header-nav__item header-nav__item--search">
               <a href="search.html" class="header-nav__link header-nav__link--search">
+                <svg class="icon-search" width="17.6px" height="17.6px">
+                  <use xlink:href="#search"></use>
+                </svg>
                 Поиск по сайту
               </a>
             </li>
