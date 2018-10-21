@@ -223,6 +223,15 @@
   margin-right: auto;
   padding-top: 32px;
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet) {
     padding-top: 0;
     padding-left: 0;
@@ -293,13 +302,5 @@
     @media (min-width: $desktop) {
       font-size: 17px;
     }
-  }
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }
