@@ -51,6 +51,16 @@
   padding: 25px 28px;
   padding-bottom: 27px;
   border: 1px solid #ececec;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 
   @media (min-width: $tablet) {
     display: flex;
@@ -99,6 +109,16 @@
   color: $color-li;
   font-size: 17px;
   text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet) {
     font-size: 20px;
