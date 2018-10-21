@@ -11,8 +11,6 @@
 }
 
 .categories__item {
-  min-height: 103px;
-
   &:nth-child(odd) {
     background-color: #63d1bb;
   }
@@ -20,16 +18,12 @@
   &:nth-child(even) {
     background-color: #56c3b2;
   }
-
-  @media (min-width: $tablet) {
-    min-height: 119px;
-    box-sizing: border-box;
-  }
 }
 
 .categories__link {
   display: flex;
   width: 180px;
+  min-height: 103px;
   padding: 25px;
   padding-left: 27px;
   color: #ffffff;
@@ -41,6 +35,7 @@
 
   @media (min-width: $tablet) {
     width: 334px;
+    min-height: 119px;
     padding: 28px;
     padding-left: 35px;
     padding-right: 160px;
