@@ -3,8 +3,8 @@
 @import "mixin";
 @import "fonts";
 @import "global";
-// Стилизация иконок
-@import "icon";
+// Подключает иконку корзины
+@import "icon-cart";
 // Стилизация отдельных элементов
 @import "blocks/btn";
 @import "blocks/logo";
