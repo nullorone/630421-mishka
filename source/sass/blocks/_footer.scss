@@ -23,8 +23,18 @@
     display: flex;
     width: 102px;
     height: 35px;
+    font-size: 0;
     margin-top: 12px;
-    background: url("../../img/logo-footer.svg") no-repeat center center;
+    margin-right: 159px;
+
+    &:hover,
+    &:focus {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $desktop) {
