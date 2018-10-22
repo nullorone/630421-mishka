@@ -8,6 +8,7 @@
 }
 
 .advantages__item {
+  position: relative;
   padding-top: 56px;
   margin-bottom: 27px;
   color: $color-li;
@@ -26,5 +27,12 @@
 
   @media (min-width: $desktop) {
     width: 350px;
+  }
+
+  & svg {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    fill:#63d1bb;
   }
 }
