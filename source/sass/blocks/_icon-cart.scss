@@ -1,0 +1,19 @@
+.icon-cart {
+  position: absolute;
+  top: 35px;
+  left: -37px;
+  width: 20.294px;
+  height: 18.849px;
+  fill: #231f20;
+  opacity: 0.2;
+
+  &:hover,
+  &:focus {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
