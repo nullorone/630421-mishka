@@ -1,7 +1,6 @@
 .socials {
   @include reset-ul;
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   width: 188px;
   margin-left: 57px;
@@ -18,7 +17,8 @@
 }
 
 .socials__icon {
-  display: block;
+  display: flex;
+  align-items: center;
   font-size: 0;
   width: 22px;
   height: 28px;
