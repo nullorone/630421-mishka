@@ -14,6 +14,7 @@
 
 .socials__item {
   margin-right: 37px;
+  display: flex;
 }
 
 .socials__icon {
@@ -22,15 +23,12 @@
   width: 22px;
   height: 28px;
 
-  &--instagram {
-    background: url("../../img/icon-insta.svg") no-repeat center center;
+  &:hover,
+  &:focus {
+    fill: #46c1ae;
   }
 
-  &--facebook {
-    background: url("../../img/icon-fb.svg") no-repeat center center;
-  }
-
-  &--twitter {
-    background: url("../../img/icon-twitter.svg") no-repeat center center;
+  &:active {
+    opacity: 0.3;
   }
 }
