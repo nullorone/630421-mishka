@@ -7,6 +7,11 @@
   fill: #231f20;
   opacity: 0.2;
 
+  @media (min-width: $tablet) {
+    top: 4px;
+    left: -51px;
+  }
+
   &:hover,
   &:focus {
     fill: #63d1bb;
