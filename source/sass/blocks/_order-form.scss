@@ -456,6 +456,10 @@
     @media (min-width: $tablet) {
       right: 77px;
     }
+
+    @media (min-width: $desktop) {
+      right: 233px;
+    }
   }
 
   &--email {
@@ -465,6 +469,11 @@
     @media (min-width: $tablet) {
       top: 33px;
       right: 72px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 32px;
+      right: 230px;
     }
   }
 }
