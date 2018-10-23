@@ -60,11 +60,23 @@
   fill: #149080;
   opacity: 0.5;
 
+  @media (min-width: $tablet) {
+    top: 30px;
+  }
+
   &--interior {
     right: -105px;
+
+    @media (min-width: $tablet) {
+      right: 37px;
+    }
   }
 
   &--toy {
     right: -113px;
+
+    @media (min-width: $tablet) {
+      right: 33px;
+    }
   }
 }
