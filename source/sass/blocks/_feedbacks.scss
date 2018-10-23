@@ -72,4 +72,8 @@
     margin-top: 107px;
     order: 2;
   }
+
+  @media (min-width: $desktop) {
+    margin-top: 109px;
+  }
 }
