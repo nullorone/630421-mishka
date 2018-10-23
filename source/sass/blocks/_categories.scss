@@ -11,11 +11,11 @@
 }
 
 .categories__item {
-  &:nth-child(odd) {
+  &:nth-child(odd) > .categories__link {
     background-color: #63d1bb;
   }
 
-  &:nth-child(even) {
+  &:nth-child(even) > .categories__link {
     background-color: #56c3b2;
   }
 }
@@ -49,8 +49,14 @@
     padding-right: 330px;
   }
 
+  &:hover,
+  &:focus {
+    transform: translateY(-5px);
+    padding-bottom: 32px;
+  }
+
   &:active {
-    opacity: 0.3;
+    color: rgba(#ffffff, 0.3);
   }
 }
 
