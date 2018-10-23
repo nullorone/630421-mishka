@@ -63,6 +63,11 @@
     top: -4px;
     left: 13px;
   }
+
+  @media (min-width: $desktop) {
+    top: -53px;
+    left: 77px;
+  }
 }
 
 .production__img-wrapper {
