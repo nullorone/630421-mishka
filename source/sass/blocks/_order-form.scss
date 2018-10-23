@@ -452,11 +452,20 @@
   &--tel {
     top: 61px;
     right: 38px;
+
+    @media (min-width: $tablet) {
+      right: 77px;
+    }
   }
 
   &--email {
     top: 45px;
     right: 34px;
+
+    @media (min-width: $tablet) {
+      top: 33px;
+      right: 72px;
+    }
   }
 }
 
