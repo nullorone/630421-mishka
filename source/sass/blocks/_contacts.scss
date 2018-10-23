@@ -74,8 +74,8 @@
 .contacts__info {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 26px;
-  margin-bottom: 29px;
+  margin-top: 25px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet) {
     width: 334px;
@@ -137,7 +137,7 @@
 
 .contacts__map-wrapper {
   position: relative;
-  margin-top: 39px;
+  margin-top: 37px;
   width: 100%;
 
   @media (min-width: $tablet) {
