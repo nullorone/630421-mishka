@@ -122,8 +122,6 @@
   }
 
   @media (min-width: $desktop) {
-    width: 525px;
-    height: 457px;
     margin-left: 525px;
     margin-top: -325px;
     order: 4;
@@ -139,6 +137,11 @@
     background-image: url(../../img/icon-map-pin.svg);
     background-repeat: no-repeat;
   }
+}
+
+.contacts__map {
+  width: 100%;
+  height: 100%;
 }
 
 .contacts__btn {
