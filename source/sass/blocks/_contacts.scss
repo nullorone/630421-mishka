@@ -30,8 +30,32 @@
 }
 
 .contacts__caption {
+  @media (min-width: $tablet) {
+    position: relative;
+  }
+
   @media (min-width: $desktop) {
     order: 1;
+  }
+
+  &::after {
+    @media (min-width: $tablet) {
+      content: "";
+      position: absolute;
+      top: -16px;
+      right: 3px;
+      width: 47px;
+      height: 81px;
+      background-image: url("../../img/icon-flag.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: $desktop) {
+      top: -8px;
+      right: 0;
+      left: -112px;
+    }
   }
 }
 
