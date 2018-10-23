@@ -192,4 +192,9 @@
   position: absolute;
   top: 0;
   left: -18px;
+
+  @media (min-width: $desktop) {
+    top: 1px;
+    left: -20px;
+  }
 }
