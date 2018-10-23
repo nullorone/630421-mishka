@@ -35,6 +35,9 @@
 
 <body>
     <svg style="display: none">
+        <symbol id="search" viewBox="-0.8 -0.8 17.6 17.6">
+            <path d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z" />
+          </symbol>
         <symbol id="camera" viewBox="0 0 32 32">
             <g transform="translate(0 192)">
                 <path d="M26-177l6-4v16l-6-4V-177z M24-177v8c0,2.209-1.791,4-4,4H4c-2.209,0-4-1.791-4-4v-8c0-2.209,1.791-4,4-4h10 c0-1.105,0.895-2,2-2v-2H5c-0.553,0-1-0.447-1-1s0.447-1,1-1h12c0.553,0,1,0.447,1,1v3c1.105,0,2,0.895,2,2 C22.209-181,24-179.209,24-177z M12-177H4v8h8V-177z M20-176c0-0.553-0.447-1-1-1h-4c-0.553,0-1,0.447-1,1s0.447,1,1,1h4 C19.553-175,20-175.447,20-176z"/>
@@ -87,12 +90,18 @@
 
           <li class="header-nav__item header-nav__item--search">
             <a href="search.html" class="header-nav__link header-nav__link--search">
+                <svg class="header-nav__icon-search" width="17.6px" height="17.6px">
+                    <use xlink:href="#search"></use>
+                  </svg>
               Поиск по сайту
             </a>
           </li>
 
           <li class="header-nav__item header-nav__item--cart">
             <a href="cart.html" class="header-nav__link header-nav__link--cart">
+                <svg class="header-nav__icon-cart icon-cart" width="20.294px" height="18.849px">
+                    <use xlink:href="#cart"></use>
+                  </svg>
               Корзина: пока пуста
             </a>
           </li>
