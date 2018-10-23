@@ -319,6 +319,10 @@
     left: 33px;
   }
 
+  @media (min-width: $desktop) {
+    top: 7px;
+  }
+
   &:hover,
   &:focus {
     fill: #63d1bb;
