@@ -29,6 +29,7 @@
 }
 
 .production__caption {
+  position: relative;
   margin-top: 22px;
   margin-left: 28px;
   padding-left: 61px;
@@ -48,6 +49,15 @@
     margin-top: -360px;
     padding-right: 140px;
   }
+}
+
+.production__icon-camera {
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  width: 32px;
+  height: 32px;
+  fill: #63d1bb;
 }
 
 .production__img-wrapper {
