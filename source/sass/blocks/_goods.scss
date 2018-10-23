@@ -173,12 +173,12 @@
 }
 
 .goods__btn {
-  display: block;
-  width: 20px;
-  height: 20px;
+  position: relative;
   font-size: 0;
-  background-image: url("../../img/icon-cart.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  opacity: 0.2;
+}
+
+.goods__icon {
+  position: absolute;
+  top: 0;
+  left: -18px;
 }
