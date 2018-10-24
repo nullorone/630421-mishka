@@ -454,8 +454,8 @@
   opacity: 0.2;
 
   &--tel {
-    top: 61px;
-    right: 38px;
+    top: 20px;
+    right: 8px;
 
     @media (min-width: $tablet) {
       right: 77px;
@@ -467,8 +467,8 @@
   }
 
   &--email {
-    top: 45px;
-    right: 34px;
+    top: 21px;
+    right: 4px;
 
     @media (min-width: $tablet) {
       top: 33px;
