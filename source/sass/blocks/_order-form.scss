@@ -92,7 +92,7 @@
 
   &--email {
     position: relative;
-    padding-top: 8px;
+    padding-top: 9px;
     padding-bottom: 2px;
 
     @media (min-width: $tablet) {
@@ -112,8 +112,6 @@
 }
 
 .order-form__group-bg {
-  padding-bottom: 39px;
-
     @media (min-width: $tablet) {
       width: auto;
       padding-top: 16px;
