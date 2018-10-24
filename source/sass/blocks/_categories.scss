@@ -11,10 +11,12 @@
 }
 
 .categories__item {
+  &:nth-child(odd),
   &:nth-child(odd) > .categories__link {
     background-color: #63d1bb;
   }
 
+  &:nth-child(even),
   &:nth-child(even) > .categories__link {
     background-color: #56c3b2;
   }
