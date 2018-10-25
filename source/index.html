@@ -356,8 +356,9 @@
           </div>
         </div>
       </div>
-      <iframe src="https://yandex.ru/map-widget/v1/-/CBB9NMWxWC" class="contacts__map-iframe" width="320px" height="457" frameborder="0" allowfullscreen="true"></iframe>
-      
+      <iframe src="https://yandex.ru/map-widget/v1/-/CBB9NMWxWC" class="contacts__map-iframe" width="320px" height="457"
+        frameborder="0" allowfullscreen="true"></iframe>
+
       <div class="contacts__map-wrapper">
         <img src="img/map-mobile@1x.jpg" alt="Местоположение нашего офиса на карте" class="contacts__map" width="320"
           height="457">
@@ -440,6 +441,26 @@
     </form>
   </div>
   <div class="overlay visually-hidden"></div>
+  <script async>
+    var mapPic = document.querySelector('.contacts__map-wrapper');
+    var iframe = document.querySelector('.contacts__map-iframe');
+    var iframeStatus = '';
+    // Проверка загрузки iframe с картой Яндекса
+    try {
+      var iframeDocument = iframe.contentWindow.document || iframe.contentDocument;
+      if (iframeDocument.readyState == 'complete') {
+        iframeStatus = true;
+      }
+    } catch (err) {
+      iframeStatus = false;
+    }
+    //Проверяет отображение iframe. Если истина, то скрывает изображение карты, иначе скрывает iframe
+    if (iframeStatus) {
+      mapPic.style.display = 'none';
+    } else {
+      iframe.style.display = 'none';
+    }
+  </script>
   <script src="js/script.js"></script>
 </body>
 
