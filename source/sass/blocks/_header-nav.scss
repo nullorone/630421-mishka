@@ -248,6 +248,7 @@
   &--cart {
     @media (min-width: $tablet) {
       margin-left: auto;
+      padding-left: 60px;
     }
 
     @media (min-width: $desktop) {
