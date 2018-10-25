@@ -24,6 +24,7 @@
 }
 
 .offer__title-product {
+  max-width: 260px;
   margin: 0;
   margin-top: 27px;
   color: $color-title;
@@ -31,6 +32,7 @@
   line-height: 30px;
 
   @media (min-width: $tablet) {
+    max-width: 550px;
     margin-top: 37px;
     font-size: 43px;
     line-height: 50px;
