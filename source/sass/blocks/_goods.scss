@@ -158,7 +158,7 @@
     margin-top: auto;
   }
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     top: -2px;

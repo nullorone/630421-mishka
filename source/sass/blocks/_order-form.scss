@@ -101,8 +101,8 @@
     @media (min-width: $tablet) {
       padding-top: 0;
       padding-bottom: 50px;
+    }
   }
-}
 
   &--textarea {
     padding-top: 10px;
@@ -115,32 +115,32 @@
 }
 
 .order-form__group-bg {
+  @media (min-width: $tablet) {
+    width: auto;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    background-color: #f1f1f1;
+  }
+
+  @media (min-width: $desktop) {
+    width: auto;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    background-color: #f1f1f1;
+  }
+
+  &--tel {
     @media (min-width: $tablet) {
-      width: auto;
-      padding-top: 16px;
-      padding-bottom: 10px;
-      background-color: #f1f1f1;
+      padding-bottom: 2px;
     }
+  }
 
-    @media (min-width: $desktop) {
-      width: auto;
-      padding-top: 16px;
-      padding-bottom: 10px;
-      background-color: #f1f1f1;
+  &--email {
+    @media (min-width: $tablet) {
+      padding-top: 8px;
+      padding-bottom: 0;
     }
-
-    &--tel {
-      @media (min-width: $tablet) {
-        padding-bottom: 2px;
-      }
-    }
-
-    &--email {
-      @media (min-width: $tablet) {
-        padding-top: 8px;
-        padding-bottom: 0;
-      }
-    }
+  }
 }
 
 .order-form__fields-wrapper {
@@ -229,9 +229,6 @@
   font-size: 17px;
   line-height: 18px;
   color: #000000;
-
-  @media (min-width: $tablet) {
-  }
 
   @media (min-width: $desktop) {
     height: 20px;
@@ -367,7 +364,7 @@
   &--radio {
     &:hover + .order-form__label--radio::before,
     &:focus + .order-form__label--radio::before {
-      border-color:#62d1ba;
+      border-color: #62d1ba;
     }
 
     &:active + .order-form__label--radio::before {
@@ -397,7 +394,7 @@
   &--checkbox {
     &:hover + .order-form__label--checkbox::before,
     &:focus + .order-form__label--checkbox::before {
-      border-color:#62d1ba;
+      border-color: #62d1ba;
     }
 
     &:active + .order-form__label--checkbox::before {
@@ -433,7 +430,7 @@
     }
 
     &:hover + .order-form__input-icon,
-    &:focus + .order-form__input-icon  {
+    &:focus + .order-form__input-icon {
       opacity: 1;
       fill: #62d1ba;
     }
