@@ -244,14 +244,17 @@
   &--radio {
     position: relative;
     display: block;
+    max-width: 260px;
     margin-bottom: 24px;
     padding-right: 20px;
     padding-left: 62px;
     font-size: 17px;
     line-height: 18px;
     color: #000000;
+    word-break: break-word;
 
     @media (min-width: $tablet) {
+      max-width: 668px;
       font-size: 19px;
       line-height: 19px;
       padding-top: 2px;
@@ -286,12 +289,14 @@
   &--checkbox {
     position: relative;
     display: block;
+    max-width: 260px;
     margin-bottom: 44px;
     padding-right: 20px;
     padding-left: 62px;
     font-size: 17px;
     line-height: 18px;
     color: #000000;
+    word-break: break-word;
 
     &::before {
       content: "";
@@ -316,6 +321,7 @@
     }
 
     @media (min-width: $tablet) {
+      max-width: 668px;
       margin-bottom: 57px;
       padding-left: 80px;
       font-size: 19px;
@@ -567,6 +573,7 @@
   line-height: 16px;
 
   @media (min-width: $tablet) {
+    max-width: 310px;
     margin-top: 61px;
     font-size: 17px;
     line-height: 30px;
