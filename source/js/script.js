@@ -1,10 +1,29 @@
 var btnToggle = document.querySelector('.header-nav__toggle');
 var modal = document.querySelector('.modal-buy');
 var overlay = document.querySelector('.overlay');
+var mapPic = document.querySelector('.contacts__map');
+var iframe = document.querySelector('.contatcs__map-iframe');
+var iframeStatus = '';
 var btnModalBuy = [];
 btnModalBuy = document.querySelectorAll('.js-modal-buy');
 
-btnToggle.classList.add('header-nav__toggle--close');//Добавляет иконку закрытого меню по-умолчанию
+// Проверка загрузки iframe с картой Яндекса
+try {
+  var iframeDocument = iframe.contentWindow.document || iframe.contentDocument;
+  if (iframeDocument.readyState  == 'complete') {
+    iframeStatus = true;}
+} catch (err) {
+    iframeStatus = false;
+}
+//Проверяет загрузку iframe. Если истина, то скрывает изображение карты, иначе скрывает iframe
+if (iframeStatus) {
+  mapPic.style.display = 'none';
+} else {
+  iframe.style.display = 'none';
+}
+
+//Добавляет иконку закрытого меню по-умолчанию
+btnToggle.classList.add('header-nav__toggle--close');
 
 // Функция скрытия пунктов меню, кроме пункта с логотипом
 function isNavItemsToggle() {
