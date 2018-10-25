@@ -188,12 +188,13 @@
 }
 
 .contacts__map-iframe {
+  border: none;
   margin-top: 16px;
 
   @media (min-width: $tablet) {
     width: 100%;
     height: 457px;
-  margin-top: 23px;
+    margin-top: 23px;
   }
 
   @media (min-width: $desktop) {
