@@ -17,6 +17,7 @@
   line-height: 20px;
   box-sizing: border-box;
   word-break: break-word;
+  overflow: hidden;
 
   @media (min-width: $tablet) {
     width: 300px;
