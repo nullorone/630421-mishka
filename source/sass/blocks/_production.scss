@@ -93,11 +93,19 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 2;
   width: 101px;
-  height: 77px;
+  z-index: 2;
   cursor: pointer;
-  transform: translate(-51px, -41px);
+  transform: translate(-50%, -50%);
+
+  &:hover {
+    width: 120px;
+  }
+
+  &:active {
+    width: 80px;
+    opacity: 0.3;
+  }
 }
 
 .production__img {
