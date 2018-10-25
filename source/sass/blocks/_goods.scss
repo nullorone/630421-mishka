@@ -177,6 +177,7 @@
   word-break: break-word;
 
   @media (min-width: $tablet) {
+    margin-right: auto; //fix IE11
     font-size: 17px;
     line-height: 24px;
     width: 180px;
