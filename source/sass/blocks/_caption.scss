@@ -10,6 +10,7 @@
 
     @media (min-width: $tablet) {
       margin-top: 62px;
+      padding-right: 100px;
     }
 
     @media (min-width: $desktop) {
@@ -19,6 +20,7 @@
   }
 
   @media (min-width: $tablet) {
+    max-width: 550px;
     font-size: 43px;
     line-height: 50px;
   }

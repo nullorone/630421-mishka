@@ -12,7 +12,12 @@
   }
 
   @media (min-width: $tablet) {
+    max-width: 668px;
     font-size: 17px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 780px;
   }
 }
 

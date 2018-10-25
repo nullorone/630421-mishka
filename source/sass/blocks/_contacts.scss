@@ -43,7 +43,7 @@
       content: "";
       position: absolute;
       top: -16px;
-      right: 3px;
+      right: -14px;
       width: 47px;
       height: 81px;
       background-image: url("../../img/icon-flag.svg");
@@ -96,20 +96,28 @@
   font-weight: 400;
   line-height: 30px;
 
+  &:first-child {
+    max-width: 50px;
+    padding-right: 30px;
+
+    @media (min-width: $tablet) {
+      max-width: 55px;
+      padding-right: 5px;
+    }
+  }
+
   &--last {
-    margin-left: 30px;
     width: 170px;
 
     @media (min-width: $tablet) {
-      width: auto;
-      margin-left: 26px;
+      width: 235px;
+      margin-left: 20px;
       align-self: flex-start;
     }
   }
 }
 
 .contacts__link {
-  margin-left: 30px;
   font-weight: 400;
   line-height: 30px;
   color: $color-text;
@@ -117,13 +125,18 @@
   word-break: break-word;
 
   @media (min-width: $tablet) {
-    margin-left: 23px;
+    margin-left: 18px;
     align-self: flex-start;
   }
 }
 
 .contacts__link--email {
+  max-width: 185px;
   border-bottom: 1px solid #46c1ae;
+
+  @media (min-width: $tablet) {
+    max-width: 205px;
+  }
 
   &:hover {
     cursor: pointer;
