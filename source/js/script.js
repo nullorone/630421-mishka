@@ -22,7 +22,6 @@ function showModal(evt) {
   evt.preventDefault();
   modal.classList.add("modal-buy--show");
   modal.classList.remove("visually-hidden");
-  modal.style.display = "block";
   overlay.classList.remove("visually-hidden");
   // Отрабатывает нажатие на клавишу Esc
   window.addEventListener("keydown", function(evt) {
@@ -33,9 +32,8 @@ function showModal(evt) {
 // Функция скрытия модального окна и оверлея
 function hideModal(evt) {
   evt.preventDefault();
-  modal.classList.add("visually-hidden");
+  modal.classList.remove("modal-buy--show");
   overlay.classList.add("visually-hidden");
-  modal.style.display = "none";
 }
 
 // Скрываем пункты меню, если ширина окна меньше 768px
@@ -58,10 +56,6 @@ window.onresize = function() {
     btnToggle.classList.add("header-nav__toggle--close");
   }
 };
-
-// Скрывает модальное окно по-умолчанию
-modal.classList.add("visually-hidden");
-modal.style.display = "none";
 
 // При нажатии на иконку меню - переключает отображение пунктов меню
 btnToggle.addEventListener("click", function(evt) {
