@@ -7,6 +7,24 @@ var overlay = document.querySelector(".overlay");
 var overlayStatus = "";
 var btnModalBuy = [];
 btnModalBuy = document.querySelectorAll(".js-modal-buy");
+var mapPic = document.querySelector('.contacts__map-wrapper');
+var iframe = document.querySelector('.contacts__map-iframe');
+var iframeStatus = '';
+
+// Проверка загрузки iframe с картой Яндекса
+try {
+  var iframeDocument = iframe.contentWindow.document || iframe.contentDocument;
+  if (iframeDocument.readyState == 'complete') {
+    iframeStatus = true;
+  }
+} catch (err) {
+  iframeStatus = false;
+}
+
+//Проверяет отображение iframe. Если истина, то скрывает изображение карты, иначе скрывает iframe
+if (iframeStatus) {
+  mapPic.style.display = 'none';
+}
 
 //Добавляет иконку закрытого меню по-умолчанию
 btnToggle.classList.add("header-nav__toggle--close");
