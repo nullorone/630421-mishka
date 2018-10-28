@@ -339,27 +339,7 @@
       </div>
     </div>
   </footer>
-  <script>
-    var btnToggle = document.querySelector('.header-nav__toggle');
-    btnToggle.classList.add('header-nav__toggle--close');//Добавляет иконку закрытого меню по-умолчанию
-    // Функция скрытия пунктов меню, кроме пункта с логотипом
-    function isNavItemsToggle() {
-      var navItem = document.querySelectorAll('.header-nav__item:not(.header-nav__item--logo)');
-      for (var i = 0; i < navItem.length; i++) {
-        navItem[i].classList.toggle('visually-hidden');
-      }
-    }
-    // Скрываем пункты меню, если ширина окна меньше 768px
-    if (window.matchMedia('(max-width: 767px)').matches) {
-      isNavItemsToggle();//Скрывает пункты меню по-умолчанию
-    }
-    // При нажатии на иконку меню - переключает отображение пунктов меню
-    btnToggle.addEventListener('click', function (evt) {
-      evt.preventDefault();
-      isNavItemsToggle();
-      btnToggle.classList.toggle('header-nav__toggle--close');
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
