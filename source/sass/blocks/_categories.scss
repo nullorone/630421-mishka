@@ -43,14 +43,12 @@
     min-height: 119px;
     padding: 28px;
     padding-left: 35px;
-    padding-right: 160px;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop) {
     width: 525px;
-    padding-right: 330px;
   }
 
   &:hover,
