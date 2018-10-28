@@ -4,6 +4,7 @@ var navItem = document.querySelectorAll(
 );
 var modal = document.querySelector(".modal-buy");
 var overlay = document.querySelector(".overlay");
+var overlayStatus = "";
 var btnModalBuy = [];
 btnModalBuy = document.querySelectorAll(".js-modal-buy");
 
@@ -68,4 +69,17 @@ btnToggle.addEventListener("click", function(evt) {
 for (var i = 0; i < btnModalBuy.length; i++) {
   btnModalBuy[i].addEventListener("click", showModal);
 }
-overlay.addEventListener("click", hideModal);
+
+//Проверяем наличие оверлея
+try {
+  if (overlay) {
+    overlayStatus = true;
+  }
+} catch (err) {
+  overlayStatus = false;
+}
+
+//Если оверлей есть на странице, то вешаем обработчик при клике
+if (overlayStatus) {
+  overlay.addEventListener("click", hideModal);
+}
