@@ -1,19 +1,32 @@
 .about__container {
   @media (min-width: $desktop) {
-    padding: 70px 50px 89px 175px;
+    padding: 61px 50px 5px 175px;
     box-sizing: border-box;
   }
 }
 
 .about__caption {
   margin: 0;
-  margin-top: 34px;
+  margin-top: 27px;
+
+  @media (min-width: $tablet) {
+    margin-top: 53px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 0;
+  }
 }
 
 .about__advantages {
   margin-top: 31px;
 
+  @media (min-width: $tablet) {
+    width: 655px;
+    margin-top: 46px;
+  }
+
   @media (min-width: $desktop) {
-    width: 700px;
+    width: 687px;
   }
 }

@@ -1,26 +1,47 @@
-var btnToggle = document.querySelector('.header-nav__toggle');
-var modal = document.querySelector('.modal-buy');
-var overlay = document.querySelector('.overlay');
+var btnToggle = document.querySelector(".header-nav__toggle");
+var navItem = document.querySelectorAll(
+  ".header-nav__item:not(.header-nav__item--logo)"
+);
+var modal = document.querySelector(".modal-buy");
+var overlay = document.querySelector(".overlay");
+var overlayStatus = "";
 var btnModalBuy = [];
-btnModalBuy = document.querySelectorAll('.js-modal-buy');
+btnModalBuy = document.querySelectorAll(".js-modal-buy");
+var mapPic = document.querySelector('.contacts__map-wrapper');
+var iframe = document.querySelector('.contacts__map-iframe');
+var iframeStatus = '';
 
-btnToggle.classList.add('header-nav__icon--close');//Добавляет иконку закрытого меню по-умолчанию
+// Проверка загрузки iframe с картой Яндекса
+try {
+  var iframeDocument = iframe.contentWindow.document || iframe.contentDocument;
+  if (iframeDocument.readyState == 'complete') {
+    iframeStatus = true;
+  }
+} catch (err) {
+  iframeStatus = false;
+}
+
+//Проверяет отображение iframe. Если истина, то скрывает изображение карты, иначе скрывает iframe
+if (iframeStatus) {
+  mapPic.style.display = 'none';
+}
+
+//Добавляет иконку закрытого меню по-умолчанию
+btnToggle.classList.add("header-nav__toggle--close");
 
 // Функция скрытия пунктов меню, кроме пункта с логотипом
 function isNavItemsToggle() {
-  var navItem = document.querySelectorAll('.header-nav__item:not(.header-nav__item--logo)');
   for (var i = 0; i < navItem.length; i++) {
-    navItem[i].classList.toggle('visually-hidden');
+    navItem[i].classList.toggle("visually-hidden");
   }
 }
 
 // Функция отображения модального окна и оверлея
 function showModal(evt) {
   evt.preventDefault();
-  modal.classList.add('modal-buy--show');
-  modal.classList.remove('visually-hidden');
-  modal.style.display = 'block';
-  overlay.classList.remove('visually-hidden');
+  modal.classList.add("modal-buy--show");
+  modal.classList.remove("visually-hidden");
+  overlay.classList.remove("visually-hidden");
   // Отрабатывает нажатие на клавишу Esc
   window.addEventListener("keydown", function(evt) {
     27 === evt.keyCode && hideModal(evt);
@@ -30,29 +51,53 @@ function showModal(evt) {
 // Функция скрытия модального окна и оверлея
 function hideModal(evt) {
   evt.preventDefault();
-  modal.classList.add('visually-hidden');
-  overlay.classList.add('visually-hidden');
-  modal.style.display = 'none';
+  modal.classList.remove("modal-buy--show");
+  overlay.classList.add("visually-hidden");
 }
 
 // Скрываем пункты меню, если ширина окна меньше 768px
-if (window.matchMedia('(max-width < 768px)').matches) {
-  isNavItemsToggle();//Скрывает пункты меню по-умолчанию
+if (window.matchMedia("(max-width: 767px)").matches) {
+  isNavItemsToggle(); //Скрывает пункты меню по-умолчанию
 }
 
-// Скрывает модальное окно по-умолчанию
-modal.classList.add('visually-hidden');
-modal.style.display = 'none';
+//Проверяем ширину viewport
+window.onresize = function() {
+  //Если больше 768px, то показываем пункты навигации
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    for (var i = 0; i < navItem.length; i++) {
+      navItem[i].classList.remove("visually-hidden");
+    }
+  } else {
+    //Если меньше 767px, то скрываем пункты навигации и меняем иконку для закрытой навигации
+    for (var i = 0; i < navItem.length; i++) {
+      navItem[i].classList.add("visually-hidden");
+    }
+    btnToggle.classList.add("header-nav__toggle--close");
+  }
+};
 
 // При нажатии на иконку меню - переключает отображение пунктов меню
-btnToggle.addEventListener('click', function (evt) {
+btnToggle.addEventListener("click", function(evt) {
   evt.preventDefault();
   isNavItemsToggle();
-  btnToggle.classList.toggle('header-nav__icon--close');
+  btnToggle.classList.toggle("header-nav__toggle--close");
 });
 
 // При нажатии на кнопку заказать в блоке оффер главной страницы, меняет отображение окна и оверлея
 for (var i = 0; i < btnModalBuy.length; i++) {
-  btnModalBuy[i].addEventListener('click', showModal);
+  btnModalBuy[i].addEventListener("click", showModal);
 }
-overlay.addEventListener('click', hideModal);
+
+//Проверяем наличие оверлея
+try {
+  if (overlay) {
+    overlayStatus = true;
+  }
+} catch (err) {
+  overlayStatus = false;
+}
+
+//Если оверлей есть на странице, то вешаем обработчик при клике
+if (overlayStatus) {
+  overlay.addEventListener("click", hideModal);
+}

@@ -14,14 +14,10 @@
     background-color: transparent;
     min-height: 215px;
 
-    @media (min-width: $tablet) {
-      min-height: 848px;
-    }
-
     &::before {
       content: "";
       position: absolute;
-      bottom: 145px;
+      bottom: 133px;
       left: 0;
       width: 100%;
       height: 373px;
@@ -32,7 +28,7 @@
 
       @media (min-width: $tablet) {
         bottom: 0;
-        height: 746px;
+        height: 732px;
         background-image: url("../../img/hero-tablet@1x.jpg");
       }
 
@@ -45,12 +41,12 @@
 
 .header-nav__toggle {
   margin-left: auto;
+  margin-top: 7px;
   width: 20px;
   height: 20px;
   font-size: 0;
   border: none;
   background: url("../../img/icon-menu-close.svg") no-repeat center center;
-  background-color: transparent;
 
   &--close {
     background: url("../../img/icon-menu-open.svg") no-repeat center center;
@@ -66,6 +62,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ffffff;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -74,6 +71,7 @@
     justify-content: space-between;
     width: 668px;
     margin: 0 auto;
+    background-color: transparent;
   }
 
   @media (min-width: $desktop) {
@@ -84,17 +82,21 @@
 .header-nav__item {
   display: flex;
   width: 260px;
-  padding-left: 30px;
+  padding-left: 26px;
   padding-right: 30px;
-  align-items: center;
   min-height: 80px;
   word-break: break-word;
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
+    padding-top: 18px;
     padding-left: 0;
     padding-right: 0;
     min-height: 88px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 30px;
   }
 
   &--logo {
@@ -103,13 +105,13 @@
 
     @media (min-width: $tablet) {
       width: 320px;
+      padding-top: 9px;
       order: 1;
     }
 
     @media (min-width: $desktop) {
-      width: 150px;
-      padding-top: 0;
-      padding-left: 5px;
+      width: 250px;
+      padding-top: 10px;
       order: 3;
     }
   }
@@ -122,6 +124,7 @@
 
     @media (min-width: $desktop) {
       width: 184px;
+      padding-right: 20px;
       order: 1;
     }
   }
@@ -135,21 +138,17 @@
 
     @media (min-width: $desktop) {
       width: 260px;
+      margin-right: 0;
+      padding-left: 33px;
       order: 2;
     }
   }
 
   &--search {
-    background-image: url("../../img/icon-search.svg");
-    background-size: 18px 18px;
-    background-repeat: no-repeat;
-    background-position: left center;
-
     @media (min-width: $tablet) {
       width: 82px;
       height: 88px;
       order: 2;
-      background-position: center center;
     }
 
     @media (min-width: $desktop) {
@@ -160,6 +159,7 @@
   &--cart {
     @media (min-width: $tablet) {
       width: 265px;
+      padding-top: 30px;
       order: 3;
     }
 
@@ -178,6 +178,7 @@
     @media (min-width: $desktop) {
       display: flex;
       width: 184px;
+      padding-top: 20px;
     }
   }
 
@@ -190,8 +191,10 @@
 
     @media (min-width: $desktop) {
       display: flex;
-      margin-right: auto;
       width: 170px;
+      margin-right: auto;
+      padding-top: 20px;
+      padding-left: 35px;
     }
   }
 
@@ -203,18 +206,34 @@
       width: 250px;
       order: 8;
     }
+
+    @media (min-width: $desktop) {
+      padding-top: 18px;
+    }
   }
 }
 
 .header-nav__link {
+  position: relative;
   color: $color-li;
   font-size: 17px;
   line-height: 24px;
   text-decoration: none;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 32px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet) {
+    padding-top: 0;
     padding-left: 0;
     margin-left: 0;
     margin-right: 0;
@@ -229,6 +248,11 @@
   &--cart {
     @media (min-width: $tablet) {
       margin-left: auto;
+      padding-left: 60px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 17px;
     }
   }
 
@@ -261,8 +285,49 @@
     }
   }
 
-  &:hover {
-    opacity: 0.6;
+  &--catalog {
+    @media (min-width: $tablet) {
+      font-size: 15px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 17px;
+    }
+  }
+
+  &--form {
+    @media (min-width: $tablet) {
+      font-size: 15px;
+    }
+
+    @media (min-width: $desktop) {
+      font-size: 17px;
+    }
+  }
+}
+
+.header-nav__icon-search {
+  position: absolute;
+  top: 35px;
+  left: -60px;
+  width: 17.6px;
+  height: 17.6px;
+  fill: #231f20;
+  opacity: 0.2;
+
+  @media (min-width: $tablet) {
+    top: 19px;
+    left: 33px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 7px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: #63d1bb;
+    opacity: 1;
   }
 
   &:active {

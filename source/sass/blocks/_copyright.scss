@@ -1,24 +1,54 @@
 .copyright {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  padding-left: 40px;
+  padding-top: 22px;
+  padding-left: 38px;
+
+  @media (min-width: $tablet) {
+    padding-top: 0;
+    padding-left: 36px;
+  }
 }
 
 .copyright__text {
   margin: 0;
-  padding: 0;
+  padding-top: 9px;
   width: 130px;
   word-break: break-word;
   font-size: 19px;
   line-height: 19px;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet) {
+    padding-top: 5px;
+  }
 }
 
 .copyright__logo {
   display: block;
   width: 27px;
   height: 34px;
-  margin-left: 20px;
+  margin-top: 3px;
+  margin-left: 26px;
   font-size: 0;
-  background: url("../../img/logo-htmlacademy.svg") no-repeat center center;
+
+  @media (min-width: $tablet) {
+    cursor: pointer;
+    margin-top: 0;
+  }
+}
+
+.copyright__icon-htmlacademy {
+  &:hover,
+  &:focus {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

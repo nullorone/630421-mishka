@@ -3,6 +3,8 @@
 @import "mixin";
 @import "fonts";
 @import "global";
+// Подключает иконку корзины
+@import "blocks/icon-cart";
 // Стилизация отдельных элементов
 @import "blocks/btn";
 @import "blocks/logo";
@@ -30,7 +32,6 @@
 // Стилизация модального окна добавления товара в корзину
 @import "blocks/modal-buy";
 // Стилизация внутренней страницы каталога
-@import "blocks/main";
 @import "blocks/goods";
 @import "blocks/production";
 // Стилизация внутренней страницы формы заказа

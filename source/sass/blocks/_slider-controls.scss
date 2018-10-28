@@ -4,31 +4,37 @@
   border: 1px solid #ececec;
 
   @media (min-width: $tablet) {
-    width: 167px;
+    width: 175px;
     margin-left: auto;
     margin-top: -55px;
-    border: none;
-  }
-
-  @media (min-width: $desktop) {
     border: none;
   }
 }
 
 .slider-controls__btn {
-  width: 129px;
+  width: 128px;
   height: 52px;
   font-size: 0;
   border: none;
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center center;
-}
+  cursor: pointer;
 
-.slider-controls__btn--back {
-  background-image: url("../../img/icon-left-arrow.svg");
-}
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
 
-.slider-controls__btn--forward {
-  background-image: url("../../img/icon-right-arrow.svg");
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--back {
+    background-image: url("../../img/icon-left-arrow.svg");
+  }
+
+  &--forward {
+    background-image: url("../../img/icon-right-arrow.svg");
+  }
 }

@@ -1,3 +1,9 @@
 .slider {
   @include reset-ul;
 }
+
+.slider__item {
+  @media (min-width: $desktop) {
+    width: 770px;
+  }
+}
