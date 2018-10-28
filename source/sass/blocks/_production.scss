@@ -31,44 +31,30 @@
 }
 
 .production__caption {
-  position: relative;
   margin-top: 22px;
   margin-left: 28px;
   padding-left: 61px;
   font-size: 17px;
   line-height: 24px;
+  background-image: url("../../img/icon-video.svg");
+  background-position: 5px 5px;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet) {
     margin-top: 36px;
     padding-left: 77px;
     font-size: 20px;
     order: 2;
+    background-position: 12px -4px;
   }
 
   @media (min-width: $desktop) {
     align-self: flex-end;
     max-width: 148px;
-    margin-top: -360px;
+    margin-top: -410px;
+    padding-top: 50px;
     padding-right: 140px;
-  }
-}
-
-.production__icon-camera {
-  position: absolute;
-  top: 6px;
-  left: 5px;
-  width: 32px;
-  height: 32px;
-  fill: #63d1bb;
-
-  @media (min-width: $tablet) {
-    top: -4px;
-    left: 13px;
-  }
-
-  @media (min-width: $desktop) {
-    top: -53px;
-    left: 77px;
+    background-position: 79px top;
   }
 }
 
