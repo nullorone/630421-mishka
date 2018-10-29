@@ -5,6 +5,7 @@ var navItem = document.querySelectorAll(
 var modal = document.querySelector(".modal-buy");
 var overlay = document.querySelector(".overlay");
 var overlayStatus = "";
+var overlayFirstInput = document.querySelector(".size-form__radio");
 var btnModalBuy = [];
 btnModalBuy = document.querySelectorAll(".js-modal-buy");
 var mapPic = document.querySelector('.contacts__map-wrapper');
@@ -41,7 +42,8 @@ function showModal(evt) {
   evt.preventDefault();
   modal.classList.add("modal-buy--show");
   modal.classList.remove("visually-hidden");
-  overlay.classList.remove("visually-hidden");
+  overlay.classList.add("overlay--show");
+  overlayFirstInput.focus();
   // Отрабатывает нажатие на клавишу Esc
   window.addEventListener("keydown", function(evt) {
     27 === evt.keyCode && hideModal(evt);
@@ -52,7 +54,7 @@ function showModal(evt) {
 function hideModal(evt) {
   evt.preventDefault();
   modal.classList.remove("modal-buy--show");
-  overlay.classList.add("visually-hidden");
+  overlay.classList.remove("overlay--show");
 }
 
 // Скрываем пункты меню, если ширина окна меньше 768px

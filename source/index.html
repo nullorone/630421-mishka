@@ -204,8 +204,13 @@
             </tr>
           </table>
 
-          <img src="img/triple-set-mobile@1x.jpg" alt="Товар недели «Вязаные корзинки»" class="offer__img" width="260"
-            height="315">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x,
+            img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x,
+            img/triple-set-tablet@2x.jpg 2x">
+            <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" class="offer__img" alt="Товар недели «Вязаные корзинки»">
+          </picture>
 
           <p class="offer__price">
             Цена: 990 руб.
@@ -303,12 +308,8 @@
             </div>
           </div>
         </div>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CBB9NMWxWC" class="contacts__map-iframe" width="320" height="457"></iframe>
 
-        <div class="contacts__map-wrapper">
-          <img src="img/map-mobile@1x.jpg" alt="Местоположение нашего офиса на карте" class="contacts__map" width="320"
-            height="457">
-        </div>
+        <div id="map" class="contacts__map-wrapper"></div>
         <a href="write-us.html" class="btn contacts__btn">
           Напишите нам
         </a>
@@ -386,7 +387,10 @@
       <button type="submit" class="btn btn--form size-form__btn">Добавить</button>
     </form>
   </div>
-  <div class="overlay visually-hidden"></div>
+  <div class="overlay"></div>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=65c6768c-e916-4a17-a69b-115500e4b367&lang=ru_RU">
+  </script>
+  <script src="js/ymap.js"></script>
   <script src="js/script.js"></script>
 </body>
 

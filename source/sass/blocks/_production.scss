@@ -95,6 +95,9 @@
 }
 
 .production__img {
+  width: 260px;
+  height: 150px;
+
   @media (min-width: $tablet) {
     width: 100%;
     height: 455px;
