@@ -12,6 +12,9 @@ var mapPic = document.querySelector('.contacts__map-wrapper');
 var iframe = document.querySelector('.contacts__map-iframe');
 var iframeStatus = '';
 
+//Инициализирует svg4everybody для svg-спрайта
+svg4everybody();
+
 // Проверка загрузки iframe с картой Яндекса
 try {
   var iframeDocument = iframe.contentWindow.document || iframe.contentDocument;
