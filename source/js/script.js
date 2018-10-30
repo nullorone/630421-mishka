@@ -11,7 +11,7 @@ btnModalBuy = document.querySelectorAll(".js-modal-buy");
 var mapPic = document.querySelector('.contacts__map-wrapper');
 
 //Инициализирует svg4everybody для svg-спрайта
-svg4everybody();
+// svg4everybody();
 
 //Добавляет иконку закрытого меню по-умолчанию
 btnToggle.classList.add("header-nav__toggle--close");
