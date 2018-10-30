@@ -95,10 +95,12 @@
 
 .header-nav__item {
   display: flex;
-  width: 260px;
+  width: 320px;
   padding-left: 26px;
   padding-right: 30px;
   min-height: 80px;
+  border-bottom: 1px solid #ececec;
+  box-sizing: border-box;
   word-break: break-word;
   box-sizing: border-box;
 
