@@ -110,6 +110,7 @@
     padding-left: 0;
     padding-right: 0;
     min-height: 88px;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop) {
@@ -166,6 +167,7 @@
       width: 82px;
       height: 88px;
       order: 2;
+      border-left: 1px solid #ececec;
     }
 
     @media (min-width: $desktop) {
@@ -178,6 +180,7 @@
       width: 265px;
       padding-top: 30px;
       order: 3;
+      border-left: 1px solid #ececec;
     }
 
     @media (min-width: $desktop) {
