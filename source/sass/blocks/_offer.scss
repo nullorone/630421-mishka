@@ -97,26 +97,34 @@
   }
 }
 
+.offer__picture {
+  @media (min-width: $tablet) {
+    align-self: flex-end;
+    margin-top: -262px;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    right: 0;
+    top: -20px;
+    z-index: -1;
+    margin-top: 0;
+  }
+}
+
 .offer__img {
   margin-top: 19px;
   width: 260px;
   height: 315px;
 
   @media (min-width: $tablet) {
-    align-self: flex-end;
     width: 333px;
     height: 404px;
-    margin-top: -247px;
   }
 
   @media (min-width: $desktop) {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
     width: 525px;
     height: 636px;
-    margin-top: 0;
   }
 }
 
@@ -130,7 +138,7 @@
   @media (min-width: $tablet) {
     max-width: 150px;
     align-self: flex-start;
-    margin-top: -110px;
+    margin-top: -115px;
     margin-left: 72px;
     font-size: 20px;
   }
