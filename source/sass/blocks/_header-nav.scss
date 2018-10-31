@@ -100,7 +100,6 @@
       bottom: 88px;
       left: 0;
       background-color: #ececec;
-
     }
   }
 
@@ -116,7 +115,6 @@
   padding-right: 30px;
   min-height: 80px;
   border-bottom: 1px solid #ececec;
-  box-sizing: border-box;
   word-break: break-word;
   box-sizing: border-box;
 
@@ -281,6 +279,7 @@
       fill: #63d1bb;
       opacity: 1;
     }
+
     @media (min-width: $tablet) {
       font-size: 0;
     }
