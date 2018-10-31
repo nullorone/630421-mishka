@@ -1,28 +1,31 @@
 .header {
   min-height: 250px;
 
+  &::after {
+    @media (min-width: $tablet) {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 23px;
+      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-size: contain;
+    }
+
+    @media (min-width: $desktop) {
+      height: 34px;
+      background-size: auto;
+    }
+  }
+
   @media (min-width: $tablet) {
     position: relative;
     min-height: 322px;
     z-index: 1;
     background-color: #f1f1f1;
     background-image: linear-gradient(to bottom, #ffffff 0, #ffffff 88px, transparent 88px, transparent 100%);
-
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 24px;
-      background-image: url("../../img/bg-zigzag-fill.svg");
-      background-size: cover;
-
-      @media (min-width: $tablet) {
-        height: 20px;
-      }
-    }
   }
 
   &--index-page {
