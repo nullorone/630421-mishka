@@ -3,6 +3,10 @@
 
   .container {
     width: 100%;
+
+    @media (min-width: $desktop) {
+      width: 1050px;
+    }
   }
 
   @media (min-width: $tablet) {
