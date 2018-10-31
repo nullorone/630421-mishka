@@ -261,12 +261,23 @@
   }
 
   &--search {
+    &:hover .header-nav__icon-search,
+    &:focus .header-nav__icon-search {
+      fill: #63d1bb;
+      opacity: 1;
+    }
     @media (min-width: $tablet) {
       font-size: 0;
     }
   }
 
   &--cart {
+    &:hover .header-nav__icon-cart,
+    &:focus .header-nav__icon-cart {
+      fill: #63d1bb;
+      opacity: 1;
+    }
+
     @media (min-width: $tablet) {
       margin-left: auto;
       padding-left: 60px;
