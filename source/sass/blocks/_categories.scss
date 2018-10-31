@@ -59,8 +59,17 @@
     padding-bottom: 32px;
   }
 
+  &:hover .categories__icon,
+  &:focus .categories__icon {
+    opacity: 0.7;
+  }
+
   &:active {
     color: rgba(#ffffff, 0.3);
+  }
+  
+  &:active .categories__icon {
+    opacity: 0.3;
   }
 }
 
