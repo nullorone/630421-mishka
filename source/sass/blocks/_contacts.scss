@@ -1,18 +1,24 @@
 .contacts {
   padding-bottom: 37px;
 
+  .container {
+    width: 100%;
+
+    @media (min-width: $desktop) {
+      width: 1050px;
+    }
+  }
+
   @media (min-width: $tablet) {
     padding-bottom: 57px;
   }
 
   @media (min-width: $desktop) {
-    width: 1050px;
-    margin: 0 auto;
     padding-bottom: 102px;
   }
 }
 
-.contacts__container {
+.contacts__content {
   width: 260px;
   margin: 0 auto;
 

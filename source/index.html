@@ -204,12 +204,17 @@
             </tr>
           </table>
 
-          <picture>
+          <picture class="offer__picture">
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x,
+              img/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x,
+              img/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/triple-set-mobile@1x.webp, img/triple-set-mobile@2x.webp 2x">
             <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x,
             img/triple-set-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x,
             img/triple-set-tablet@2x.jpg 2x">
-            <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" class="offer__img" alt="Товар недели «Вязаные корзинки»">
+            <img class="offer__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Товар недели «Вязаные корзинки»">
           </picture>
 
           <p class="offer__price">
@@ -289,33 +294,39 @@
       </section>
 
       <section class="contacts decor-separator">
-        <div class="contacts__container">
-          <h2 class="caption contacts__caption caption--size">
-            Контакты
-          </h2>
-          <div class="contacts__info-wrapper">
-            <div class="contacts__info">
-              <p class="contacts__text">e-mail:</p>
-              <a href="mailto:info@mimimishkashop.ru" class="contacts__link contacts__link--email">info@mimimishkashop.ru</a>
-            </div>
+        <div class="container">
+          <div class="contacts__content">
+            <h2 class="caption contacts__caption caption--size">
+              Контакты
+            </h2>
+            <div class="contacts__info-wrapper">
+              <div class="contacts__info">
+                <p class="contacts__text">e-mail:</p>
 
-            <div class="contacts__info">
-              <p class="contacts__text">адрес:</p>
-              <p class="contacts__text contacts__text--last">
-                г. Санкт-Петербург,<br>
-                ул. Большая Конюшенная,<br>
-                д. 19/8, офис 101</p>
+                <a href="mailto:info@mimimishkashop.ru" class="contacts__link contacts__link--email">info@mimimishkashop.ru</a>
+              </div>
+
+              <div class="contacts__info">
+                <p class="contacts__text">адрес:</p>
+
+                <p class="contacts__text contacts__text--last">
+                  г. Санкт-Петербург,<br>
+                  ул. Большая Конюшенная,<br>
+                  д. 19/8, офис 101</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div id="map" class="contacts__map-wrapper"></div>
-        <a href="write-us.html" class="btn contacts__btn">
-          Напишите нам
-        </a>
+          <div id="map" class="contacts__map-wrapper"></div>
+
+          <a href="write-us.html" class="btn contacts__btn">
+            Напишите нам
+          </a>
+        </div>
       </section>
+    </main>
   </div>
-  </main>
+
   <footer class="footer">
     <div class="container footer__container">
       <a class="footer__logo">
@@ -352,10 +363,10 @@
       </ul>
 
       <div class="copyright footer__copyright">
-        <p class="copyright__text">
-          Разработано
-        </p>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__logo">
+          <p class="copyright__text">
+            Разработано
+          </p>
           <svg class="copyright__icon-htmlacademy" width="26.943" height="34.09">
             <use xlink:href="#htmlacademy"></use>
           </svg>
@@ -388,6 +399,8 @@
     </form>
   </div>
   <div class="overlay"></div>
+  <script src="js/picturefill.js" async></script>
+  <script src="js/svg4everybody.js" async></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=65c6768c-e916-4a17-a69b-115500e4b367&lang=ru_RU">
   </script>
   <script src="js/ymap.js"></script>
