@@ -48,8 +48,7 @@ gulp.task("webp", function() {
 
 gulp.task("copy", function() {
   return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
-    "source/js/*.js"
+    "source/fonts/**/*.{woff,woff2}"
   ], {
     base: "source"
   })
@@ -58,6 +57,17 @@ gulp.task("copy", function() {
 
 gulp.task("copyHtml", function() {
   return gulp.src("source/*.html", {base: "source"})
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("copyJs", function() {
+  return gulp.src("source/js/*.js", {base: "source"})
+    .pipe(gulp.dest("build"));
+});
+
+//Временно для выравнивания верстки под макет
+gulp.task("copyPP", function() {
+  return gulp.src("source/pixel-glass/**/*.{css,js}", {base: "source"})
     .pipe(gulp.dest("build"));
 });
 
@@ -93,6 +103,8 @@ gulp.task("build", gulp.series(
   "css",
   "copy",
   "copyHtml",
+  "copyJs",
+  "copyPP", //Временно
   "image-optimize"
   ));
 
