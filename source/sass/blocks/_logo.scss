@@ -5,7 +5,7 @@
   font-size: 0;
   width: 90px;
   height: 35px;
-  background: url("../../img/logo-mobile.svg") no-repeat center center;
+  background: url("../img/logo-mobile.svg") no-repeat center center;
 
   &:hover,
   &:focus {
@@ -20,12 +20,12 @@
     width: 111px;
     height: 72px;
     margin-left: 0;
-    background: url("../../img/logo-tablet.svg") no-repeat center center;
+    background: url("../img/logo-tablet.svg") no-repeat center center;
   }
 
   @media (min-width: $desktop) {
     width: 149px;
     height: 72px;
-    background: url("../../img/logo-desktop.svg") no-repeat center center;
+    background: url("../img/logo-desktop.svg") no-repeat center center;
   }
 }
