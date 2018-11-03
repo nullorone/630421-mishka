@@ -61,10 +61,10 @@
   height: 20px;
   font-size: 0;
   border: none;
-  background: url("../../img/icon-menu-close.svg") no-repeat center center;
+  background: url("../../img/menu-close.svg") no-repeat center center;
 
   &--close {
-    background: url("../../img/icon-menu-open.svg") no-repeat center center;
+    background: url("../../img/menu-open.svg") no-repeat center center;
   }
 
   @media (min-width: $tablet) {
