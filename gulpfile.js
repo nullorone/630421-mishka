@@ -71,7 +71,7 @@ gulp.task("sprite", function() {
 gulp.task("image-optimize", gulp.series("imagemin", "webp", "sprite"));
 
 gulp.task("refresh", function(done) {
-  server.reload;
+  server.reload();
   done();
 });
 
