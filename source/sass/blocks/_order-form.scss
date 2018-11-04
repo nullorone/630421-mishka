@@ -179,7 +179,15 @@
   position: relative;
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(to bottom, #ffffff 0, #ffffff 12px, #62d1ba 12px, #62d1ba 13px, #ffffff 13px, #ffffff 100%);
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff 0,
+    #ffffff 12px,
+    #62d1ba 12px,
+    #62d1ba 13px,
+    #ffffff 13px,
+    #ffffff 100%
+  );
 
   @media (min-width: $tablet) {
     float: left;
@@ -360,7 +368,13 @@
   }
 
   &::placeholder {
+    color: #444444;
     opacity: 0.3;
+  }
+
+  //Fix for IE11
+  &:-ms-input-placeholder {
+    color: rgba(#000000, 0.3);
   }
 
   &--radio {
@@ -532,6 +546,11 @@
 
   &::placeholder {
     opacity: 0.3;
+  }
+
+  //Fix for IE11
+  &:-ms-input-placeholder {
+    color: rgba(#000000, 0.3);
   }
 
   @media (min-width: $tablet) {
