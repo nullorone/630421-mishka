@@ -1,5 +1,5 @@
 .order-form {
-  padding-bottom: 57px;
+  padding-bottom: 53px;
 
   @media (min-width: $tablet) {
     margin-top: 60px;
@@ -35,13 +35,13 @@
 .order-form__group {
   width: 320px;
   margin: 0 auto;
-  padding: 38px 30px;
+  padding: 31px 30px;
   border: none;
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
     width: 768px;
-    padding-top: 50px;
+    padding-top: 49px;
     padding-bottom: 0;
   }
 
@@ -70,16 +70,18 @@
   }
 
   &--text {
-    padding-top: 29px;
+    padding-top: 23px;
     padding-bottom: 5px;
+    margin-top: 8px;
 
     @media (min-width: $tablet) {
       padding-top: 42px;
       padding-bottom: 49px;
+      margin-top: 0;
     }
 
     @media (min-width: $desktop) {
-      padding-top: 36px;
+      padding-top: 38px;
     }
   }
 
@@ -105,7 +107,7 @@
   }
 
   &--textarea {
-    padding-top: 10px;
+    padding-top: 8px;
     padding-bottom: 1px;
 
     @media (min-width: $tablet) {
@@ -173,7 +175,7 @@
 .order-form__group-title {
   display: block;
   width: 260px;
-  height: 17px;
+  min-height: 17px;
   position: relative;
   margin: 0;
   padding: 0;
@@ -290,7 +292,7 @@
     position: relative;
     display: block;
     max-width: 260px;
-    margin-bottom: 44px;
+    margin-bottom: 43px;
     padding-right: 20px;
     padding-left: 62px;
     font-size: 17px;
@@ -358,7 +360,13 @@
   }
 
   &::placeholder {
+    color: #444444;
     opacity: 0.3;
+  }
+
+  //Fix for IE11
+  &:-ms-input-placeholder {
+    color: rgba(#000000, 0.3);
   }
 
   &--radio {
@@ -410,7 +418,7 @@
       display: block;
       width: 22px;
       height: 22px;
-      background-image: url("../../img/icon-tick.svg");
+      background-image: url("../img/tick.svg");
       background-repeat: no-repeat;
       background-position: center center;
 
@@ -457,10 +465,10 @@
 
   &--text[type="tel"],
   &--text[type="email"] {
-    margin-top: 23px;
+    margin-top: 16px;
 
     @media (min-width: $tablet) {
-      width: 500px;
+      width: 484px;
       margin-top: 4px;
       margin-left: 0;
       padding-top: 20px;
@@ -480,7 +488,7 @@
   opacity: 0.2;
 
   &--tel {
-    top: 20px;
+    top: 12px;
     right: 8px;
 
     @media (min-width: $tablet) {
@@ -494,7 +502,7 @@
   }
 
   &--email {
-    top: 21px;
+    top: 13px;
     right: 4px;
 
     @media (min-width: $tablet) {
@@ -512,7 +520,7 @@
 .order-form__textarea {
   width: 260px;
   height: 142px;
-  margin-top: 26px;
+  margin-top: 21px;
   padding: 14px 20px 5px 15px;
   font-weight: 400;
   font-size: 17px;
@@ -530,6 +538,11 @@
 
   &::placeholder {
     opacity: 0.3;
+  }
+
+  //Fix for IE11
+  &:-ms-input-placeholder {
+    color: rgba(#000000, 0.3);
   }
 
   @media (min-width: $tablet) {
@@ -570,7 +583,7 @@
 
 .order-form__tip {
   margin: 0;
-  margin-top: 8px;
+  margin-top: 9px;
   padding: 0;
   font-weight: 400;
   font-size: 14px;

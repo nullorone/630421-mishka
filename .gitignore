@@ -8,6 +8,7 @@
 *.sublime*
 node_modules/
 npm-debug.*
+build/**
 source/img/temp/
 source/pixel-glass/
 source/css/*.css
