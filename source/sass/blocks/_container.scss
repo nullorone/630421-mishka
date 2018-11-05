@@ -1,6 +1,8 @@
 .container {
-  width: $mobile - 30 * 2;
+  // width: $mobile - 30 * 2;
+  max-width: 650px;
   margin: 0 auto;
+  box-sizing: border-box;
 
   @media (min-width: $tablet) {
     width: $tablet - 50 * 2;
