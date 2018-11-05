@@ -93,20 +93,6 @@ gulp.task("js", function(cb) {
   );
 });
 
-//Временно для выравнивания верстки под макет
-
-gulp.task("copyPPimages", function() {
-  return gulp
-    .src("source/img/temp/*.jpg", { base: "source/img/temp/" })
-    .pipe(gulp.dest("build/img/temp"));
-});
-
-gulp.task("copyPP", function() {
-  return gulp
-    .src("source/pixel-glass/**/*.{css,js}", { base: "source" })
-    .pipe(gulp.dest("build"));
-});
-
 gulp.task("sprite", function() {
   return gulp
     .src("source/img/icon-*.svg")
@@ -144,9 +130,7 @@ gulp.task(
     "image-optimize",
     "css",
     "html",
-    "js",
-    "copyPP", //Временно
-    "copyPPimages" //Временно
+    "js"
   )
 );
 
