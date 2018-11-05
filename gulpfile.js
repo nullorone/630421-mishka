@@ -79,6 +79,12 @@ gulp.task("copy:fonts", function() {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("copy:favicon", function() {
+  return gulp
+    .src(["source/img/favicon.ico"], { base: "source" })
+    .pipe(gulp.dest("build"));
+});
+
 gulp.task("js", function(cb) {
   return pump([
     gulp.src("source/js/*.js", { base: "source" }),
@@ -127,6 +133,7 @@ gulp.task(
   gulp.series(
     "clear",
     "copy:fonts",
+    "copy:favicon",
     "image-optimize",
     "css",
     "html",
