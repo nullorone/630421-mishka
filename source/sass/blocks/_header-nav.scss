@@ -28,7 +28,7 @@
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/hero-mobile@2x.jpg");
-        background-size: cover;
+        background-size: 575px 373px;
       }
 
       @media (min-width: $tablet) {
@@ -55,7 +55,7 @@
 
 .header-nav__toggle {
   margin-left: auto;
-  margin-right: 30px;
+  margin-right: ceil(percentage(30px / 320px));
   margin-top: 7px;
   width: 20px;
   height: 20px;
@@ -110,9 +110,9 @@
 
 .header-nav__item {
   display: flex;
-  width: 320px;
-  padding-left: 26px;
-  padding-right: 30px;
+  width: 100%; // 320px
+  padding-left: ceil(percentage(26px / 320px)); //26px
+  padding-right: ceil(percentage(30px / 320px));// 30px;
   min-height: 80px;
   border-bottom: 1px solid #ececec;
   word-break: break-word;

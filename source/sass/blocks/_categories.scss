@@ -25,12 +25,13 @@
 .categories__link {
   position: relative;
   display: flex;
-  width: 320px;
+  width: auto;
+  max-width: 500px;
   min-height: 103px;
   margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 25px;
-  padding-right: 100px;
+  padding-right: ceil(percentage(120px / 320px));// 100px;
   padding-left: 27px;
   color: #ffffff;
   font-size: 19px;
