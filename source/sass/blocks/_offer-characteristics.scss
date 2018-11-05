@@ -18,7 +18,7 @@
 .offer-characteristics__cell {
   word-break: break-word;
   padding-bottom: 11px;
-  padding-right: 10px;
+  padding-right: ceil(percentage(10px / 320px));// 10px;
 
   &:first-child {
     width: 85px;
