@@ -1,8 +1,9 @@
 .copyright {
   display: flex;
   flex-wrap: wrap;
+  width: ceil(percentage(188px / 320px));// 188px;
   padding-top: 28px;
-  margin-left: 38px;
+  margin-left: ceil(percentage(57px / 320px));// 38px;
 
   @media (min-width: $tablet) {
     padding-top: 0;
