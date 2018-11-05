@@ -2,8 +2,9 @@
   @include reset-ul;
   display: flex;
   flex-wrap: wrap;
-  width: 188px;
-  margin-left: 57px;
+  width: ceil(percentage(188px / 320px));// 188px;
+  margin-left: ceil(percentage(57px / 320px));// 57px;
+  margin-right: ceil(percentage(57px / 320px));// 57px;
 
   @media (min-width: $tablet) {
     margin-left: 0;
