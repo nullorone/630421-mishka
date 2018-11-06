@@ -5,7 +5,7 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
-    width: $tablet - 50 * 2;
+    // width: $tablet - 50 * 2;
   }
 
   @media (min-width: $desktop) {
