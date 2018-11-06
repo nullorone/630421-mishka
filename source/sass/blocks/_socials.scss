@@ -8,6 +8,8 @@
   margin-right: ceil(percentage(57px / 320px));// 57px;
 
   @media (min-width: $tablet) {
+    width: 30%;
+    margin-right: 5%;
     margin-left: 0;
     padding-bottom: 0;
   }
