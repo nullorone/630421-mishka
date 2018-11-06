@@ -10,10 +10,10 @@
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
-    width: 768px;
+    // width: 768px;
     min-height: 470px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: ceil(percentage(50px / 768px));// 50px;
+    padding-right: ceil(percentage(50px / 768px));// 50px;
     padding-bottom: 69px;
     box-sizing: border-box;
     background-image: url("../img/review@1x.jpg");
@@ -67,6 +67,7 @@
   margin-top: 29px;
 
   @media (min-width: $tablet) {
+    margin-right: 0;
     margin-top: -54px;
     order: 4;
   }
@@ -78,6 +79,7 @@
 
   @media (min-width: $tablet) {
     width: 175px;
+    margin: 0;
     margin-top: 107px;
     order: 2;
   }
