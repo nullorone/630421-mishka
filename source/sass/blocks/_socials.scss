@@ -2,6 +2,7 @@
   @include reset-ul;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   width: ceil(percentage(188px / 320px));// 188px;
   margin-left: ceil(percentage(57px / 320px));// 57px;
   margin-right: ceil(percentage(57px / 320px));// 57px;
