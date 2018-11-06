@@ -5,7 +5,7 @@
   border-collapse: collapse;
 
   @media (min-width: $tablet) {
-    width: 291px;
+    width: ceil(percentage(291px / 768px));// 291px;
   }
 }
 
