@@ -8,6 +8,10 @@
 }
 
 .offer__container {
+  padding-left: ceil(percentage(30px / 320px));// 30px;
+  padding-right: ceil(percentage(30px / 320px));// 30px;
+  box-sizing: border-box;
+
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: column;
