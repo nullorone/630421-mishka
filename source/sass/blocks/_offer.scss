@@ -81,9 +81,9 @@
 
   @media (min-width: $tablet) {
     box-sizing: border-box;
-    width: 334px;
+    width: ceil(percentage(334px / 768px));// 334px;
     margin-top: 54px;
-    padding-right: 45px;
+    padding-right: ceil(percentage(45px / 768px));// 45px;
     font-size: 17px;
     line-height: 30px;
   }
