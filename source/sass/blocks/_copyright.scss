@@ -1,6 +1,7 @@
 .copyright {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   width: ceil(percentage(188px / 320px));// 188px;
   padding-top: 28px;
   margin-left: ceil(percentage(57px / 320px));// 38px;
