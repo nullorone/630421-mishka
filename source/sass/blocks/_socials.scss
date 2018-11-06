@@ -18,6 +18,10 @@
   display: flex;
 }
 
+.socials__item:nth-child(3n) {
+  margin-right: 0;
+}
+
 .socials__icon {
   display: flex;
   align-items: center;
