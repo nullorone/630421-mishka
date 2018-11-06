@@ -24,9 +24,9 @@
   padding-right: ceil(percentage(30px / 320px));// 30px;
   margin: 0 auto;
 
-  @media (min-width: $tablet) {
-    width: 668px;
-  }
+  // @media (min-width: $tablet) {
+  //   width: 668px;
+  // }
 
   @media (min-width: $desktop) {
     display: flex;
