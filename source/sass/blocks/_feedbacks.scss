@@ -3,6 +3,9 @@
 }
 
 .feedbacks__container {
+  padding-left: ceil(percentage(30px / 320px));// 30px;
+  padding-right: ceil(percentage(30px / 320px));// 30px;
+
   @media (min-width: $tablet) {
     display: flex;
     flex-flow: wrap;
