@@ -20,6 +20,11 @@
     padding-left: 6%;
     padding-right: 6%;
   }
+
+  @media (min-width: $desktop) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .footer__logo {
@@ -44,7 +49,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-right: 158px;
+    margin-right: ceil(percentage(292px / 1150px));// 158px;
   }
 }
 

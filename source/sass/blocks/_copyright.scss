@@ -11,6 +11,10 @@
     padding-top: 0;
     margin-left: 36px;
   }
+
+  @media (min-width: $desktop) {
+    justify-content: flex-end;
+  }
 }
 
 .copyright__logo {

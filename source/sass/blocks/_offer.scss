@@ -87,6 +87,10 @@
     font-size: 17px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop) {
+    width: 43%;
+  }
 }
 
 .offer__characteristics {

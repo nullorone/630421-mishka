@@ -104,7 +104,10 @@
   }
 
   @media (min-width: $desktop) {
-    width: 1150px;
+    width: 1050px;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: flex-start;
   }
 }
 
@@ -142,7 +145,7 @@
     }
 
     @media (min-width: $desktop) {
-      width: 250px;
+      width: 260px;
       padding-top: 10px;
       order: 3;
     }
@@ -186,7 +189,9 @@
     }
 
     @media (min-width: $desktop) {
+      width: 82px;
       order: 4;
+      border-right: 1px solid #ececec;
     }
   }
 
@@ -199,7 +204,10 @@
     }
 
     @media (min-width: $desktop) {
+      width: 260px;
+      margin-left: auto;
       order: 5;
+      border-left: none;
     }
   }
 
