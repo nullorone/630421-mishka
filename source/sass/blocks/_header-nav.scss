@@ -86,8 +86,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     // width: 768px;
-    padding-left: ceil(percentage(50px / 768px)); // 50px;
-    padding-right: ceil(percentage(50px / 768px)); // 50px;
+    padding-left: 6%; // 50px;
+    padding-right: 6%; // 50px;
     margin: 0 auto;
     box-sizing: border-box;
     background-color: transparent;
@@ -135,7 +135,7 @@
     padding-right: 0;
 
     @media (min-width: $tablet) {
-      width: ceil(percentage(320px / 768px));// 320px;
+      width: 42%;// 320px;
       // max-width: 468px;
       padding-top: 9px;
       order: 1;
@@ -179,7 +179,7 @@
 
   &--search {
     @media (min-width: $tablet) {
-      width: 13%;// 82px;
+      width: 6%;// 82px;
       height: 88px;
       order: 2;
       border-left: 1px solid #ececec;
@@ -192,7 +192,7 @@
 
   &--cart {
     @media (min-width: $tablet) {
-      width: 44%;// 265px;
+      width: 40%;// 265px;
       padding-top: 30px;
       order: 3;
       border-left: 1px solid #ececec;
@@ -295,7 +295,7 @@
 
     @media (min-width: $tablet) {
       margin-left: auto;
-      padding-left: 15%;// 60px;
+      padding-left: 24%;// 60px;
     }
 
     @media (min-width: $desktop) {

@@ -1,10 +1,15 @@
 .about__container {
   padding-left: ceil(percentage(30px / 320px));// 30px;
   padding-right: ceil(percentage(30px / 320px));// 30px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet) {
+    padding-left: percentage(50px / 768px);// 30px;
+    padding-right: percentage(50px / 768px);// 30px;
+  }
 
   @media (min-width: $desktop) {
     padding: 61px 50px 5px 175px;
-    box-sizing: border-box;
   }
 }
 

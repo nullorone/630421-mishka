@@ -17,8 +17,8 @@
     display: flex;
     justify-content: space-between;
     min-height: 60px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 6%;
+    padding-right: 6%;
   }
 }
 
@@ -31,7 +31,7 @@
     height: 35px;
     font-size: 0;
     margin-top: -12px;
-    margin-right: 159px;
+    margin-right: ceil(percentage(155px / 768px));// 148px;
 
     &:hover,
     &:focus {

@@ -24,9 +24,11 @@
   padding-right: ceil(percentage(30px / 320px));// 30px;
   margin: 0 auto;
 
-  // @media (min-width: $tablet) {
-  //   width: 668px;
-  // }
+  @media (min-width: $tablet) {
+    // width: 668px;
+    padding-left: percentage(50px / 768px);// 50px;
+    padding-right: percentage(50px / 768px);// 50px;
+  }
 
   @media (min-width: $desktop) {
     display: flex;
@@ -51,7 +53,7 @@
       content: "";
       position: absolute;
       top: -16px;
-      right: -14px;
+      right: 3px;
       width: 47px;
       height: 81px;
       background-image: url("../img/flag.svg");
