@@ -23,6 +23,10 @@
   &:nth-child(even) > .categories__link {
     background-color: #56c3b2;
   }
+
+  @media (min-width: $tablet) {
+    width: 50%;
+  }
 }
 
 .categories__link {
@@ -44,7 +48,7 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
-    width: 334px;
+    width: 340px;
     min-height: 119px;
     padding-top: 28px;
     padding-bottom: 28px;
