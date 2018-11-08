@@ -138,14 +138,18 @@
     padding-right: 0;
 
     @media (min-width: $tablet) {
-      width: 42%;// 320px;
-      // max-width: 468px;
+      min-width: 320px;
+      max-width: 48.5%;
+      margin-right: auto;
       padding-top: 9px;
       order: 1;
     }
 
     @media (min-width: $desktop) {
+      min-width: 0;
       width: 260px;
+      max-width: none;
+      margin-right: 0;
       padding-top: 10px;
       order: 3;
     }
@@ -182,14 +186,13 @@
 
   &--search {
     @media (min-width: $tablet) {
-      width: 6%;// 82px;
+      width: 82px;
       height: 88px;
       order: 2;
       border-left: 1px solid #ececec;
     }
 
     @media (min-width: $desktop) {
-      width: 82px;
       order: 4;
       border-right: 1px solid #ececec;
     }
@@ -197,14 +200,17 @@
 
   &--cart {
     @media (min-width: $tablet) {
-      width: 40%;// 265px;
+      min-width: 265px;
+      max-width: 28%;
       padding-top: 30px;
       order: 3;
       border-left: 1px solid #ececec;
     }
 
     @media (min-width: $desktop) {
-      width: 260px;
+      min-width: 0;
+      width: 250px;
+      max-width: none;
       margin-left: auto;
       order: 5;
       border-left: none;
