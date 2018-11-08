@@ -32,8 +32,7 @@
 }
 
 .goods__img-link {
-  display: block;
-  width: 260px;
+  // width: 260px;
   height: 195px;
 
   @media (min-width: $tablet) {
@@ -45,6 +44,11 @@
     width: 315px;
     height: 462px;
   }
+}
+
+.goods__img {
+  display: block;
+  width: 100%;
 }
 
 .goods__info {
