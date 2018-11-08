@@ -11,6 +11,11 @@
   padding-bottom: 20px;
   padding-left: 9.5%;
   padding-right: 9.5%;
+
+  @media (min-width: $tablet) {
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+  }
 }
 
 .order-form__description {
@@ -77,7 +82,7 @@
     margin-top: 8px;
 
     @media (min-width: $tablet) {
-      padding-top: 42px;
+      padding-top: 36px;
       padding-bottom: 49px;
       margin-top: 0;
     }
@@ -168,7 +173,7 @@
     flex-wrap: wrap;
 
     @media (min-width: $tablet) {
-      max-width: 525px;
+      // max-width: 525px;
     }
 
     @media (min-width: $desktop) {
@@ -223,8 +228,8 @@
 
   @media (min-width: $tablet) {
     display: flex;
-    max-width: 500px;
-    min-height: 75px;
+    width: 100%;
+    // min-height: 75px;
     margin-top: 25px;
   }
 
@@ -347,6 +352,10 @@
 
 .order-form__input-wrapper {
   position: relative;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
 }
 
 .order-form__input {
@@ -363,6 +372,7 @@
   border-bottom: 2px solid #000000;
 
   @media (min-width: $tablet) {
+    width: 30%;
     margin-top: 5px;
     padding-bottom: 0;
   }
@@ -454,7 +464,7 @@
     }
 
     @media (min-width: $tablet) {
-      width: 500px;
+      width: 100%; //500px;
       margin-top: 0;
       margin-left: 25px;
       margin-bottom: 9px;
@@ -478,7 +488,7 @@
     margin-top: 16px;
 
     @media (min-width: $tablet) {
-      width: 484px;
+      width: 100%;// 484px;
       margin-top: 4px;
       margin-left: 0;
       padding-top: 20px;
@@ -556,7 +566,7 @@
   }
 
   @media (min-width: $tablet) {
-    width: 500px;
+    width: 100%;// 500px;
     margin-top: 12px;
     min-height: 142px;
     font-size: 19px;
