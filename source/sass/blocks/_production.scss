@@ -1,10 +1,11 @@
 .production {
+  width: ceil(percentage(260px / 320px));
+  margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 57px;
   padding-bottom: 33px;
-  padding-left: 6.5%;
-  padding-right: 6.5%;
   border: 1px solid #ececec;
+  box-sizing: border-box;
 
   &:hover,
   &:focus {
@@ -119,7 +120,7 @@
   margin-top: 23px;
   margin-left: 28px;
   padding-left: 6px;
-  padding-right: 50px;
+  padding-right: 35px;
   font-size: 13px;
   font-weight: 400;
   word-break: break-word;
@@ -146,10 +147,11 @@
 }
 
 .production__btn {
-  width: 62.2%;// 192px;
-  margin: 0 auto;
+  width: 74.2%;// 192px;
   margin-top: 25px;
-  // margin-left: 33px;
+  margin-left: 33px;
+  padding: 8px;
+  padding-top: 15px;
 
   @media (min-width: $tablet) {
     width: 584px;
