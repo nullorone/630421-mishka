@@ -1,6 +1,6 @@
 .goods {
   @include reset-ul;
-  padding-top: 30px;
+  padding: 30px 9.5% 0;
 
   @media (min-width: $tablet) {
     padding-top: 0;
