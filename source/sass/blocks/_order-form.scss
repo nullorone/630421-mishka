@@ -233,7 +233,7 @@
 
   @media (min-width: $tablet) {
     display: flex;
-    width: 100%;
+    width: 96%;
     // min-height: 75px;
     margin-top: 25px;
   }
@@ -347,7 +347,7 @@
       font-size: 19px;
       line-height: 19px;
       min-width: 150px; //Fix IE11
-      width: 150px;
+      width: 160px;
     }
 
     @media (min-width: $desktop) {
@@ -360,7 +360,7 @@
   position: relative;
 
   @media (min-width: $tablet) {
-    width: 100%;
+    width: 70%;
   }
 
   @media (min-width: $desktop) {
@@ -523,11 +523,6 @@
 
     @media (min-width: $tablet) {
       top: 23px;
-      right: 25px;
-    }
-
-    @media (min-width: $desktop) {
-      right: 8px;
     }
   }
 
@@ -537,12 +532,6 @@
 
     @media (min-width: $tablet) {
       top: 23px;
-      right: 21px;
-    }
-
-    @media (min-width: $desktop) {
-      top: 22px;
-      right: 4px;
     }
   }
 }
@@ -576,7 +565,7 @@
   }
 
   @media (min-width: $tablet) {
-    width: 100%;// 500px;
+    width: 73%;// 500px;
     margin-top: 12px;
     min-height: 142px;
     font-size: 19px;
