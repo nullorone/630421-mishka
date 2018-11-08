@@ -16,6 +16,11 @@
     padding-left: 6.5%;
     padding-right: 6.5%;
   }
+
+  @media (min-width: $desktop) {
+    padding-left: 4.5%;
+    padding-right: 4.5%;
+  }
 }
 
 .order-form__description {
@@ -53,8 +58,8 @@
   }
 
   @media (min-width: $desktop) {
-    // width: 1050px;
-    padding-left: 41px;
+    width: 1050px;
+    padding-left: 90px;
   }
 
   &--modified {
@@ -355,6 +360,10 @@
 
   @media (min-width: $tablet) {
     width: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    width: 701px;
   }
 }
 
