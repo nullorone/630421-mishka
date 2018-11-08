@@ -27,6 +27,7 @@
 
   @media (min-width: $desktop) {
     display: flex;
+    width: 100%;
     min-height: 455px;
     margin-top: 57px;
     margin-bottom: 104px;
@@ -78,6 +79,7 @@
 
   @media (min-width: $desktop) {
     width: 682px;
+    margin: 0;
   }
 }
 
