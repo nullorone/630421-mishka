@@ -8,7 +8,7 @@ var overlayStatus = "";
 var overlayFirstInput = document.querySelector(".size-form__radio");
 var btnModalBuy = [];
 btnModalBuy = document.querySelectorAll(".js-modal-buy");
-var mapPic = document.querySelector('.contacts__map-wrapper');
+var mapPic = document.querySelector(".contacts__map-wrapper");
 //Добавляет иконку закрытого меню по-умолчанию
 btnToggle.classList.add("header-nav__toggle--close");
 
