@@ -33,20 +33,22 @@
 }
 
 .order-form__group {
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 31px 30px;
+  padding-right: 10px;
   border: none;
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
-    width: 768px;
+    width: auto;
+    max-width: 768px;
     padding-top: 49px;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop) {
-    width: 1050px;
+    max-width: 1050px;
     padding-left: 41px;
   }
 
@@ -218,13 +220,15 @@
 
   @media (min-width: $tablet) {
     display: flex;
+    width: 500px;
     max-width: 500px;
-    min-height: 75px;
     margin-top: 25px;
   }
 
   @media (min-width: $desktop) {
+    width: 700px;
     max-width: 700px;
+    min-height: 45px;
     margin-top: 26px;
   }
 }
@@ -295,7 +299,7 @@
     max-width: 260px;
 
     min-height: 20px;
-    margin-bottom: 43px;
+    margin-bottom: 41px;
     padding-right: 20px;
     padding-left: 62px;
     font-size: 17px;
@@ -326,7 +330,7 @@
     }
 
     @media (min-width: $tablet) {
-      max-width: 668px;
+      max-width: 160px;
       margin-bottom: 57px;
       padding-left: 80px;
       font-size: 19px;
@@ -447,11 +451,11 @@
     }
 
     @media (min-width: $tablet) {
-      width: 500px;
+      width: 100%;//500px;
       margin-top: 0;
       margin-left: 25px;
       margin-bottom: 9px;
-      padding-bottom: 18px;
+      padding-bottom: 17px;
       padding-left: 16px;
       font-size: 19px;
       line-height: 19px;
@@ -492,7 +496,7 @@
 
   &--tel {
     top: 12px;
-    right: 8px;
+    right: 25px;
 
     @media (min-width: $tablet) {
       top: 23px;
@@ -506,7 +510,7 @@
 
   &--email {
     top: 13px;
-    right: 4px;
+    right: 25px;
 
     @media (min-width: $tablet) {
       top: 23px;
@@ -562,25 +566,25 @@
 }
 
 .order-form__footer {
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   padding-left: 30px;
-  padding-right: 30px;
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
-    width: 768px;
+    min-width: 745px;
+    max-width: 768px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   @media (min-width: $desktop) {
     width: 700px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 22px;
+    padding-right: 22px;
   }
 }
 

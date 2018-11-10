@@ -1,3 +1,11 @@
+// * {
+//   outline: 2px solid red;
+// }
+
+svg {
+  overflow: hidden;
+}
+
 body {
   color: $color-text;
   font-family: $font-family--main;

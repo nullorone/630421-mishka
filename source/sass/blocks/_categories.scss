@@ -25,13 +25,12 @@
 .categories__link {
   position: relative;
   display: flex;
-  width: 320px;
+  width: 260px;
   min-height: 103px;
   margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 25px;
   padding-right: 100px;
-  padding-left: 27px;
   color: #ffffff;
   font-size: 19px;
   line-height: 24px;
@@ -86,7 +85,7 @@
   }
 
   &--interior {
-    right: 36px;
+    right: 6px;
 
     @media (min-width: $tablet) {
       right: 37px;
@@ -94,7 +93,7 @@
   }
 
   &--toy {
-    right: 26px;
+    right: -4px;
 
     @media (min-width: $tablet) {
       right: 33px;

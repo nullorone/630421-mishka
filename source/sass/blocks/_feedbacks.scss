@@ -1,5 +1,15 @@
 .feedbacks {
   padding-bottom: 45px;
+
+  .container {
+    @media (min-width: $tablet) {
+      margin-left: 0;
+    }
+
+    @media (min-width: $desktop) {
+      margin-left: auto;
+    }
+  }
 }
 
 .feedbacks__container {
@@ -7,10 +17,11 @@
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
-    width: 768px;
+    max-width: 768px;
+    width: 745px;
     min-height: 470px;
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 27px;
     padding-bottom: 69px;
     box-sizing: border-box;
     background-image: url("../img/review@1x.jpg");
@@ -24,9 +35,11 @@
   }
 
   @media (min-width: $desktop) {
-    width: 1150px;
+    max-width: 1150px;
+    width: 1125px;
     margin: 0 auto;
-    padding-left: 225px;
+    padding-left: 215px;
+    padding-right: 37px;
     padding-bottom: 120px;
     background-position: 50px 30px;
   }

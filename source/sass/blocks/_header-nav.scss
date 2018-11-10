@@ -86,9 +86,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 768px;
-    padding-left: 50px;
-    padding-right: 50px;
+    width: 745px;
+    max-width: 768px;
+    padding-left: 37px;
+    padding-right: 37px;
     margin: 0 auto;
     box-sizing: border-box;
     background-color: transparent;
@@ -106,12 +107,16 @@
 
   @media (min-width: $desktop) {
     width: 1150px;
+    max-width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
 .header-nav__item {
   display: flex;
-  width: 320px;
+  width: 302px;
+  max-width: 320px;
   padding-left: 26px;
   padding-right: 30px;
   min-height: 80px;
@@ -136,13 +141,14 @@
     padding-right: 0;
 
     @media (min-width: $tablet) {
-      width: 320px;
+      width: 295px;
       padding-top: 9px;
       order: 1;
+      flex-grow: 1;
     }
 
     @media (min-width: $desktop) {
-      width: 250px;
+      width: 230px;
       padding-top: 10px;
       order: 3;
     }
