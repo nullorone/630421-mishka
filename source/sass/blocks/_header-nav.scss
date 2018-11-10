@@ -141,7 +141,8 @@
     padding-right: 0;
 
     @media (min-width: $tablet) {
-      width: 295px;
+      // width: 295px;
+      width: 320px;
       padding-top: 9px;
       order: 1;
       flex-grow: 1;
