@@ -1,17 +1,13 @@
-// * {
-//   outline: 2px solid red;
-// }
-
-svg {
-  overflow: hidden;
-}
-
 body {
   color: $color-text;
   font-family: $font-family--main;
   font-size: $font-size--main;
   font-weight: 700;
   line-height: 24px;
+}
+
+svg {
+  overflow: hidden;
 }
 
 .visually-hidden {
