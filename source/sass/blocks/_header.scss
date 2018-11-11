@@ -31,11 +31,16 @@
 
   &--index-page {
     .header__title {
+      width: 250px;
+      max-width: 260px;
       min-height: 200px;
+      margin: 0 auto;
       padding-bottom: 12px;
       background-color: transparent;
 
       @media (min-width: $tablet) {
+        width: auto;
+        max-width: 100%;
         padding-top: 66px;
         padding-bottom: 13px;
         min-height: 460px;
